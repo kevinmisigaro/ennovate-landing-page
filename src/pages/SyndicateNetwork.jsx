@@ -98,7 +98,7 @@ const HowToJoin = () => {
 const TagLine = () => {
   return (
     <div className="h-fit w-full flex flex-col items-center justify-evenly pb-12 pt-4 bg-current">
-      <h1 className="text-white font-light">Discover</h1>
+{/*       <h1 className="text-white font-light">Discover</h1> */}
       {/* <h4 className="text-white text-5xl font-bold my-1">
         How to join our Syndicate Network
       </h4> */}
