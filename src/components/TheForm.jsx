@@ -112,7 +112,9 @@ function SyndicateForm() {
         // console.log(receivedData);
         // console.log(receivedStatus);
       setIsSubmitting(false);
-      setTimeout(() => window.location.reload(), 3000);
+      // setTimeout(() => window.location.reload(), 3000);
+       setTimeout(() => window.location.assign('/'), 3000);
+
 
       })
       .catch((err) => {
