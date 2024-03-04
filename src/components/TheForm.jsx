@@ -96,6 +96,7 @@ function SyndicateForm() {
     e.preventDefault();
     setIsSubmitting(true);
     const url = "https://others.medlinep.com/api/auth/register";
+    // const url = "https://others.medlinep.com/api/auth/register";
 
     fetch(url, {
       method: "POST",
