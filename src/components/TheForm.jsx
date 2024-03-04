@@ -95,7 +95,7 @@ function SyndicateForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const url = "http://143:198:232:68:5002/api/auth/register";
+    const url = "https://others.medlinep.com/api/auth/register";
 
     fetch(url, {
       method: "POST",
