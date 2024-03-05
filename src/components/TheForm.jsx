@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { PhoneInput } from "react-international-phone";
 // import  formatPhoneNumber  from 'react-international-phone';
-import "react-international-phone/style.css";
 import Switch from "@mui/material/Switch";
-import Modal from "./Modal";
-import ErrorModal from "./ErrorModal";
-import axios from "axios";
+import "react-international-phone/style.css";
 import AnimatedText from "./AnimatedText";
+import ErrorModal from "./ErrorModal";
 
 function SyndicateForm() {
   const [formData, setFormData] = useState({

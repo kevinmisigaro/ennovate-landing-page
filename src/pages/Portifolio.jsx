@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import PortfolioHero from "../components/PortfolioHero";
 import { portfolios } from "../utils";
-import collabo from "../assets/heroguy.png";
+import collabo from "../assets/collabo.png";
 import NextFundHero from "../components/NextFundHero";
 
 const PartnersCard = ({ logo, name, description, url }) => {
