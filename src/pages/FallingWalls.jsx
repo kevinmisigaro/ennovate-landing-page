@@ -30,7 +30,7 @@ function FallingWalls() {
             <h2 className="text-5xl font-bold text-yellow-500">
               Falling Walls
               <br />
-              <span className="text-black"> Program</span>
+              <span className="text-black"> Program.</span>
             </h2>
             <img src={globe} alt="" className="size-16 -ml-12 -mb-20" />
           </div>
