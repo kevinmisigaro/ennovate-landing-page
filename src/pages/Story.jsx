@@ -39,7 +39,7 @@ function Story() {
         textDescription={
           <h1 className="text-4xl ml-12 font-bold tracking-tight text-white sm:text-7xl sm:w-[12em]">
             We're backing Africa's most undeserved
-            <span className="text-yellow-500">
+            <span className="text-yellow-500 font-light">
               <br></br>founders
             </span>
           </h1>

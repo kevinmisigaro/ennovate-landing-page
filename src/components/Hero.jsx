@@ -53,7 +53,7 @@ function Hero({
         ref={ref}
         src={hero}
         alt=""
-        className={`sm:h-[44em] object-fill mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
+        className={`sm:h-[44em] object-fill md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -85,7 +85,7 @@ function Hero({
           style={{
             pointerEvents: "none",
           }}
-          className={`h-72 pl-0  hidden md:block absolute  lg:w-[58em] xl:w-[60em] mt-32`}
+          className={`h-72 pl-0  hidden md:block absolute  lg:w-[55em] xl:w-[60em] mt-32`}
         />
 
         {/* bulb with faded columnar view */}
