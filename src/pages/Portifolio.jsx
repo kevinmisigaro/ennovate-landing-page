@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import PortfolioHero from "../components/PortfolioHero";
 import { portfolios } from "../utils";
-import collabo from "../assets/collabo.png"
+import collabo from "../assets/heroguy.png";
 import NextFundHero from "../components/NextFundHero";
 
 const PartnersCard = ({ logo, name, description, url }) => {
@@ -125,7 +125,21 @@ function Portifolio() {
       </div>
       {/* <HeroSection /> */}
       {/* <PortfolioHero hero={collabo} heroSideDescription={'we combine'}/> */}
-      <NextFundHero hero={collabo} heroSideDescription={''} />
+      <NextFundHero
+        hero={collabo}
+        textDescription={
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl sm:w-[12em] sm:ml-12">
+            We combine both
+            <span className="text-yellow-500 font-light">
+              &nbsp; venture building
+            </span>{" "}
+            and bootstrapping funds to enable less visible founders to&nbsp;
+            <span className="text-yellow-500 font-light">
+              build successful businesses
+            </span>
+          </h1>
+        }
+      />
 
       <div className="flex items-center justify-evenly flex-wrap">
         {portfolios.map((portfolio) => (

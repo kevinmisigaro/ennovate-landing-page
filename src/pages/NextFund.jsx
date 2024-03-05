@@ -16,7 +16,7 @@ import NextFundHero from "../components/NextFundHero";
 function NextFund() {
   return (
     <div className="bg-gradient-to-b from-[#000000] via-[#0f0f0f] to-[#000000]">
-      <NextFundHero hero={guy} heroSideDescription={founders} />
+      <NextFundHero hero={guy} heroSideDescription={founders} showSideHeroImage={true} />
       <div className="h-fit w-full flex flex-col items-center justify-evenly mb-12 mt-4">
         <AnimatedText text={"HOW WE INVEST"} color={"white"} size={"2em"} />
         <h4 className="text-white text-xl my-1 mx-4 text-center capitalize">

@@ -13,7 +13,7 @@ import bulb from "../assets/Ennovate-Ventures-Bulb.png";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextFundHero from "../components/NextFundHero";
-import heroGuy from "../assets/collabo.png";
+import heroGuy from "../assets/heroguy.png";
 
 const Icon = () => {
   return <img src={bulb} alt="" />;
@@ -149,9 +149,8 @@ const Partinership = () => {
 function HackLab() {
   return (
     <div className="w-full h-fit">
-      {/* <NavBar color={'black'} showContactBtn={true} /> */}
       <div className="bg-black">
-        <NextFundHero hero={heroGuy} heroSideDescription={""} />
+        <NextFundHero hero={heroGuy} textDescription={<h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">The Next HackLab</h1>} />
       </div>
       <Hero />
       <Partinership />

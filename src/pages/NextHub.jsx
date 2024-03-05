@@ -62,9 +62,9 @@ const PartTwo = () => {
           <strong className="text-[#feba00]"> IdeaLab </strong> in Tanzania,
           building a
           <strong className="text-[#feba00]">
-            {" "}
+            
             pipeline of the most disruptive innovations
-          </strong>{" "}
+          </strong>
           powering smart cities, the blue economy, and tech talents for the
           future of work. The IdeaLab is
           <strong>
@@ -133,10 +133,13 @@ const HeroSection = () => {
       <div className="mx-auto py-12 flex items-center justify-evenly w-full">
         <div className="text-center my-12 sm:my-0 sm:w-1/2 w-full">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Tanzania’s First{" "}
-            <span className="text-[#feba00] font-light">Open Digital Innovation Lab</span>{" "}
-            that is Enabling Africa's{" "}
-            <span className="text-[#feba00] font-light">NEXT</span> Big Companies
+            Tanzania’s First
+            <span className="text-[#feba00] font-light">
+              Open Digital Innovation Lab
+            </span>
+            that is Enabling Africa's
+            <span className="text-[#feba00] font-light">NEXT</span> Big
+            Companies
           </h1>
         </div>
         <img src={heroGuy} alt="" className="hidden sm:block w-[40%] mt-4" />
@@ -152,7 +155,6 @@ const HeroSection = () => {
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
         />
-        
       </div>
     </div>
   );
@@ -253,12 +255,25 @@ const Programme = ({ icon, name, route }) => {
 };
 function NextHub() {
   return (
-    <div className="pattern w-full h-fit">
+    <div className="bg-black w-full h-fit">
       <div className="bg-black absolute w-full z-10">
         {/* <NavBar color={"black"} showContactBtn={true}/> */}
       </div>
       {/* <HeroSection /> */}
-      <NextFundHero hero={heroGuy} heroSideDescription={''}/>
+      <NextFundHero
+        hero={heroGuy}
+        textDescription={
+          <h1 className="text-4xl ml-12 font-bold tracking-tight text-white sm:text-6xl sm:w-[12em]">
+            Tanzania’s First
+            <span className="text-[#feba00] mx-2 font-light">
+              Open Digital Innovation Lab
+            </span>
+            that is Enabling Africa's
+            <span className="text-[#feba00] mx-2 font-light">NEXT</span>Big
+            Companies
+          </h1>
+        }
+      />
       <PartTwo />
       <section className="flex flex-row items-center justify-evenly w-[90%] mx-[5%] my-12 rounded-xl flex-wrap h-1/2 p-16 pattern">
         {nextHubProgrammes.map((programme) => (

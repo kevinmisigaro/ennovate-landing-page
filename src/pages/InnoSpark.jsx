@@ -7,15 +7,15 @@ import map from "../assets/gallery/map.png";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import NextFundHero from "../components/NextFundHero";
-import heroGuy from "../assets/collabo.png"
+import heroGuy from "../assets/heroguy.png"
 function InnoSpark() {
   return (
     <>
       {/* <NavBar color={"black"} showContactBtn={true} /> */}
       <div className="bg-black">
-        <NextFundHero hero={heroGuy} heroSideDescription={""} />
+        <NextFundHero hero={heroGuy} textDescription={<h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">InnoSpark</h1>} />
       </div>
-      <div className="w-full h-fi flex flex-col md:p-4 items-center justify-center sm:flex-row sm:justify-between md:border-x-[2.5em] border-black">
+      <div className="w-full h-fit flex flex-col md:p-4 items-center justify-center sm:flex-row sm:justify-between md:border-x-[2.5em] border-black">
         <div className="w-full h-fit md:w-1/2">
           <div className="flex flex-row items-center justify-stretch px-4 my-8 sm:my-0">
             <h2 className="text-4xl font-bold text-yellow-500">

@@ -144,7 +144,7 @@ function SyndicateForm() {
           color={"white"}
         />
         <br />
-        <h4 className="text-center text-yellow-500 -mt-2 text-xl font-semibold my-4">
+        <h4 className="text-center text-yellow-500 -ml-4 -mt-2 text-xl font-semibold my-4">
           Part 1
         </h4>
         <br />

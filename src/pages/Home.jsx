@@ -38,22 +38,7 @@ function Home() {
       </div>
       <Partiners />
 
-      <div class="cardPro">
-        <p class="card-title">FINTECH INCUBATOR PROGRAM</p>
-        <p class="small-desc">
-          Our FINTECH Incubator program is a 6-month top-level start-up
-          incubator in partnership with FSDT and St. Augustine’sUniversity of
-          Tanzania. The incubator is currently supporting five FINTECH start-ups
-          through our innovation hub in Mwanza. In order to promote digital
-          adoption by the start-ups, we are facilitating the incubation program
-          by combining both physical and online meet-ups. Through the virtual
-          meetings, we engage each start-up with dedicated mentorship support to
-          help them implement key knowledge gained from the program.
-        </p>
-        <div class="go-corner">
-          <img src={logo} alt="" className="size-8" />
-        </div>
-      </div>
+     
       <Footer />
     </div>
   );

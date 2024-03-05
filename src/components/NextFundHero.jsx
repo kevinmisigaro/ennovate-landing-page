@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 import innovate from "../assets/Ennovate-Ventures-Bulb.png";
 import founder2 from "../assets/Group 4.png";
 import NavBar from "./NavBar";
-function NextFundHero({ hero, heroSideDescription = founder2 }) {
+function NextFundHero({
+  hero,
+  showSideHeroImage = false,
+  heroSideDescription = founder2,
+  textDescription = "",
+}) {
   const { scrollYProgress } = useScroll();
 
   const controls = useAnimation();
@@ -44,7 +49,7 @@ function NextFundHero({ hero, heroSideDescription = founder2 }) {
         ref={ref}
         src={hero}
         alt=""
-        className={`sm:h-[44em] mt-60 sm:mt-0 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
+        className={`sm:h-[44em] mt-60 sm:-mt-0 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -56,10 +61,23 @@ function NextFundHero({ hero, heroSideDescription = founder2 }) {
       />
     );
   };
+  const renderText = () => {
+    return (
+      <div
+        className={`sm:h-[44em] mt-44 hidden sm:block  object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 left-0 z-10`}
+      >
+        {/* <h1 className="text-white text-5xl ml-4 font-semibold">
+          {textDescription}
+        </h1> */}
+        {textDescription}
+      </div>
+    );
+  };
 
   return (
     <div className="overflow-clip h-screen w-full bg-gradient-to-b from-transparent flex flex-row items-center justify-between to-black box-border">
       {renderHeroImage()}
+
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
         <div className="flex flex-col items-center justify-evenly h-full w-full">
@@ -69,11 +87,15 @@ function NextFundHero({ hero, heroSideDescription = founder2 }) {
               founders
             </span>
           </h2>
-          <img
-            src={heroSideDescription}
-            alt=""
-            className="hidden sm:block -mt-32 -ml-40"
-          />
+          {showSideHeroImage ? (
+            <img
+              src={heroSideDescription}
+              alt=""
+              className="hidden sm:block -mt-32 -ml-40"
+            />
+          ) : (
+            renderText()
+          )}
         </div>
 
         {/* bulb with faded columnar view */}

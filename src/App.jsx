@@ -11,12 +11,12 @@ import Digify from "./pages/Digify";
 import FallingWalls from "./pages/FallingWalls";
 import HackLab from "./pages/HackLab";
 import NotFound from "./pages/NotFound";
-
+import Programmes from "./pages/Programmes";
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* <Route path="/" element={<Story />} /> */}
+      <Route path="/ourstory" element={<Story />} />
       <Route path="/nextfund" element={<NextFund />} />
       <Route path="/portfolio" element={<Portifolio />} />
       <Route path="/nexthub" element={<NextHub />} />
@@ -26,6 +26,7 @@ function App() {
       <Route path="/govtech" element={<GovTech />} />
       <Route path="/fallingwalls" element={<FallingWalls />} />
       <Route path="/syndicatenetwork" element={<SyndicateNetwork />} />
+      <Route path="/programmes" element={<Programmes />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/stories" element={<Story />} /> */}
     </Routes>

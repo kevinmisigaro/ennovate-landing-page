@@ -1,13 +1,13 @@
 import React from "react";
+import image3 from "../assets/programmes/dollar.png";
 import funds from "../assets/programmes/fund.png";
+import image2 from "../assets/programmes/graph.png";
 import unity from "../assets/programmes/innovation.png";
 import image1 from "../assets/programmes/people.png";
-import image2 from "../assets/programmes/graph.png";
-import image3 from "../assets/programmes/dollar.png";
 import image4 from "../assets/programmes/unity.png";
-import AnimatedText from "../components/AnimatedText";
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import NextFundHero from "../components/NextFundHero";
+import heroGuy from "../assets/heroguy.png";
 
 const data = [
   {
@@ -33,8 +33,16 @@ const data = [
 ];
 function Story() {
   return (
-    <>
-      <NavBar color={"black"} />
+    <div className="bg-black">
+      <NextFundHero
+        hero={heroGuy}
+        textDescription={
+          <h1 className="text-4xl ml-12 font-bold tracking-tight text-[#feba00] sm:text-5xl sm:w-[12em]">
+            our story
+          </h1>
+        }
+      />
+      {/* <NavBar color={"black"} /> */}
       <div className="h-fit sm:h-screen max-w-full flex flex-col sm:flex-row items-center justify-between">
         <div className="w-full sm:z-10 h-screen sm:h-full sm:w-1/3 bg-amber-900 flex flex-col items-center justify-evenly">
           <div className="w-[96%] h-72 flex flex-col items-center sm:items-start justify-center mx-[2%] sm:h-72 sm:w-[27em] sm:ml-24 bg-yellow-500 p-2">
@@ -81,7 +89,7 @@ function Story() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

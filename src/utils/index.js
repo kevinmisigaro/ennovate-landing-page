@@ -51,9 +51,9 @@ import haba from "../assets/Logos/haba.png";
 import plumar from "../assets/Logos/plumar.png";
 import sumet from "../assets/Logos/sumet.png";
 import lima from "../assets/Logos/lima.jpg";
-import payshiga from "../assets/Logos/payshiga.jpg"
-import mkononi from "../assets/Logos/mkononi.png"
-import tayari from "../assets/Logos/tayari.jpg"
+import payshiga from "../assets/Logos/payshiga.jpg";
+import mkononi from "../assets/Logos/mkononi.png";
+import tayari from "../assets/Logos/tayari.jpg";
 
 // svgs
 import youtubeSvg from "../assets/icons/icons8-youtube.svg";
@@ -91,7 +91,7 @@ export const navLinks = [
   {
     id: crypto.randomUUID(),
     name: "Our Story",
-    linkTo: "/",
+    linkTo: "/ourstory",
   },
   {
     id: crypto.randomUUID(),
@@ -124,7 +124,7 @@ export const galleryData = [
     description:
       "We work with corporates and development partners to design and implement entrepreneurship programmes to scale innovative solutions across Africa",
     img: image2,
-    page: "/#",
+    page: "/programmes",
   },
   {
     id: crypto.randomUUID(),
@@ -830,5 +830,61 @@ export const logos = [
   // a16,
   a17,
   a18,
-  a19
+  a19,
+];
+export const programmesData = [
+  {
+    id: crypto.randomUUID(),
+    title: "VENTURE BUILDING PROGRAMME",
+    description:
+      "Our venture building programme is supporting and investing in the outlying gaps in underserved African entrepreneurs that VCs are not covering – Through our top level venture growth support and micro fund, we are betting on ambitious founders  that are building innovations that are solving Africa’s most challenging problems. Good news is that, we have added 4 more startups to our portfolio, offering them funding and technical support, and having monthly mentorship office hours to ensure that they are working towards meeting their milestones. Find the four startups below.",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "IDEA MARATHON INCUBATOR",
+    description:
+      "The Idea Marathon incubator is our flagship digital start-up development program, where we help entrepreneurs transform their ideas into desirable and scalable products. The 4-month long incubation programme takes the start-ups through an intensive user-focused ideation process, develops a Minimum Viable Product, embed digital strategies and validates business  model assumptions to achieve product market-fit. We supported 57 start-ups in 3 cohorts of the incubation programme. So far, 11 start-ups from our idea marathon incubator have received investment to scale  up their business operations. ",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "INNOVATION FOR FUTURE COVID-19 INNOVATION CHALLENGE",
+    description:
+      "Ennovate Ventures partnered with the United Nations International Trade Centre, National Economic Empowerment Council, and GIZ to implement the COVID-19 Innovation Challenge and Business Continuity Project for 11 start-ups.The project started with a virtual hackathon where  participating start-ups were matched with expert mentors to improve their business concepts, and then the start-ups pitched online. We selected 2 winners, to whom we awarded $5,000 each to help them  navigate the impact of COVID-19on their business. The 11 start-ups then joined a 2-month business continuity project, where they supported restructuring their business model to become more resilient  and built their team’s capacity to adopt digital solutions in their day-to-day business operations.    ",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "FINTECH INCUBATOR PROGRAM",
+    description:
+      "Our FINTECH Incubator program is a 6-month top-level start-up incubator in partnership  with FSDT and St. Augustine’sUniversity of Tanzania. The incubator is currently supporting five FINTECH start-ups through our innovation hub in Mwanza.In order to promote digital adoption by the start-ups, we are facilitating the incubation program by combining both physical and online meet-ups.Through the virtual meetings, we engage each start-up with dedicated mentorship support to  help them implement key knowledge gained from the program.",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "INNOVATORS IN RESIDENCE PROGRAMME AND MEDIA INNOVATION CONFERENCE",
+    description:
+      "Ennovate Ventures worked with DW Akademie and Aga Khan University Media Innovation Centre to plan and implement an Innovators in Residence Programme in the Lake Zone.",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "DIGIFY PROGRAMME",
+    description:
+      "Digify-tech Programme has trained 1,200+ digital entrepreneurs, matched over 300 to different types of jobs online. Digital entrepreneurs trained from the programme have generated thousands of dollars income since the inception of the programme. The results achieved so far from the digify-tech initiative have shown strong demand for digital skills by young people in Tanzania as an alternative to the growing unemployment rate within the region. With the support from The UN International Trade Centre, Ennovate Ventures will continue to offer digital skills capacity building training to Tanzania youths, equip them with enterprise skills to help them sell and monetize their digital expertise.",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "develoPPP Ventures Programme",
+    description:
+      "Ennovate Ventures have partnered with VC4A and DEG Impulse to implement the develoPPP Ventures Programme in Tanzania, which is funded by BMZ, Germany. Through develoPPP Ventures Programme, we are providing tailor-made technical assistance, business acceleration support and euro 100,000 each to selected early stage youth-led startups and SMEs in Tanzania per year. The programme, which will run until 2025 is designed to help entrepreneurs identify, validate and scale their innovative companies that are improving living outcomes in Tanzania and beyond. Some of the startups and SMEs we have supported through this programme are:id, Tembo Plus, Medikea, Rosho, Safiri etc. We have supported these startups to unlock over $1M in funding and they have experienced revenue increase by average of 11% month on month growth in the last one year.    ",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "GIZ WE4A Programme",
+    description:
+      "Ennovate Ventures was contracted by GIZ Tanzania through E4D Programme to provide technical assistance, business digital transitioning, mentorship, access to capital and international market linkage support to 41 female entrepreneurs in the WE4A project. Ennovate Ventures offered very curated BDS, funding and B2B market linkages to enable the entrepreneurs to accelerate their business performance, reduce overhead cost and become profitable. Through the programme, the women entrepreneurs have raised $500,000+ in funding, grew their revenue by over 35% and created dozens of jobs in the last 8 months into the programme.    ",
+  },
+  {
+    id: crypto.randomUUID(),
+    title: "Innovate 4 Food Security Project",
+    description:
+      "Innovate4FoodSecurity is a collaborative initiative by StartHub Africa and Ennovate Ventures that is commissioned and funded by NOREC. The Project is designed to foster sustainable entrepreneurial ventures addressing climate change impacts on food security. The project's core focus is to enhance youth involvement in income-generating opportunities within the agricultural value chain. This is achieved through entrepreneurship support programs targeting 744 young individuals per round, totaling 1488 for both rounds. By imparting knowledge, skills, and exposure to the agricultural value chain, the initiative aims to empower the youth to play a pivotal role in fostering economic growth, developing sustainable ventures, and mitigating climate change effects on food security.    ",
+  },
 ];

@@ -85,7 +85,7 @@ function Hero({
           style={{
             pointerEvents: "none",
           }}
-          className={`h-72 pl-8 hidden md:block absolute md:w-[60em] mt-32`}
+          className={`h-72 pl-0  hidden md:block absolute  lg:w-[58em] xl:w-[60em] mt-32`}
         />
 
         {/* bulb with faded columnar view */}
