@@ -10,6 +10,7 @@ function NextFundHero({
   showSideHeroImage = false,
   heroSideDescription = founder2,
   textDescription = "",
+  textOnSmall = "",
 }) {
   const { scrollYProgress } = useScroll();
 
@@ -74,6 +75,10 @@ function NextFundHero({
     );
   };
 
+  const renderTextOnSmall = () => {
+    return <div>{textOnSmall}</div>;
+  };
+
   return (
     <div className="overflow-clip h-screen w-full bg-gradient-to-b from-transparent flex flex-row items-center justify-between to-black box-border">
       {renderHeroImage()}
@@ -81,17 +86,18 @@ function NextFundHero({
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
         <div className="flex flex-col items-center justify-evenly h-full w-full">
-          <h2 className="text-white uppercase text-2xl -mt-[20em] font-semibold text-center sm:hidden">
+          {/* <h2 className="text-white uppercase text-2xl -mt-[20em] font-semibold text-center sm:hidden">
             investing in africa's most daring
             <span className="text-yellow-500 ml-2 font-extralight">
               founders
             </span>
-          </h2>
+          </h2> */}
+          {renderTextOnSmall()}
           {showSideHeroImage ? (
             <img
               src={heroSideDescription}
               alt=""
-              className="hidden sm:block -mt-32 -ml-40"
+              className="hidden sm:block -mt-60 -ml-40 w-[50em]"
             />
           ) : (
             renderText()

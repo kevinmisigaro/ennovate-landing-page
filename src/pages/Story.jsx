@@ -37,9 +37,20 @@ function Story() {
       <NextFundHero
         hero={heroGuy}
         textDescription={
-          <h1 className="text-4xl ml-12 font-bold tracking-tight text-[#feba00] sm:text-5xl sm:w-[12em]">
-            our story
+          <h1 className="text-4xl ml-12 font-bold tracking-tight text-white sm:text-7xl sm:w-[12em]">
+            We're backing Africa's most undeserved
+            <span className="text-yellow-500">
+              <br></br>founders
+            </span>
           </h1>
+        }
+        textOnSmall={
+          <h2 className="text-white uppercase text-2xl -mt-[15em] font-semibold text-center sm:hidden">
+            We're backing Africa's most undeserved
+            <span className="text-yellow-500 ml-2 font-extralight">
+              founders
+            </span>
+          </h2>
         }
       />
       {/* <NavBar color={"black"} /> */}
