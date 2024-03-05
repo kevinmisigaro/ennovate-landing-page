@@ -1,12 +1,13 @@
-import React from "react";
-import desire from "../assets/Logos//desire.png";
 import { motion } from "framer-motion";
+import React from "react";
 import { useInView } from "react-intersection-observer";
-import { portfolios } from "../utils";
-import NavBar from "../components/NavBar";
+import heroImage from "../assets/heroguy.png";
 import Footer from "../components/Footer";
-import heroImage from "../assets/heroguy.png"
-import AnimatedText from "../components/AnimatedText";
+import NavBar from "../components/NavBar";
+import PortfolioHero from "../components/PortfolioHero";
+import { portfolios } from "../utils";
+import collabo from "../assets/collabo.png"
+import NextFundHero from "../components/NextFundHero";
 
 const PartnersCard = ({ logo, name, description, url }) => {
   const { ref, inView } = useInView({
@@ -85,15 +86,20 @@ const HeroSection = () => {
           }}
         />
       </div>
-      <div className="mx-auto max-w-2xl py-32">
-        <div className="text-center">
+      <div className="mx-auto max-w-2xl py-32 flex flex-row items-center justify-center">
+        <div className="text-center ">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             We combine both
-            <span className="text-yellow-500 font-light">&nbsp; venture building</span> and
-            bootstrapping funds to enable less visible founders to&nbsp;
-            <span className="text-yellow-500 font-light">build successful businesses</span>
+            <span className="text-yellow-500 font-light">
+              &nbsp; venture building
+            </span>{" "}
+            and bootstrapping funds to enable less visible founders to&nbsp;
+            <span className="text-yellow-500 font-light">
+              build successful businesses
+            </span>
           </h1>
         </div>
+        <img src={heroImage} alt="" />
       </div>
       <div
         className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -115,9 +121,12 @@ function Portifolio() {
   return (
     <div className="bg-black">
       <div className="z-50 absolute w-full">
-        <NavBar color={"black"} showContactBtn={true} />
+        {/* <NavBar color={"black"} showContactBtn={true} /> */}
       </div>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      {/* <PortfolioHero hero={collabo} heroSideDescription={'we combine'}/> */}
+      <NextFundHero hero={collabo} heroSideDescription={''} />
+
       <div className="flex items-center justify-evenly flex-wrap">
         {portfolios.map((portfolio) => (
           <PartnersCard

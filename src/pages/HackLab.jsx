@@ -12,7 +12,8 @@ import { guides, modelData, partinershipData } from "../utils";
 import bulb from "../assets/Ennovate-Ventures-Bulb.png";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-
+import NextFundHero from "../components/NextFundHero";
+import heroGuy from "../assets/collabo.png";
 
 const Icon = () => {
   return <img src={bulb} alt="" />;
@@ -132,7 +133,12 @@ const Partinership = () => {
           </div>
           <ul className="mx-8 mt-4">
             {guides.map((guide) => (
-              <li key={guide.id} className="text-lg md:text-2xl font-semibold list-disc my-2">{guide.name}</li>
+              <li
+                key={guide.id}
+                className="text-lg md:text-2xl font-semibold list-disc my-2"
+              >
+                {guide.name}
+              </li>
             ))}
           </ul>
         </div>
@@ -143,10 +149,13 @@ const Partinership = () => {
 function HackLab() {
   return (
     <div className="w-full h-fit">
-      <NavBar color={'black'} showContactBtn={true} />
+      {/* <NavBar color={'black'} showContactBtn={true} /> */}
+      <div className="bg-black">
+        <NextFundHero hero={heroGuy} heroSideDescription={""} />
+      </div>
       <Hero />
       <Partinership />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

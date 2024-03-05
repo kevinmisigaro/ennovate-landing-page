@@ -15,7 +15,7 @@ import phone from "../assets/Phone.png";
 import youtube from "../assets/vectors/youtube.png";
 import linkedin from "../assets/vectors/linkedin.png";
 import instagram from "../assets/vectors/instagram.png";
-import twiter from "../assets/vectors/twiter.png";
+import twiter from "../assets/vectors/x.png";
 
 // thenexthubprogramme icons
 import inno from "../assets/gallery/Picture1.png";
@@ -236,7 +236,7 @@ export const footerQuickLinks = [
   },
   {
     id: crypto.randomUUID(),
-    route: "Carriers",
+    route: "careers",
   },
 ];
 
@@ -820,15 +820,15 @@ export const logos = [
   a6,
   a7,
   a8,
-  // a9,
-  // a10,
-  // a11,
-  a12,
+  a9,
+  a10,
+  a11,
+  // a12,
   a13,
   a14,
-  // a15,
+  a15,
   // a16,
-  // a17,
-  // a18,
-  // a19
+  a17,
+  a18,
+  a19
 ];

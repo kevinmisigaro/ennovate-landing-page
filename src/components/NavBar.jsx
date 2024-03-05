@@ -52,7 +52,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
           ))}
         </ul>
 
-        {showContactBtn ? (
+        {/* {showContactBtn ? (
           <Link
             to={"/SyndicateNetwork#syndicateform"}
             className="hidden font-poppins font-semibold sm:flex justify-center items-center text text-xl p-1 mr-12 text-black bg-white rounded-full"
@@ -61,7 +61,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
           </Link>
         ) : (
           ""
-        )}
+        )} */}
         <div className="md:hidden">
           <img
             src={humburger}

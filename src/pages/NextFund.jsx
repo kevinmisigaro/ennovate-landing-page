@@ -17,12 +17,9 @@ function NextFund() {
   return (
     <div className="bg-gradient-to-b from-[#000000] via-[#0f0f0f] to-[#000000]">
       <NextFundHero hero={guy} heroSideDescription={founders} />
-      {/* <Hero hero={guy}  setHero={false} heroSideDescription={founders} showDescription={true} showOnThisPage={true}/> */}
       <div className="h-fit w-full flex flex-col items-center justify-evenly mb-12 mt-4">
-        {/* <h1 className="text-white text-3xl font-bold">HOW WE INVEST</h1> */}
         <AnimatedText text={"HOW WE INVEST"} color={"white"} size={"2em"} />
         <h4 className="text-white text-xl my-1 mx-4 text-center capitalize">
-          {/* WE ARE INVESTING IN THE OUTLYING GAPS IN UNDESERVED AFRICA FOUNDER */}
           we are investing in the outlying gaps in undeserved africa founders
         </h4>
         <div className="w-24 h-[2px] bg-yellow-500"></div>
@@ -43,8 +40,7 @@ function NextFund() {
 
       <hr />
       <Footer />
-      {/* <DummyForm/> */}
-      <NewsSwiper />
+      {/* <NewsSwiper /> */}
     </div>
   );
 }

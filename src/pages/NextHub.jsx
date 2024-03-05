@@ -10,6 +10,8 @@ import extension from "../assets/gallery/puzzle.png";
 import gender from "../assets/gallery/equality.png";
 import ideas from "../assets/gallery/bulb.png";
 import heroGuy from "../assets/heroguy.png";
+import PortfolioHero from "../components/PortfolioHero";
+import NextFundHero from "../components/NextFundHero";
 // import Hero from "../components/Hero";
 
 const Hero = () => {
@@ -253,9 +255,10 @@ function NextHub() {
   return (
     <div className="pattern w-full h-fit">
       <div className="bg-black absolute w-full z-10">
-        <NavBar color={"black"} showContactBtn={true}/>
+        {/* <NavBar color={"black"} showContactBtn={true}/> */}
       </div>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <NextFundHero hero={heroGuy} heroSideDescription={''}/>
       <PartTwo />
       <section className="flex flex-row items-center justify-evenly w-[90%] mx-[5%] my-12 rounded-xl flex-wrap h-1/2 p-16 pattern">
         {nextHubProgrammes.map((programme) => (

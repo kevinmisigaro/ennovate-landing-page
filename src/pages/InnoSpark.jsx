@@ -6,11 +6,15 @@ import target from "../assets/gallery/target.png";
 import map from "../assets/gallery/map.png";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-
+import NextFundHero from "../components/NextFundHero";
+import heroGuy from "../assets/collabo.png"
 function InnoSpark() {
   return (
     <>
-      <NavBar color={"black"} showContactBtn={true} />
+      {/* <NavBar color={"black"} showContactBtn={true} /> */}
+      <div className="bg-black">
+        <NextFundHero hero={heroGuy} heroSideDescription={""} />
+      </div>
       <div className="w-full h-fi flex flex-col md:p-4 items-center justify-center sm:flex-row sm:justify-between md:border-x-[2.5em] border-black">
         <div className="w-full h-fit md:w-1/2">
           <div className="flex flex-row items-center justify-stretch px-4 my-8 sm:my-0">

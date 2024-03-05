@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import innovate from "../assets/Ennovate-Ventures-Bulb.png";
 import founder2 from "../assets/Group 4.png";
 import NavBar from "./NavBar";
-function NextFundHero({ hero, heroSideDescription = founder2 }) {
+function PortfolioHero({ hero, heroSideDescription = founder2 }) {
   const { scrollYProgress } = useScroll();
 
   const controls = useAnimation();
@@ -44,7 +44,7 @@ function NextFundHero({ hero, heroSideDescription = founder2 }) {
         ref={ref}
         src={hero}
         alt=""
-        className={`sm:h-[44em] mt-60 sm:mt-0 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
+        className={`sm:h-[40em] mt-60 sm:-mt-12 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-0 right-0 z-10`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -64,16 +64,22 @@ function NextFundHero({ hero, heroSideDescription = founder2 }) {
         <NavBar />
         <div className="flex flex-col items-center justify-evenly h-full w-full">
           <h2 className="text-white uppercase text-2xl -mt-[20em] font-semibold text-center sm:hidden">
-            investing in africa's most daring
+            we enable less visible founders to
             <span className="text-yellow-500 ml-2 font-extralight">
-              founders
+              build successful businesses
             </span>
           </h2>
-          <img
-            src={heroSideDescription}
-            alt=""
-            className="hidden sm:block -mt-32 -ml-40"
-          />
+
+          <h1 className="hidden sm:block -mt-32 text-4xl -ml-[15%]  w-[70%] font-bold tracking-tight text-white sm:text-6xl">
+            We combine both
+            <span className="text-yellow-500 font-light">
+              &nbsp; venture building
+            </span>
+            and bootstrapping funds to enable less visible founders to&nbsp;
+            <span className="text-yellow-500 font-light">
+              build successful businesses
+            </span>
+          </h1>
         </div>
 
         {/* bulb with faded columnar view */}
@@ -97,7 +103,7 @@ function NextFundHero({ hero, heroSideDescription = founder2 }) {
         </section>
       </div>
       {/* yellow narrow end section */}
-      <div className="bg-right-gradient w-[20%] h-full hidden sm:flex sm:items-start sm:justify-center">
+      <div className="bg-right-gradient w-[20%] z-50 h-full hidden sm:flex sm:items-start sm:justify-center">
         <button className="h-fit font-semibold w-36 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins  text-xl">
           <Link to={"/SyndicateNetwork#syndicateform"}>contact us</Link>
         </button>
@@ -106,4 +112,4 @@ function NextFundHero({ hero, heroSideDescription = founder2 }) {
   );
 }
 
-export default NextFundHero;
+export default PortfolioHero;
