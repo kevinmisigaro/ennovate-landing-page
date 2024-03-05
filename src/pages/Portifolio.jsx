@@ -139,6 +139,18 @@ function Portifolio() {
             </span>
           </h1>
         }
+        textOnSmall={
+          <h2 className="text-white uppercase text-xl -mt-[15em] font-semibold text-center sm:hidden">
+            We combine both
+            <span className="text-yellow-500 ml-2 font-extralight">
+            &nbsp;venture building&nbsp;
+            </span>
+            and bootstrapping funds to enable less visible founders to&nbsp;
+            <span className="text-yellow-500 ml-2 font-extralight">
+            build successful businesses
+            </span>
+          </h2>
+        }
       />
 
       <div className="flex items-center justify-evenly flex-wrap">
