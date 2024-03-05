@@ -38,19 +38,13 @@ function NextFundHero({
     }
   }, [controls, inView]);
 
-  // Conditionally render the hero image based on setHero prop and screen size
   const renderHeroImage = () => {
-    // if (!setHero && isSmallScreen && showDescription) {
-    //   // If setHero is false and screen size is small, return null
-    //   return null;
-    // }
-    // Otherwise, render the hero image
     return (
       <motion.img
         ref={ref}
         src={hero}
         alt=""
-        className={`sm:h-[44em] mt-60 sm:-mt-0 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
+        className={`sm:h-[44em] mt-60 sm:mt-10 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -86,18 +80,12 @@ function NextFundHero({
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
         <div className="flex flex-col items-center justify-evenly h-full w-full">
-          {/* <h2 className="text-white uppercase text-2xl -mt-[20em] font-semibold text-center sm:hidden">
-            investing in africa's most daring
-            <span className="text-yellow-500 ml-2 font-extralight">
-              founders
-            </span>
-          </h2> */}
           {renderTextOnSmall()}
           {showSideHeroImage ? (
             <img
               src={heroSideDescription}
               alt=""
-              className="hidden sm:block -mt-60 -ml-40 w-[50em]"
+              className="hidden sm:block -mt-72 -ml-40 w-[50em]"
             />
           ) : (
             renderText()
