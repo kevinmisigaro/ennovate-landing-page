@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "./NavBar";
-import woman from "../assets/EnoWoman.png";
+import woman from "../assets/lady.png";
 import innovate from "../assets/Ennovate-Ventures-Bulb.png";
 import founders from "../assets/vectors/founders.png";
 import { motion, useScroll, useAnimation } from "framer-motion";
@@ -51,9 +51,9 @@ function Hero({
     return (
       <motion.img
         ref={ref}
-        src={hero}
+        src={woman}
         alt=""
-        className={`sm:h-[44em] object-fill md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
+        className={` object-fill md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -83,7 +83,7 @@ function Hero({
           style={{
             pointerEvents: "none",
           }}
-          className={`h-72 pl-0  hidden md:block absolute  lg:w-[55em] xl:w-[60em] mt-32`}
+          className={`h-72 pl-0  hidden md:block absolute  lg:w-[53em] xl:w-[60em] mt-32`}
         />
 
         {/* bulb with faded columnar view */}
