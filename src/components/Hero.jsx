@@ -53,7 +53,7 @@ function Hero({
         ref={ref}
         src={woman}
         alt=""
-        className={` object-fill md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
+        className={` object-fill mt-8 md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -71,12 +71,7 @@ function Hero({
       {renderHeroImage()}
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
-        {/* <img
-          src={heroSideDescription}
-          alt=""
-          style={showDescription && showOnThisPage ? { display: "block",userSelect:"none",pointerEvents:"none" } : { display: "none" }}
-          className="hidden h-72 pl-8 md:block absolute md:w-[60em] mt-32 "
-        /> */}
+
         <img
           src={heroSideDescription}
           alt=""
