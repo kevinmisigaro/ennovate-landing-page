@@ -107,8 +107,7 @@ function Hero({
         </section>
       </div>
       {/*<h3 className="text-white absolute bottom-0">heading</h3>*/}
-      <h2 className="text-white uppercase text-2xl ml-0 absolute mt-[20em] font-semibold text-center sm:hidden">
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
+      <h2 className="text-white uppercase text-2xl ml-0 absolute mt-[17em] font-semibold text-center sm:hidden">
         we're betting on
         <span className="text-yellow-500 ml-2 font-extralight">
           ambitious founders{" "}
