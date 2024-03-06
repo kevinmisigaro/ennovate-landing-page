@@ -69,10 +69,8 @@ function Hero({
   return (
     <div className="overflow-clip relative h-screen w-full bg-gradient-to-b from-transparent flex flex-row items-center justify-between to-black box-border">
       {renderHeroImage()}
-
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
-
         {/* <img
           src={heroSideDescription}
           alt=""
