@@ -731,3 +731,67 @@ height: fit-content;
   transition: all 0.5s ease-out;
   color: #ffffff;
 }
+
+.hero-container {
+  /* position: relative; */
+  /* display: inline-block; */
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 100;
+  bottom: 10px;
+  /* width: 20rem; */
+  left: 75%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+.tooltip-1 {
+  visibility: hidden;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 100;
+  bottom: 10rem;
+  /* width: 20rem; */
+  left: 60%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition: opacity 3s  cubic-bezier(0.23, 1, 0.320, 1);
+}
+.tooltip-2 {
+  visibility: hidden;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 100;
+  bottom: 15rem;
+  /* width: 20rem; */
+  right: -5%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition: opacity 3s  cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.hero-container:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+.hero-container:hover .tooltip-1{
+  visibility: visible;
+  opacity: 1;
+}
+.hero-container:hover .tooltip-2{
+  visibility: visible;
+  opacity: 1;
+}

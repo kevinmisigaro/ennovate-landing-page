@@ -1,6 +1,6 @@
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.jpg";
-import image3 from "../assets/image3.jpg";
+import image3 from "../assets/imageg3.jpg";
 import image4 from "../assets/image4.jpg";
 // icons
 import money from "../assets/money.png";
@@ -131,7 +131,7 @@ export const galleryData = [
     name: "The NextFund",
     description:
       "We work with audacious  tech founders to build and commercialize high growth companies.",
-    img: image3,
+    img: image4,
     page: "/nextFund",
   },
   {
@@ -139,7 +139,7 @@ export const galleryData = [
     name: "The NextHub",
     description:
       "The first integrated IdeaLab in Tanzania that is building a pipeline of the most disruptive innovations",
-    img: image4,
+    img: image3,
     page: "/nexthub",
   },
 ];
@@ -165,7 +165,7 @@ export const testimonials = [
     name: "Twaha Jiwaji",
     description:
       "The Ennovate team has worked with us to help onboard and train the resellers, the education and training aspect is very critical for resellers so that they can maximize their understanding of the platform, the sms technology and how it can help their clients. We decided to work with Ennovate because we wanted to have a dedicated team that would focus on really training and educating these resellers  so far the resellers have really appreciated this these trainings and are we're seeing more traction and usage of the platform because of the ongoing support that they get in the last six months we've onboarded almost 200 resellers.      ",
-    title: "Beam Africa ",
+    title: "Beem Africa ",
     url: image1,
   },
 ];

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import woman from "../assets/lady.png";
 import innovate from "../assets/Ennovate-Ventures-Bulb.png";
@@ -7,7 +7,7 @@ import { motion, useScroll, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import founder2 from "../assets/Group 4.png";
 import { Link } from "react-router-dom";
-
+import check from "../assets/icons/check.png";
 function Hero({
   hero,
   setHero = true,
@@ -43,32 +43,50 @@ function Hero({
 
   // Conditionally render the hero image based on setHero prop and screen size
   const renderHeroImage = () => {
-    // if (!setHero && isSmallScreen && showDescription) {
-    //   // If setHero is false and screen size is small, return null
-    //   return null;
-    // }
-    // Otherwise, render the hero image
     return (
-      <motion.img
-        ref={ref}
-        src={woman}
-        alt=""
-        className={` object-fill mt-8 md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10`}
-        animate={controls}
-        initial={{ scale: 1 }}
-        transition={{
-          duration: 3,
-          type: "spring",
-          stiffness: 100,
-          mass: 1.2,
-        }}
-      />
+      <div className="hero-container">
+        <motion.img
+          ref={ref}
+          src={woman}
+          alt=""
+          className={` object-fill mt-8 md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10 `}
+          animate={controls}
+          initial={{ scale: 1 }}
+          transition={{
+            duration: 3,
+            type: "spring",
+            stiffness: 100,
+            mass: 1.2,
+          }}
+        />
+        <div className="tooltip flex flex-row items-center justify-between rounded-3xl">
+          <img src={check} alt="" className="size-8" />
+          <h3 className="font-semibold text-center">
+            Are you an Investor looking for investment?
+          </h3>
+        </div>
+        <div className="tooltip-1 flex flex-row items-center rounded-3xl">
+          <img src={check} alt="" className="size-8" />
+          <h3 className="font-semibold text-center">And you need Funding?</h3>
+        </div>
+        <div className="tooltip-2 flex flex-row items-center justify-between rounded-3xl">
+          <img src={check} alt="" className="size-8" />
+          <h3 className="font-semibold text-center">
+            {" "}
+            Do you have a business Idea?
+          </h3>
+        </div>
+      </div>
     );
+  };
+
+  const Loader = () => {
+    return <div className="bg-slate-200 text-xl font-poppins font-bold">loading...</div>;
   };
 
   return (
     <div className="overflow-clip relative h-screen w-full bg-gradient-to-b from-transparent flex flex-row items-center justify-between to-black box-border">
-      {renderHeroImage()}
+      <Suspense fallback={Loader}>{renderHeroImage()}</Suspense>
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
 
@@ -78,7 +96,7 @@ function Hero({
           style={{
             pointerEvents: "none",
           }}
-          className={`h-72 pl-0  hidden md:block absolute  lg:w-[53em] xl:w-[60em] mt-32`}
+          className={`h-60 pl-0  hidden md:block absolute  lg:w-[53em] xl:w-[60em] mt-32`}
         />
 
         {/* bulb with faded columnar view */}
