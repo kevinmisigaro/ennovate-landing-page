@@ -8,7 +8,7 @@ import image4 from "../assets/programmes/unity.png";
 import Footer from "../components/Footer";
 import NextFundHero from "../components/NextFundHero";
 import heroGuy from "../assets/heroguy.png";
-
+import UniversalHero from './../components/UniversalHero';
 const data = [
   {
     id: crypto.randomUUID(),
@@ -53,6 +53,7 @@ function Story() {
           </h2>
         }
       />
+      {/* <UniversalHero/> */}
       {/* <NavBar color={"black"} /> */}
       <div className="h-fit sm:h-screen max-w-full flex flex-col sm:flex-row items-center justify-between">
         <div className="w-full sm:z-10 h-screen sm:h-full sm:w-1/3 bg-amber-900 flex flex-col items-center justify-evenly">

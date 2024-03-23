@@ -93,7 +93,7 @@ function NextFundHero({
         </div>
 
         {/* bulb with faded columnar view */}
-        <section className="hidden sm:h-full sm:flex sm:flex-row sm:items-center sm:justify-center sm:pt-20 p">
+        <section className=" lg:h-full lg:flex lg:flex-row lg:items-center lg:justify-center sm:pt-20 p">
           <motion.img
             ref={ref}
             animate={controls}
@@ -107,7 +107,7 @@ function NextFundHero({
             }}
             src={innovate}
             alt=""
-            className="opacity-15 size-[36em] mt-60 mr-[32em]"
+            className=" size-[36em] mt-60 mr-[32em] border-4 border-red-600"
           />
           <div className="h-full -ml-24 w-60 bg-gradient-to-b from-current via-transparent to-[rgba(255,255,255,0.08)] "></div>
         </section>

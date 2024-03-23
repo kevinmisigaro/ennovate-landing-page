@@ -352,8 +352,8 @@ function SyndicateForm() {
           </button> */}
           <button
             type="submit"
-            disabled={isSubmitting}
-            className="h-[2.5em] uppercase w-32 bg-yellow-500 text-black rounded-xl mx-8"
+            // disabled={isSubmitting}
+            className={`h-[2.5em] uppercase w-32 bg-yellow-500 text-black rounded-xl mx-8 ${isSubmitting?'cursor-wait':'cursor-default'}`}
           >
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>

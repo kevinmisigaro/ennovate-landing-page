@@ -59,20 +59,20 @@ function Hero({
             mass: 1.2,
           }}
         />
-        <div className="tooltip flex flex-row items-center justify-between rounded-3xl">
+        <div className="tooltip hidden md:flex flex-row items-center justify-between rounded-3xl">
           <img src={check} alt="" className="size-8" />
           <h3 className="font-semibold text-center">
             Are you an Investor looking for investment?
           </h3>
         </div>
-        <div className="tooltip-1 flex flex-row items-center rounded-3xl">
+        <div className="tooltip-1 hidden md:flex flex-row items-center rounded-3xl">
           <img src={check} alt="" className="size-8" />
-          <h3 className="font-semibold text-center">And you need Funding?</h3>
+          <h3 className="font-semibold text-center px-2">Do you need funding?</h3>
         </div>
-        <div className="tooltip-2 flex flex-row items-center justify-between rounded-3xl">
+        <div className="tooltip-2 hidden md:flex flex-row items-center justify-between rounded-3xl">
           <img src={check} alt="" className="size-8" />
-          <h3 className="font-semibold text-center">
-            {" "}
+          <h3 className="font-semibold text-center px-2">
+           
             Do you have a business Idea?
           </h3>
         </div>
