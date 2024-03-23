@@ -62,18 +62,21 @@ function Hero({
         <div className="tooltip hidden md:flex flex-row items-center justify-between rounded-3xl">
           <img src={check} alt="" className="size-8" />
           <h3 className="font-semibold text-center">
-            Are you an Investor looking for investment?
+            <Link to="/syndicatenetwork">
+              Are you an Investor looking for investment?
+            </Link>
           </h3>
         </div>
         <div className="tooltip-1 hidden md:flex flex-row items-center rounded-3xl">
           <img src={check} alt="" className="size-8" />
-          <h3 className="font-semibold text-center px-2">Do you need funding?</h3>
+          <h3 className="font-semibold text-center px-2">
+            Do you need funding?
+          </h3>
         </div>
         <div className="tooltip-2 hidden md:flex flex-row items-center justify-between rounded-3xl">
           <img src={check} alt="" className="size-8" />
           <h3 className="font-semibold text-center px-2">
-           
-            Do you have a business Idea?
+            <Link to="/nexthub">Do you have a business Idea?</Link>
           </h3>
         </div>
       </div>
@@ -81,7 +84,11 @@ function Hero({
   };
 
   const Loader = () => {
-    return <div className="bg-slate-200 text-xl font-poppins font-bold">loading...</div>;
+    return (
+      <div className="bg-slate-200 text-xl font-poppins font-bold">
+        loading...
+      </div>
+    );
   };
 
   return (
