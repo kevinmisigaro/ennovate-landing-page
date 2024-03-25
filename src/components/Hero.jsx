@@ -59,7 +59,7 @@ function Hero({
             mass: 1.2,
           }}
         />
-        <div className="tooltip hidden md:flex flex-row items-center justify-between rounded-3xl">
+        <div className="tooltip hidden mb-12 md:flex flex-row items-center justify-between rounded-3xl">
           <img src={check} alt="" className="size-8" />
           <h3 className="font-semibold text-center">
             <Link to="/syndicatenetwork">
