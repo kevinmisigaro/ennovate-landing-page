@@ -52,7 +52,7 @@ function Story() {
             </span>
           </h2>
         }
-        marginSize={12}
+        marginSize={4}
       />
       {/* <UniversalHero/> */}
       {/* <NavBar color={"black"} /> */}

@@ -28,7 +28,7 @@ function NextFund() {
             </span>
           </h2>
         }
-        marginSize={12}
+        marginSize={4}
       />
       <div className="h-fit w-full flex flex-col items-center justify-evenly mb-12 mt-4">
         <AnimatedText text={"HOW WE INVEST"} color={"white"} size={"2em"} />
