@@ -427,7 +427,7 @@ function Footer() {
               </li>
             ))}
             <li className="mb-2   text-white visited:text-white">
-              <News />
+              {/* <News /> */}
             </li>
           </ul>
         </div>

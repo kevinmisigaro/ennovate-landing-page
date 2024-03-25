@@ -11,6 +11,7 @@ function NextFundHero({
   heroSideDescription = founder2,
   textDescription = "",
   textOnSmall = "",
+  marginSize
 }) {
   const { scrollYProgress } = useScroll();
 
@@ -74,7 +75,7 @@ function NextFundHero({
   };
 
   return (
-    <div className="overflow-clip h-screen w-full bg-gradient-to-b from-transparent flex flex-row items-center justify-between to-black box-border">
+    <div className="overflow-clip relative h-screen w-full bg-gradient-to-b from-transparent flex flex-row items-center justify-between to-black box-border">
       {renderHeroImage()}
 
       <div className="bg-transparent w-full sm:w-[80%] h-full">
@@ -85,7 +86,7 @@ function NextFundHero({
             <img
               src={heroSideDescription}
               alt=""
-              className="hidden sm:block -mt-72 -ml-40 w-[50em]"
+              className="hidden sm:block -mt-[30rem] -ml-40 w-[50em]"
             />
           ) : (
             renderText()
@@ -93,7 +94,7 @@ function NextFundHero({
         </div>
 
         {/* bulb with faded columnar view */}
-        <section className=" lg:h-full lg:flex lg:flex-row lg:items-center lg:justify-center sm:pt-20 p">
+        <section className="top-16 absolute hidden lg:h-full lg:flex lg:flex-row lg:items-center lg:justify-center sm:pt-20 p">
           <motion.img
             ref={ref}
             animate={controls}
@@ -107,9 +108,9 @@ function NextFundHero({
             }}
             src={innovate}
             alt=""
-            className=" size-[36em] mt-60 mr-[32em] border-4 border-red-600"
+            className=" size-[36em] mt-24 ml-[12em] opacity-10 "
           />
-          <div className="h-full -ml-24 w-60 bg-gradient-to-b from-current via-transparent to-[rgba(255,255,255,0.08)] "></div>
+          {/* <div className="h-full -ml-24 w-60 bg-gradient-to-b from-current via-transparent to-[rgba(255,255,255,0.08)] "></div> */}
         </section>
       </div>
       {/* yellow narrow end section */}

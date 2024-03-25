@@ -96,7 +96,6 @@ function Hero({
       <Suspense fallback={Loader}>{renderHeroImage()}</Suspense>
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
-
         <img
           src={heroSideDescription}
           alt=""
