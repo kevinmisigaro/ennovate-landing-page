@@ -161,13 +161,13 @@
   @apply relative w-full m-2 h-[50%] md:w-[80%] overflow-hidden rounded-lg;
 }
 .indicator {
-  @apply inline-block w-4 h-2 bg-gray-100 rounded-full mx-1 cursor-pointer transition-all duration-300;
+  @apply inline-block w-4 h-2 bg-black rounded-full mx-1 cursor-pointer transition-all duration-300;
 }
 .indicators {
   @apply flex justify-center absolute bottom-4 left-0 right-0;
 }
 .indicator.active {
-  @apply bg-green-500 w-8;
+  @apply bg-yellow-500 w-8;
 }
 .button-bg {
   @apply backdrop-blur-md bg-white bg-opacity-30 rounded-xl text-slate-800;

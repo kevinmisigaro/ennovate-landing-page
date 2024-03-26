@@ -55,7 +55,7 @@ const HighLights = ({sectionTitle}) => {
               data-aos="fade-up"
               data-aos-delay={data.aosDelay}
               key={data.title}
-              className="bg-white border border-yellow-600 rounded-xl p-1"
+              className="bg-white border border-yellow-600 rounded-lg p-1"
             >
               {/* image section */}
               <div className="overflow-hidden rounded-2xl mb-2">
