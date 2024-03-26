@@ -31,6 +31,14 @@ const BlogData = [
     image: Img3,
     aosDelay: "400",
   },
+//   {
+//     title: "How to ennovate with tech",
+//     subtitle:
+//       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
+//     published: "mar 20, 2024 by Jasmine",
+//     image: Img3,
+//     aosDelay: "500",
+//   },
 ];
 const HighLights = ({sectionTitle}) => {
   return (

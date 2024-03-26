@@ -13,7 +13,27 @@ import HackLab from "./pages/HackLab";
 import NotFound from "./pages/NotFound";
 import Programmes from "./pages/Programmes";
 import NewsLetter from "./pages/NewsLetter";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React from "react";
+
 function App() {
+  const [orderPopup, setOrderPopup] = React.useState(false);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
+
+  React.useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+      offset: 100,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

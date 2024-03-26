@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./../components/NavBar";
 import HighLights from "../components/Highlights";
 import Footer from "./../components/Footer";
-import hero from "../assets/syndicatehero.jpg";
+import hero from "../assets/news_hero.jpg";
 
 const SubHero = () => {
   return (
