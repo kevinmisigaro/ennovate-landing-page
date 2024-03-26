@@ -12,6 +12,7 @@ import FallingWalls from "./pages/FallingWalls";
 import HackLab from "./pages/HackLab";
 import NotFound from "./pages/NotFound";
 import Programmes from "./pages/Programmes";
+import NewsLetter from "./pages/NewsLetter";
 function App() {
   return (
     <Routes>
@@ -27,6 +28,7 @@ function App() {
       <Route path="/fallingwalls" element={<FallingWalls />} />
       <Route path="/syndicatenetwork" element={<SyndicateNetwork />} />
       <Route path="/programmes" element={<Programmes />} />
+      <Route path="/newsletter" element={<NewsLetter />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/stories" element={<Story />} /> */}
     </Routes>

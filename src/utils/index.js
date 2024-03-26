@@ -106,7 +106,7 @@ export const navLinks = [
   {
     id: crypto.randomUUID(),
     name: "Ennovate News",
-    linkTo: "#",
+    linkTo: "/newsletter",
   },
 ];
 export const galleryData = [
