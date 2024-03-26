@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./../components/NavBar";
+import NavBar2 from "./../components/NavBar2";
 import HighLights from "../components/Highlights";
 import Footer from "./../components/Footer";
 import hero from "../assets/news_hero.jpg";
@@ -55,7 +55,7 @@ function NewsLetter() {
 
   return (
     <div className="bg-black w-full h-full">
-      <NavBar />
+      <NavBar2 />
       <SubHero />
       <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"Ennovate News"} />

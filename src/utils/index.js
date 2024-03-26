@@ -109,6 +109,38 @@ export const navLinks = [
     linkTo: "/newsletter",
   },
 ];
+export const navLinks2 = [
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: "Home",
+  //   linkTo: "/",
+  // },
+  {
+    id: crypto.randomUUID(),
+    name: "Our Story",
+    linkTo: "/ourstory",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Our Portfolio",
+    linkTo: "/portfolio",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "The Next Fund",
+    linkTo: "/nextfund",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Ennovate News",
+    linkTo: "/newsletter",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Contact",
+    linkTo: "/syndicatenetwork",
+  },
+];
 export const galleryData = [
   {
     id: crypto.randomUUID(),
