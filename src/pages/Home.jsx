@@ -8,15 +8,17 @@ import AnimatedText from "../components/AnimatedText";
 import Footer from "./../components/Footer";
 import Partiners from "./../components/Partiners";
 import logo from "../assets/Ennovate-Ventures-Bulb.png";
+import SuperHero from "../components/SuperHero";
 function Home() {
   return (
     <div className="bg-gradient-to-b from-[#000000] via-[#0f0f0f] to-[#000000]">
-      <Hero
+      {/* <Hero
         hero={woman}
         heroSideDescription={sideDescription}
         showDescription={true}
         showOnThisPage={true}
-      />
+      /> */}
+      <SuperHero/>
       <div className="h-fit w-full flex flex-col items-center justify-evenly mb-12 mt-4 py-20">
         <AnimatedText
           text={"Explore Ennovate Ventures"}

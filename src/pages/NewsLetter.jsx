@@ -8,6 +8,7 @@ import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
 import Carousel from "../components/Carousel";
 import Heading from "../components/Shared/Heading";
+import HighLightsCard from "../components/HighLightsCard";
 
 const SubHero = () => {
   return (
@@ -60,9 +61,7 @@ function NewsLetter() {
       <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"Ennovate News"} />
       </div>
-      <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
-        <HighLights sectionTitle={"HighLights"} />
-      </div>
+     <HighLightsCard/>
       <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"NewsLetter"} />
       </div>
