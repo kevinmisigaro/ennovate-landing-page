@@ -1,6 +1,6 @@
 import React from "react";
 import hero from "../assets/syndicatehero.jpg";
-import NavBar from "../components/NavBar";
+import NavBar2 from "../components/NavBar2";
 import tick from "../assets/tick.png";
 import paint from "../assets/paint.png";
 import paintfront from "../assets/paintFront.png";
@@ -114,11 +114,11 @@ const TagLine = () => {
 function SyndicateNetwork() {
   return (
     <div className="relative bg-gradient-to-b from-[#000000] via-[#0f0f0f] to-[#000000] h-full w-full">
-      <NavBar />
+      <NavBar2 />
       <SubHero />
       <TagLine />
       <HowToJoin />
-      <section className="bg-white p-8">
+      <section className="bg-white py-8 px-4">
         <TheForm />
       </section>
       <Footer />

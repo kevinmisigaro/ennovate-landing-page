@@ -9,9 +9,9 @@ import image3 from "../assets/image3.jpg";
 import Carousel from "../components/Carousel";
 import Heading from "../components/Shared/Heading";
 import HighLightsCard from "../components/HighLightsCard";
-import doc1 from "../assets/docs/annual.pdf"
-import doc2 from "../assets/docs/fintech.pdf"
-import doc3 from "../assets/docs/food.pdf"
+import doc1 from "../assets/docs/annual.pdf";
+import doc2 from "../assets/docs/fintech.pdf";
+import doc3 from "../assets/docs/food.pdf";
 
 const SubHero = () => {
   return (
@@ -61,25 +61,26 @@ function NewsLetter() {
     <div className="bg-black w-full h-full">
       <NavBar2 />
       <SubHero />
-      <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
+      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"Ennovate News"} />
       </div>
-    
-      <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
+
+      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"NewsLetter"} />
       </div>
       {/* <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"Articles"} />
       </div> */}
       <div>
-        <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">Articles</h1>
-       <HighLightsCard docLink={doc1}/>
-       <HighLightsCard docLink={doc2}/>
-       <HighLightsCard docLink={doc3}/>
-
+        <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">
+          Articles
+        </h1>
+        <HighLightsCard docLink={doc1} />
+        <HighLightsCard docLink={doc2} />
+        <HighLightsCard docLink={doc3} />
       </div>
       {/* <Media/> */}
-      <Heading title={'Media'}/>
+      <Heading title={"Media"} />
       <div className="flex lg:items-center lg:justify-center">
         <Carousel imagesList={logos} />
       </div>
