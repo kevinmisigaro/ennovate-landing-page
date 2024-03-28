@@ -22,7 +22,7 @@ function HoverableHero() {
         ref={ref}
         src={woman}
         alt=""
-        className={` object-fill mt-8 md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10 `}
+        className={`object-fill pointer-events-none h-[33em] w-[30em] mt-40 md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10 `}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{

@@ -20,12 +20,12 @@ function SuperHero() {
   }, [controls, inView]);
   return (
     <>
-      <div className=" sm:w-[80%]">
+      <div className="sm:w-[80%]">
         <NavBar />
       </div>
-      <div className=" relative flex flex-col lg:flex-row items-center justify-center bg-black py-16 px-4 lg:px-32">
+      <div className=" relative flex flex-col lg:flex-row items-center justify-center md:justify-between bg-black py-16 px-4 lg:px-32">
         <div className="lg:w-1/2 lg:pr-12 h-full lg:-mt-12">
-          <h1 className="text-2xl md:text-4xl relative lg:text-5xl lg:w-[40rem] font-bold text-white mb-4">
+          <h1 className="container sm:w-[45em] sm:text-3xl text-2xl md:text-5xl sm:-ml-10 lg:-ml-0 relative lg:text-5xl lg:w-[40rem] font-bold text-white mb-4">
             We’re betting on
             <h3 className="px-2 text-yellow-600 font-thin">
               Ambitious Founders
@@ -77,22 +77,24 @@ function SuperHero() {
         </div>
 
         {/* Hero Image Section */}
-        <div className="lg:w-1/2 mt-4 lg:mt-0">
+        <div className="w-full md:w-1/2 lg:w-1/2 mt-4 lg:mt-0">
           {/* <img
             src={hero}
             alt="Hero"
             className="w-full rounded-lg shadow-lg z-50"
           /> */}
-          <HoverableHero />
+          <div className="md:mb-8">
+            <HoverableHero />
+          </div>
         </div>
-      
+
         {/* <div className="w-60 bg-gradient-to-b from-yellow-600 to-black h-full absolute right-0 top-0 hidden lg:block "></div> */}
       </div>
       <div className="bg-right-gradient w-[20%] absolute right-0 top-0 h-full hidden sm:flex sm:items-start sm:justify-center">
-          <button className="h-fit font-semibold w-36 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins  text-xl">
-            <Link to={"/SyndicateNetwork#syndicateform"}>contact us</Link>
-          </button>
-        </div>
+        <button className="h-fit font-semibold w-36 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins  text-xl">
+          <Link to={"/SyndicateNetwork#syndicateform"}>contact us</Link>
+        </button>
+      </div>
     </>
   );
 }

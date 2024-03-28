@@ -26,7 +26,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
           <img
             src={logo}
             alt="ennovate"
-            className="mt-4 h-12 w-32 ml-2 sm:mt-0 sm:h-[52px] sm:w-[170px] sm:ml-20"
+            className="mt-4 h-12 w-32 md:h-8 md:w-24 lg:h-12 lg:w-32 ml-2 sm:mt-0 sm:h-[52px] sm:w-[170px] sm:ml-20"
           />
         </a>
         <ul className="hidden md:flex md:justify-center md:items-center gap-4 md:gap-16 md:text-gray-950 ">
@@ -38,7 +38,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
                   window.location.pathname === navlink.linkTo
                     ? "text-yellow-500"
                     : "text-white"
-                } no-underline font-poppins hover:no-underline hover:text-yellow-500 font-semibold leading-normal sm:text-lg lg:text-xl xl:text-2xl text-white md:text-white md:p-2 relative nav-link`} // Added nav-link class
+                } no-underline font-poppins hover:no-underline hover:text-yellow-500 font-semibold leading-normal sm:text-lg md:text-sm lg:text-lg xl:text-2xl text-white md:text-white md:p-2 relative nav-link`} // Added nav-link class
               >
                 {navlink.name}
                 {/* Add the PNG vector for underline effect */}
