@@ -117,7 +117,7 @@ const Founders = () => {
   return (
     <div>
       <h2 className="text-white font-bold text-xl md:text-2xl lg:text-3xl xl:text-5xl">
-        Investing in Africa's Most Daring Founders{" "}
+        Investing in Africa's Most Daring Founders
       </h2>
     </div>
   );

@@ -45,7 +45,7 @@ function NextFundHero({
         ref={ref}
         src={hero}
         alt=""
-        className={`sm:h-[44em] mt-60 sm:mt-10 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-${marginSize} pt-4 right-0 z-10`}
+        className={`sm:h-[44em] mt-60 sm:mt-10 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-${marginSize} pt-4 right-0`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{

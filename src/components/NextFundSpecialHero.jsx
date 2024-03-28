@@ -79,7 +79,7 @@ function NextFundSpecialHero({
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
         <div className="flex flex-col relative items-center justify-evenly h-full w-full">
-          <h1 className="text-white font-bold text-xl sm:text-4xl md:text-3xl lg:text-5xl text-wrap absolute top-12 md:w-[12em] md:left-12 sm:left-4 sm:top-0 sm:w-[10em] sm:text-nowrap mb-8 md:text-wrap">
+          <h1 className="text-white font-bold md:mt-12 lg:mt-16 text-xl sm:text-4xl md:text-3xl lg:text-7xl text-wrap absolute top-12 md:w-[12em] md:left-12 sm:left-4 sm:top-0 sm:w-[10em] sm:text-nowrap mb-8 md:text-wrap">
             Investing In Africa's most daring <h4 className="md:inline text-yellow-600">Founders</h4> 
           </h1>
         </div>
