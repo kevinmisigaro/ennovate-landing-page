@@ -18,7 +18,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
 
   return (
     <header
-      className={`h-${height} w-full ${bgColor} left-0 right-0 py-2 md:py-6 mt-0`}
+      className={`h-${height} w-full lg:bg-gradient-to-r from-black from-80%  to-yellow-600 left-0 right-0 py-2 md:py-6 mt-0`}
       // style={{color?}}
     >
       <nav className="flex justify-between items-center">
@@ -50,18 +50,15 @@ const NavBar = ({ height, showContactBtn, color }) => {
               </NavLink>
             </li>
           ))}
-        </ul>
-
-        {/* {showContactBtn ? (
-          <Link
+         {/* <Link
             to={"/SyndicateNetwork#syndicateform"}
             className="hidden font-poppins font-semibold sm:flex justify-center items-center text text-xl p-1 mr-12 text-black bg-white rounded-full"
           >
             Contact us
-          </Link>
-        ) : (
-          ""
-        )} */}
+          </Link> */}
+        </ul>
+
+       
         <div className="md:hidden">
           <img
             src={humburger}
@@ -106,5 +103,8 @@ const NavBar = ({ height, showContactBtn, color }) => {
     </header>
   );
 };
+
+
+
 
 export default NavBar;

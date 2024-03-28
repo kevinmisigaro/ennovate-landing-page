@@ -18,11 +18,11 @@ function Home() {
         showDescription={true}
         showOnThisPage={true}
       /> */}
-      <SuperHero/>
+      <SuperHero />
       <div className="h-fit w-full flex flex-col items-center justify-evenly mb-12 mt-4 py-20">
         <AnimatedText
           text={"Explore Ennovate Ventures"}
-          size={'3em'}
+          size={"3em"}
           color={"white"}
         />
         <div className="w-32 h-[2px] bg-yellow-500 mt-2"></div>
