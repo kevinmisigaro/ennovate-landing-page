@@ -19,7 +19,7 @@ function Home() {
         showOnThisPage={true}
       /> */}
       <SuperHero />
-      <div className="h-fit w-full flex flex-col items-center justify-evenly mb-12 mt-4 py-20">
+      <div className="h-fit sm:mt-40 w-full flex flex-col items-center justify-evenly mb-4 mt-4 md:mt-4 py-20">
         <AnimatedText
           text={"Explore Ennovate Ventures"}
           size={"3em"}

@@ -128,7 +128,7 @@ function Portifolio() {
       <NextFundHero
         hero={collabo}
         textDescription={
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl sm:w-[12em] sm:ml-12">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-3xl lg:text-5xl xl:text-6xl sm:w-[12em] sm:ml-12">
             We combine both
             <span className="text-yellow-500 font-light">
               &nbsp; venture building
