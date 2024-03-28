@@ -745,9 +745,9 @@ height: fit-content;
   padding: 5px;
   position: absolute;
   z-index: 100;
-  bottom: 10px;
+  bottom: -6em;
   /* width: 20rem; */
-  left: 75%;
+  left: 50%;
   transform: translateX(-50%);
   opacity: 0.5;
   transition: opacity 1s;
@@ -760,9 +760,9 @@ height: fit-content;
   padding: 5px;
   position: absolute;
   z-index: 100;
-  bottom: 10rem;
+  bottom: 0rem;
   /* width: 20rem; */
-  left: 60%;
+  left: 0%;
   transform: translateX(-50%);
   opacity: 0.5;
   transition: opacity 3s  cubic-bezier(0.23, 1, 0.320, 1);
@@ -775,9 +775,9 @@ height: fit-content;
   padding: 5px;
   position: absolute;
   z-index: 100;
-  bottom: 15rem;
+  bottom: 7rem;
   /* width: 20rem; */
-  right: -5%;
+  right: -15%;
   transform: translateX(-50%);
   opacity: 0.5;
   transition: opacity 3s  cubic-bezier(0.23, 1, 0.320, 1);

@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import { motion, useScroll, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import HoverableHero from "./HoverableHero";
 
 function SuperHero() {
   const controls = useAnimation();
@@ -19,7 +20,7 @@ function SuperHero() {
   }, [controls, inView]);
   return (
     <>
-      <div className="">
+      <div className=" sm:w-[80%]">
         <NavBar />
       </div>
       <div className=" relative flex flex-col lg:flex-row items-center justify-center bg-black py-16 px-4 lg:px-32">
@@ -42,11 +43,10 @@ function SuperHero() {
               className="absolute top-8 w-[10em] lg:block lg:top-12 lg:left-0 lg:-ml-20 lg:w-[13em] lg:h-[70px]"
               ref={ref}
               animate={controls}
-              initial={{ scale: 1,opacity:0.8 }}
+              initial={{ scale: 1, opacity: 0.8 }}
               transition={{
                 duration: 3,
                 type: "spring",
-
               }}
             >
               <path
@@ -63,7 +63,7 @@ function SuperHero() {
           <motion.img
             src={bulb}
             alt=""
-            className="hidden w-[28em] h-[28em] lg:block opacity-10 -mt-12"
+            className="hidden w-[28em] h-[28em] lg:block opacity-10 -mt-24"
             ref={ref}
             animate={controls}
             initial={{ scale: 1 }}
@@ -77,20 +77,22 @@ function SuperHero() {
         </div>
 
         {/* Hero Image Section */}
-        <div className="lg:w-1/2 mt-4 lg:mt-0 static">
-          <img
+        <div className="lg:w-1/2 mt-4 lg:mt-0">
+          {/* <img
             src={hero}
             alt="Hero"
             className="w-full rounded-lg shadow-lg z-50"
-          />
+          /> */}
+          <HoverableHero />
         </div>
-        {/* <div className="bg-right-gradient w-[20%] h-full hidden sm:flex sm:items-start sm:justify-center">
+      
+        {/* <div className="w-60 bg-gradient-to-b from-yellow-600 to-black h-full absolute right-0 top-0 hidden lg:block "></div> */}
+      </div>
+      <div className="bg-right-gradient w-[20%] absolute right-0 top-0 h-full hidden sm:flex sm:items-start sm:justify-center">
           <button className="h-fit font-semibold w-36 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins  text-xl">
             <Link to={"/SyndicateNetwork#syndicateform"}>contact us</Link>
           </button>
-        </div> */}
-        {/* <div className="w-60 bg-gradient-to-b from-yellow-600 to-black h-full absolute right-0 top-0 hidden lg:block "></div> */}
-      </div>
+        </div>
     </>
   );
 }

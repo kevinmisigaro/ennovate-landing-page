@@ -18,7 +18,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
 
   return (
     <header
-      className={`h-${height} w-full lg:bg-gradient-to-r from-black from-80%  to-yellow-600 left-0 right-0 py-2 md:py-6 mt-0`}
+      className={`h-${height} w-full bg-transparent left-0 right-0 py-2 md:py-6 mt-0`}//lg:bg-gradient-to-r from-black from-80%  to-yellow-600
       // style={{color?}}
     >
       <nav className="flex justify-between items-center">
