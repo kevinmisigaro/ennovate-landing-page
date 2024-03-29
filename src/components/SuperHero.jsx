@@ -25,7 +25,7 @@ function SuperHero() {
       </div>
       <div className=" relative flex flex-col lg:flex-row items-center justify-center md:justify-between bg-black py-16 px-4 lg:px-32">
         <div className="lg:w-1/2 lg:pr-12 h-full lg:-mt-12">
-          <h1 className="container sm:w-[45em] sm:text-3xl text-2xl md:text-5xl lg:-ml-0 relative lg:text-5xl lg:w-[40rem] font-bold text-white mb-4">
+          <h1 className=" mt-12 sm:w-[20em] xs:text-2xl sm:text-4xl text-2xl md:text-5xl lg:-ml-0 relative lg:text-5xl lg:w-[44rem] font-bold text-white mb-4">
             We’re betting on
             <h3 className="px-2 text-yellow-600 font-thin">
               Ambitious Founders

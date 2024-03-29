@@ -22,7 +22,7 @@ function HoverableHero() {
         ref={ref}
         src={woman}
         alt=""
-        className={`object-fill pointer-events-none  mt-40 md:mt-12 xl:mt-32 sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-4 right-0 z-10 `}
+        className={`object-fill pointer-events-none aspect-square  mt-40 md:mt-12 xl:mt-12 sm:w-[38em] xl:h-[60em] xl:w-[60em] absolute top-4 right-0 z-10 `}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -32,7 +32,7 @@ function HoverableHero() {
           mass: 1.2,
         }}
       />
-      <div className="h-[30em] ">
+      <div className="h-[30em] xl:hidden ">
         <div className="tooltip hidden mb-2 md:flex flex-row items-center justify-between rounded-3xl">
           <img src={check} alt="" className="size-8" />
           <h3 className="font-semibold text-center">
