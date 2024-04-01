@@ -492,10 +492,17 @@ function Footer() {
 
         <div className="w-full text-center mt-8">
           <hr className="mb-8 md:w-[60%] md:mx-[20%] md:mt-12 " />
-          <p className="text-white text-sm">
+          <p className="text-white text-lg">
             &copy; {new Date().getFullYear()} - Ennovate Ventures . All Rights
             Reserved
           </p>
+          <a
+            href="https://kibuti.co.tz"
+            target="_blank"
+            className="text-white font-extralight capitalize"
+          >
+            developed by <span className="text-yellow-600">kibuti softwares</span> 
+          </a>
         </div>
       </div>
     </footer>
