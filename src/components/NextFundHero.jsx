@@ -45,7 +45,7 @@ function NextFundHero({
         ref={ref}
         src={hero}
         alt=""
-        className={`sm:h-[44em] mt-60 sm:mt-10 md:max-w-md object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-${marginSize} pt-4 right-0`}
+        className={`sm:h-[44em] mt-60 sm:mt-10 object-fill sm:w-[38em] xl:h-[72em] xl:w-[60em] absolute top-${marginSize} pt-4 right-0`}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{
@@ -115,7 +115,7 @@ function NextFundHero({
       </div>
       {/* yellow narrow end section */}
       <div className="bg-right-gradient w-[20%] h-full hidden sm:flex sm:items-start sm:justify-center">
-        <button className="h-fit font-semibold w-36 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins  text-xl">
+        <button className="h-fit font-semibold w-36 z-40 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins  text-xl">
           <Link to={"/SyndicateNetwork#syndicateform"}>contact us</Link>
         </button>
       </div>
