@@ -25,7 +25,7 @@ function SuperHero() {
       </div>
       <div className=" relative flex flex-col lg:flex-row items-center justify-center md:justify-between bg-black py-16 px-4 lg:px-32">
         <div className="lg:w-1/2 lg:pr-12 h-full lg:-mt-12">
-          <h1 className=" mt-12 sm:w-[20em] xs:text-2xl sm:text-4xl text-2xl md:text-5xl lg:-ml-0 relative lg:text-5xl lg:w-[44rem] font-bold text-white mb-4">
+          <h1 className="hidden md:block mt-20 sm:w-[20em] xs:text-2xl sm:text-4xl text-2xl md:text-5xl lg:-ml-0 relative lg:text-5xl lg:w-[44rem] font-bold text-white mb-4">
             We’re betting on
             <h3 className="px-2 text-yellow-600 font-thin">
               Ambitious Founders
@@ -34,13 +34,13 @@ function SuperHero() {
               </span>
             </h3>
             shaping the future
-            <motion.svg
+            {/* <motion.svg
               // width="480"
               // height="137"
               viewBox="0 0 922 137"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute top-8 w-[10em] lg:block lg:top-12 lg:left-0 lg:-ml-20 lg:w-[13em] lg:h-[70px]"
+              className="absolute  top-8 w-[10em] lg:block lg:top-12 lg:left-0 lg:-ml-20 lg:w-[13em] lg:h-[70px]"
               ref={ref}
               animate={controls}
               initial={{ scale: 1, opacity: 0.8 }}
@@ -57,13 +57,14 @@ function SuperHero() {
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-            </motion.svg>
+            </motion.svg> */}
           </h1>
+          <h2 className="md:hidden uppercase font-semibold font-poppins text-white text-xl text-center sm:w-[22em] sm:text-2xl">we're betting on <span className="text-yellow-600"> ambitious founders</span> that are shaping the future</h2>
 
           <motion.img
             src={bulb}
             alt=""
-            className="hidden w-[28em] h-[28em] lg:block opacity-10 -mt-24"
+            className="hidden w-[28em] h-[28em] lg:block opacity-10 -mt-32"
             ref={ref}
             animate={controls}
             initial={{ scale: 1 }}
@@ -83,7 +84,7 @@ function SuperHero() {
             alt="Hero"
             className="w-full rounded-lg shadow-lg z-50"
           /> */}
-          <div className="md:mb-8">
+          <div className="md:mb-20 md:-mr-12">
             <HoverableHero />
           </div>
         </div>
