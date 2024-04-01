@@ -496,13 +496,16 @@ function Footer() {
             &copy; {new Date().getFullYear()} - Ennovate Ventures . All Rights
             Reserved
           </p>
-          <a
-            href="https://kibuti.co.tz"
-            target="_blank"
-            className="text-white font-extralight capitalize"
-          >
-            developed by <span className="text-yellow-600">kibuti softwares</span> 
-          </a>
+          <p className="text-white font-extralight capitalize">
+            developed by
+            <a
+              href="https://kibuti.co.tz"
+              target="_blank"
+              className="text-yellow-600 mx-1 hover:no-underline hover:text-blue-600 hover:font-semibold"
+            >
+              kibuti softwares
+            </a>
+          </p>
         </div>
       </div>
     </footer>
