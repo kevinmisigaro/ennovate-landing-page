@@ -36,20 +36,20 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/ourstory" element={<Story />} />
-      <Route path="/nextfund" element={<NextFund />} />
-      <Route path="/portfolio" element={<Portifolio />} />
-      <Route path="/nexthub" element={<NextHub />} />
-      <Route path="/hacklab" element={<HackLab />} />
-      <Route path="/innospark" element={<InnoSpark />} />
-      <Route path="/digify" element={<Digify />} />
-      <Route path="/govtech" element={<GovTech />} />
-      <Route path="/fallingwalls" element={<FallingWalls />} />
-      <Route path="/syndicatenetwork" element={<SyndicateNetwork />} />
-      <Route path="/programmes" element={<Programmes />} />
-      <Route path="/newsletter" element={<NewsLetter />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/" element={<Home />} exact />
+      <Route path="/ourstory" element={<Story />} exact />
+      <Route path="/nextfund" element={<NextFund />} exact />
+      <Route path="/portfolio" element={<Portifolio />} exact />
+      <Route path="/nexthub" element={<NextHub />} exact />
+      <Route path="/hacklab" element={<HackLab />} exact />
+      <Route path="/innospark" element={<InnoSpark />} exact />
+      <Route path="/digify" element={<Digify />} exact />
+      <Route path="/govtech" element={<GovTech />} exact />
+      <Route path="/fallingwalls" element={<FallingWalls />} exact />
+      <Route path="/syndicatenetwork" element={<SyndicateNetwork />} exact />
+      <Route path="/programmes" element={<Programmes />} exact />
+      <Route path="/newsletter" element={<NewsLetter />} exact />
+      <Route path="*" element={<NotFound />} exact />
       {/* <Route path="/stories" element={<Story />} /> */}
     </Routes>
   );
