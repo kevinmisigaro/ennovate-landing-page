@@ -1,19 +1,26 @@
 import React from "react";
-import spark from "../assets/gallery/spark.png";
-import { deliveryApproach, innosparkOutcomes, objectives } from "../utils";
-import tick from "../assets/gallery/tick.png";
-import target from "../assets/gallery/target.png";
 import map from "../assets/gallery/map.png";
-import NavBar from "../components/NavBar";
+import spark from "../assets/gallery/spark.png";
+import target from "../assets/gallery/target.png";
+import tick from "../assets/gallery/tick.png";
+import heroGuy from "../assets/heroguy.png";
 import Footer from "../components/Footer";
 import NextFundHero from "../components/NextFundHero";
-import heroGuy from "../assets/heroguy.png"
+import { deliveryApproach, innosparkOutcomes, objectives } from "../utils";
 function InnoSpark() {
   return (
     <>
       {/* <NavBar color={"black"} showContactBtn={true} /> */}
       <div className="bg-black">
-        <NextFundHero hero={heroGuy} textDescription={<h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">InnoSpark</h1>} />
+        <NextFundHero
+          hero={heroGuy}
+          textDescription={
+            <h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">
+              InnoSpark
+            </h1>
+          }
+          marginSize={4}
+        />
       </div>
       <div className="w-full h-fit flex flex-col md:p-4 items-center justify-center sm:flex-row sm:justify-between md:border-x-[2.5em] border-black">
         <div className="w-full h-fit md:w-1/2">

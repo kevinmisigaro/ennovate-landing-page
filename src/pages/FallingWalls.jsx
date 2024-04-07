@@ -1,28 +1,29 @@
 import React from "react";
-import bank from "../assets/gallery/bank.png";
-import banner from "../assets/gallery/banner.png";
+import globe from "../assets/gallery/globe.png";
 import settings from "../assets/gallery/handsetting.png";
 import target from "../assets/gallery/target.png";
 import tick from "../assets/gallery/tick.png";
-import {
-  deliveryApproach,
-  fallingWallsObjectives,
-  fallingWallsOutcomes,
-  govtechObjectives,
-  govtechOutcomes,
-} from "../utils";
-import globe from "../assets/gallery/globe.png";
-import { fallingWallsApproach } from "./../utils/index";
-import NavBar from "../components/NavBar";
+import heroGuy from "../assets/heroguy.png";
 import Footer from "../components/Footer";
 import NextFundHero from "../components/NextFundHero";
-import heroGuy from "../assets/heroguy.png"
+import {
+  fallingWallsObjectives,
+  fallingWallsOutcomes
+} from "../utils";
+import { fallingWallsApproach } from "./../utils/index";
 function FallingWalls() {
   return (
     <>
-      {/* <NavBar color={"black"} showContactBtn={true} /> */}
       <div className="bg-black">
-        <NextFundHero hero={heroGuy} textDescription={<h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">Falling Walls</h1>} />
+        <NextFundHero
+          hero={heroGuy}
+          textDescription={
+            <h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">
+              Falling Walls
+            </h1>
+          }
+          marginSize={4}
+        />
       </div>
       <div className="w-full h-fi flex flex-col md:p-4 items-center justify-center sm:flex-row sm:justify-between md:border-x-[2.5em] border-black">
         <div className="w-full h-fit md:w-1/2">

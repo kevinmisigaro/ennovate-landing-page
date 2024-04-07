@@ -26,6 +26,7 @@ function Programmes() {
             <span className="text-[#feba00] font-light"> across Africa</span>
           </h1>
         }
+        marginSize={4}
       />
       <section className="h-fit w-[99%] ml-[2%] flex flex-col sm:flex-row flex-wrap  ">
       {/* <section className="  "> */}

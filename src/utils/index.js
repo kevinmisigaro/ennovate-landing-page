@@ -248,27 +248,33 @@ export const footerLinks = [
 export const footerQuickLinks = [
   {
     id: crypto.randomUUID(),
-    route: "Join our syndicate Fund",
+    routeName: "Join our syndicate Fund",
+    route: "/syndicatenetwork",
   },
   {
     id: crypto.randomUUID(),
-    route: "TheNextHub",
+    routeName: "The Nexthub",
+    route: "/nexthub",
   },
   {
     id: crypto.randomUUID(),
-    route: "Privacy Policy",
+    routeName: "Privacy Policy",
+    route: "",
   },
   {
     id: crypto.randomUUID(),
-    route: "Our Programmes",
+    routeName: "Our Programmes",
+    route: "/programmes",
   },
   {
     id: crypto.randomUUID(),
-    route: "News Letter",
+    routeName: "News Letter",
+    route: "/newsletter",
   },
   {
     id: crypto.randomUUID(),
-    route: "Careers",
+    routeName: "Careers",
+    route: "",
   },
 ];
 

@@ -38,7 +38,6 @@ function Carousel({ imagesList }) {
     };
   }, [currentImageIndex]);
 
-  
   return (
     <div
       className="carousel-container"

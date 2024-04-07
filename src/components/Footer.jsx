@@ -422,7 +422,7 @@ function Footer() {
                   key={quickLink.id}
                   className="text-white visited:text-white"
                 >
-                  {quickLink.route}
+                  {quickLink.routeName}
                 </Link>
               </li>
             ))}
@@ -472,22 +472,7 @@ function Footer() {
               </li>
             ))}
           </ul>
-          {/* <ul className="example-2">
-            {socialLinks.map((link) => (
-              <li className="icon-content">
-                <a
-                  data-social={link.media}
-                  aria-label={link.media}
-                  // href="https://telegram.org/"
-                  href={link.url}
-                >
-                  <div class="filled"></div>
-                  <img src={link.svg} alt="" />
-                </a>
-                <div class="tooltip">{link.media}</div>
-              </li>
-            ))}
-          </ul> */}
+         
         </div>
 
         <div className="w-full text-center mt-8">

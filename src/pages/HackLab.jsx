@@ -150,7 +150,15 @@ function HackLab() {
   return (
     <div className="w-full h-fit">
       <div className="bg-black">
-        <NextFundHero hero={heroGuy} textDescription={<h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">The Next HackLab</h1>} />
+        <NextFundHero
+          hero={heroGuy}
+          textDescription={
+            <h1 className="text-4xl ml-12 font-bold tracking-tight sm:text-5xl sm:w-[12em] text-yellow-500">
+              The Next HackLab
+            </h1>
+          }
+          marginSize={4}
+        />
       </div>
       <Hero />
       <Partinership />

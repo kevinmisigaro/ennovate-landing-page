@@ -23,6 +23,7 @@ function Digify() {
               Digify Skills
             </h1>
           }
+          marginSize={4}
           showSideHeroImage={false}
         />
       </div>
