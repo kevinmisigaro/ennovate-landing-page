@@ -19,7 +19,7 @@ function GalleryCard({ title, description, imgUrl, linkTo }) {
                 {title}
               </h2>
             </div>
-            <h4 className="text-white md:w-full font-normal text-xl lg:mx-2 lg:w-fit md:text-3xl -mt-12 p-4 text-wrap md:self-start ml-[40px]">
+            <h4 className="text-white md:w-full font-normal text-xl lg:mx-2 lg:text-2xl lg:w-fit md:text-3xl -mt-12 p-4 text-wrap md:self-start ml-[40px]">
               {description}
             </h4>
           </div>
