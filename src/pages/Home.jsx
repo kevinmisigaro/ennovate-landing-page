@@ -12,12 +12,6 @@ import SuperHero from "../components/SuperHero";
 function Home() {
   return (
     <div className="bg-gradient-to-b from-[#000000] via-[#0f0f0f] to-[#000000]">
-      {/* <Hero
-        hero={woman}
-        heroSideDescription={sideDescription}
-        showDescription={true}
-        showOnThisPage={true}
-      /> */}
       <SuperHero />
       <div className="h-fit sm:mt-40 w-full flex flex-col items-center justify-evenly mb-4 mt-4 md:mt-4 py-20">
         <AnimatedText
@@ -28,7 +22,6 @@ function Home() {
         <div className="w-32 h-[2px] bg-yellow-500 mt-2"></div>
       </div>
       <Gallery />
-
       <News />
       <div className="bg-white py-20">
         <AnimatedText
@@ -39,7 +32,6 @@ function Home() {
         />
       </div>
       <Partiners />
-
       <Footer />
     </div>
   );
