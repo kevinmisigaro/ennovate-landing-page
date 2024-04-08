@@ -109,10 +109,8 @@ function SyndicateForm() {
         setIsOpen(true);
         // console.log(receivedData);
         // console.log(receivedStatus);
-      setIsSubmitting(false);
-      setTimeout(() => window.location.assign('/SyndicateNetwork'), 3000);
-      
-
+        setIsSubmitting(false);
+      // setTimeout(() => window.location.assign('/SyndicateNetwork'), 3000);
       })
       .catch((err) => {
         console.error("Error:", err);
