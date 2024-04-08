@@ -56,7 +56,7 @@ function NextHubHero({ hero }) {
       <div className="bg-transparent w-full sm:w-[80%] h-full">
         <NavBar />
         <div className="flex flex-col relative items-center justify-evenly h-full w-full">
-          <h1 className="text-5xl md:-ml-20 text-center md:text-4xl md:-mt-20 md:text-left lg:text-center font-bold tracking-tight lg:-mt-60 lg:-ml-20 text-white sm:text-5xl lg:text-6xl sm:w-[12em]">
+          <h1 className="text-5xl md:-ml-20 text-center md:text-4xl md:-mt-20 md:text-left font-bold tracking-tight lg:-mt-72 lg:-ml-32 text-white sm:text-5xl lg:text-6xl sm:w-[12em]">
             Tanzania’s First
             <span className="text-[#feba00] mx-2 font-light">
               Open Digital Innovation Lab
