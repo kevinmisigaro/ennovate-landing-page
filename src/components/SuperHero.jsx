@@ -18,6 +18,7 @@ function SuperHero() {
       controls.start({ scale: 0.8 }); // Scale down when leaving view
     }
   }, [controls, inView]);
+
   return (
     <>
       <div className="sm:w-[80%]">
@@ -34,7 +35,7 @@ function SuperHero() {
               </span>
             </h3>
             shaping the future
-            {/* <motion.svg
+            <motion.svg
               // width="480"
               // height="137"
               viewBox="0 0 922 137"
@@ -57,7 +58,7 @@ function SuperHero() {
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-            </motion.svg> */}
+            </motion.svg>
           </h1>
           <h2 className="md:hidden uppercase font-semibold font-poppins text-white text-xl text-center sm:w-[22em] sm:text-2xl">we're betting on <span className="text-yellow-600"> ambitious founders</span> that are shaping the future</h2>
 
