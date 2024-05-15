@@ -1,6 +1,6 @@
 import React from "react";
 import woman from "../assets/imageg3.jpg";
-function HighLightsCard({ docLink }) {
+function HighLightsCard({ docLink,description,heading }) {
   const handleDownload = () => {
     const filePath = docLink;
     const fileName = 'document.pdf'; // Name of the downloaded file
@@ -32,14 +32,11 @@ function HighLightsCard({ docLink }) {
       </div>
       <div className="h-full md:w-1/3 p-2 mt-2 md:mt-8 lg:mt-12">
         <h2 className="text-white font-bold text-3xl mt-1 mb-4">
-          Article title
+          {heading}
         </h2>
-        <p className="text-white">some really cool description</p>
+        {/* <p className="text-white">some really cool description</p> */}
         <p className="text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In eveniet
-          quia, velit dicta voluptas blanditiis obcaecati amet ab laborum illo
-          expedita sequi? Odit incidunt, consectetur ex pariatur itaque
-          exercitationem enim!
+          {description}
         </p>
       </div>
       <div class=" h-40 flex items-center justify-center cursor-pointer">

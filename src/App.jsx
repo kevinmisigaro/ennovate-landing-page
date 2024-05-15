@@ -13,6 +13,7 @@ import HackLab from "./pages/HackLab";
 import NotFound from "./pages/NotFound";
 import Programmes from "./pages/Programmes";
 import NewsLetter from "./pages/NewsLetter";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
@@ -49,6 +50,7 @@ function App() {
       <Route path="/syndicatenetwork" element={<SyndicateNetwork />} />
       <Route path="/programmes" element={<Programmes />} />
       <Route path="/newsletter" element={<NewsLetter />} />
+      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/stories" element={<Story />} /> */}
     </Routes>

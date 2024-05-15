@@ -9,9 +9,9 @@ import image3 from "../assets/image3.jpg";
 import Carousel from "../components/Carousel";
 import Heading from "../components/Shared/Heading";
 import HighLightsCard from "../components/HighLightsCard";
-import doc1 from "../assets/docs/annual.pdf";
-import doc2 from "../assets/docs/fintech.pdf";
-import doc3 from "../assets/docs/food.pdf";
+import doc1 from "../assets/docs/fintech.pdf";
+import doc2 from "../assets/docs/ruge.pdf";
+import doc3 from "../assets/docs/press.pdf";
 
 const SubHero = () => {
   return (
@@ -56,13 +56,32 @@ const Media = () => {
 
 function NewsLetter() {
   const logos = [image1, image2, image3, image1];
-
+  const docs = [
+    {
+      id: crypto.randomUUID(),
+      title: "How Fintechs are Revolutionizing Transactions in Tanzania",
+      attach: doc1,
+      desc: "Having personally witnessed the emergence and rise of fintech services in Tanzania and interacting with most of the solutions firsthand on a daily basis gives me so much hope for the potential fintech holds for harmonising and democratising access to financial services",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Ennovate Ventures X Ruge Mutahaba",
+      attach: doc2,
+      desc: "Ennovate Ventures and Ruge Mutahaba Foundation Join Forces to Empower Tanzania Youth.",
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Press Release_develoPPP Ventures Support",
+      attach: doc3,
+      desc: "Dar es Salaam, Tanzania, May 15th 2024, DEG Impulse announces the launch of a new call for applications for the develoPPP Ventures program, designed to support start-ups with €100,000 in grant financing and technical assistance to fuel business growth in Tanzania.",
+    },
+  ];
   return (
     <div className="bg-black w-full h-full">
       <NavBar2 />
       <SubHero />
       <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
-        <HighLights sectionTitle={"Ennovate News"} />
+        <HighLights sectionTitle={"Highlights"} />
       </div>
 
       <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
@@ -75,9 +94,14 @@ function NewsLetter() {
         <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">
           Articles
         </h1>
-        <HighLightsCard docLink={doc1} />
-        <HighLightsCard docLink={doc2} />
-        <HighLightsCard docLink={doc3} />
+        {docs.map((doc, index) => (
+          <HighLightsCard
+            docLink={doc.attach}
+            description={doc.desc}
+            heading={doc.title}
+            key={index}
+          />
+        ))}
       </div>
       {/* <Media/> */}
       <Heading title={"Media"} />

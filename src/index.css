@@ -26,6 +26,13 @@
 * {
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar (Chrome, Safari, Edge) */
+}
+embed::-webkit-scrollbar {
+  display: none; /* Hide scrollbar (Chrome, Safari, Edge) */
+  background-color: #000;
+}
 
 .text-gradient {
   background: radial-gradient(

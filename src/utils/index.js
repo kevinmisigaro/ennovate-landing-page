@@ -259,7 +259,7 @@ export const footerQuickLinks = [
   {
     id: crypto.randomUUID(),
     routeName: "Privacy Policy",
-    route: "",
+    route: "/privacypolicy",
   },
   {
     id: crypto.randomUUID(),
