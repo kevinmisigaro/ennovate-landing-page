@@ -19,3 +19,6 @@ function Card({url, title, desc, icon}) {
 }
 
 export default Card;
+
+// 0754091738
+// 0718500700

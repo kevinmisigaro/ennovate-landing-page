@@ -5,6 +5,7 @@ import Switch from "@mui/material/Switch";
 import "react-international-phone/style.css";
 import AnimatedText from "./AnimatedText";
 import ErrorModal from "./ErrorModal";
+import { LOGIN_URL, URL } from "../utils/api";
 
 function SyndicateForm() {
   const [formData, setFormData] = useState({
@@ -93,9 +94,9 @@ function SyndicateForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const url = "https://others.medlinep.com/api/auth/register";
+    // const url = "https://others.medlinep.com/api/auth/register";
 
-    fetch(url, {
+    fetch(URL, {
       method: "POST",
       body: JSON.stringify(formData),
     })
@@ -110,7 +111,7 @@ function SyndicateForm() {
         // console.log(receivedData);
         // console.log(receivedStatus);
         setIsSubmitting(false);
-      // setTimeout(() => window.location.assign('/SyndicateNetwork'), 3000);
+        // setTimeout(() => window.location.assign('/SyndicateNetwork'), 3000);
       })
       .catch((err) => {
         console.error("Error:", err);
@@ -207,6 +208,7 @@ function SyndicateForm() {
               placeholder="Estimated Annual Income"
               onChange={handleInputChange}
               name="user_estimated_annual_income"
+              min={0}
             />
             <input
               type="number"
@@ -215,6 +217,7 @@ function SyndicateForm() {
               placeholder="Amount Willing to Invest"
               onChange={handleInputChange}
               name="user_amount_willing_to_invest"
+              min={0}
             />
             <input
               type="number"
@@ -223,6 +226,7 @@ function SyndicateForm() {
               placeholder="Number of Investment Deals"
               onChange={handleInputChange}
               name="user_investment_deals"
+              min={0}
             />
             <div className="flex place-self-start">
               <div className="w-[90%] mx-5 my-2">
@@ -351,11 +355,14 @@ function SyndicateForm() {
           <button
             type="submit"
             // disabled={isSubmitting}
-            className={`h-[2.5em] uppercase w-32 bg-yellow-500 text-black rounded-xl mx-8 ${isSubmitting?'cursor-wait':'cursor-default'}`}
+            className={`h-[2.5em] uppercase w-32 bg-yellow-500 text-black rounded-xl mx-8 ${isSubmitting ? 'cursor-wait' : 'cursor-default'}`}
           >
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>
+
         </div>
+        <h1 className="text-center text-white pb-4 ">Already have an Account? <span> <a href={LOGIN_URL} target="_blank" rel="noopener noreferrer" className="select-none text-yellow-500 font-bold mx-1">login</a>
+        </span> </h1>
       </form>
     </>
   );

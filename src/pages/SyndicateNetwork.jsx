@@ -54,12 +54,12 @@ const HowToJoin = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 h-fit w-full p-4 bg-[#000000] pb-24 md:flex md:flex-row md:items-center md:justify-center md:h-screen md:w-full">
       <div className="relative h-full w-1/2 lg:overflow-visible flex items-center justify-center  xl:h-full xl:w-1/2">
         {/* Images and background */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <img src={paint} alt="" className="h-1/2 w-3/4 absolute" />
+        <div className="absolute inset-0 flex items-center justify-center select-none">
+          <img src={paint} alt="" className="h-1/2 w-3/4 absolute select-none pointer-events-none" />
           <img
             src={paintfront}
             alt=""
-            className="z-10 h-1/2 w-3/4 absolute mt-24 md:mt-40 -ml-12 lg:mt-[18em] xl:-ml-8"
+            className="z-10 h-1/2 w-3/4 absolute mt-24 md:mt-40 -ml-12 lg:mt-[18em] xl:-ml-8 select-none pointer-events-none"
           />
         </div>
         {/* Yellow background */}

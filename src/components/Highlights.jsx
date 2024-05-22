@@ -3,7 +3,7 @@ import Heading from "./Shared/Heading";
 
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
-import Img2 from "../assets/blogs/blog-2.jpg";
+// import Img2 from "../assets/blogs/Tudarco.heic";
 import Img3 from "../assets/blogs/blog-3.jpg";
 
 const BlogData = [
@@ -16,19 +16,19 @@ const BlogData = [
     aosDelay: "0",
     url: "https://www.developpp.de/en/funding-programme/startups",
   },
+  // {
+  //   title: "How to choose perfect gadget",
+  //   subtitle:
+  //     "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
+  //   published: "Jan 20, 2024 by Satya",
+  //   image: Img2,
+  //   aosDelay: "200",
+  //   url: " https://foodsecurity.ennovateventures.co",
+  // },
   {
-    title: "How to choose perfect gadget",
+    title: "Innovate for Security.",
     subtitle:
-      "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
-    published: "Jan 20, 2024 by Satya",
-    image: Img2,
-    aosDelay: "200",
-    url: " https://foodsecurity.ennovateventures.co",
-  },
-  {
-    title: "How to choose perfect VR headset",
-    subtitle:
-      "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
+      "The Innovate for Food Security Program is a year-long, intense practical program guiding finalists and recent graduates to start and build agribusinesses aimed at improving food security in Tanzania. 40 participants from different disciplines (Agriculture, Technology, Engineering, Food science, etc.) at your university will be guided through design thinking practices to deeply understand the challenges and opportunities that lie along the agricultural value chain.",
     published: "Jan 20, 2024 by Sabir",
     image: Img3,
     aosDelay: "400",
@@ -54,10 +54,7 @@ const HighLights = ({ sectionTitle }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
           {/* Blog card */}
           {BlogData.map((data) => (
-            <a
-              href={data.url}
-              target="_blank"
-            >
+            <a href={data.url} target="_blank">
               <div
                 data-aos="fade-up"
                 data-aos-delay={data.aosDelay}

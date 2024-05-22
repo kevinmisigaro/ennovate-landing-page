@@ -6,12 +6,15 @@ import hero from "../assets/news_hero.jpg";
 import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.jpg";
 import image3 from "../assets/image3.jpg";
+import pretty from "../assets/blogs/meeting.jpg"
+import wahuni from "../assets/blogs/wahuni.jpg"
 import Carousel from "../components/Carousel";
 import Heading from "../components/Shared/Heading";
 import HighLightsCard from "../components/HighLightsCard";
 import doc1 from "../assets/docs/fintech.pdf";
 import doc2 from "../assets/docs/ruge.pdf";
 import doc3 from "../assets/docs/press.pdf";
+import Onboarding from "../components/Onboarding";
 
 const SubHero = () => {
   return (
@@ -61,37 +64,41 @@ function NewsLetter() {
       id: crypto.randomUUID(),
       title: "How Fintechs are Revolutionizing Transactions in Tanzania",
       attach: doc1,
+      thumbnail:wahuni,
       desc: "Having personally witnessed the emergence and rise of fintech services in Tanzania and interacting with most of the solutions firsthand on a daily basis gives me so much hope for the potential fintech holds for harmonising and democratising access to financial services",
     },
     {
       id: crypto.randomUUID(),
       title: "Ennovate Ventures X Ruge Mutahaba",
       attach: doc2,
+      thumbnail:pretty,
       desc: "Ennovate Ventures and Ruge Mutahaba Foundation Join Forces to Empower Tanzania Youth.",
     },
     {
       id: crypto.randomUUID(),
       title: "Press Release_develoPPP Ventures Support",
       attach: doc3,
+      thumbnail:wahuni,
       desc: "Dar es Salaam, Tanzania, May 15th 2024, DEG Impulse announces the launch of a new call for applications for the develoPPP Ventures program, designed to support start-ups with €100,000 in grant financing and technical assistance to fuel business growth in Tanzania.",
     },
   ];
   return (
     <div className="bg-black w-full h-full">
+      <Onboarding/>
       <NavBar2 />
       <SubHero />
-      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
+      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center home">
         <HighLights sectionTitle={"Highlights"} />
       </div>
 
-      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
+      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center about">
         <HighLights sectionTitle={"NewsLetter"} />
       </div>
       {/* <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"Articles"} />
       </div> */}
       <div>
-        <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">
+        <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center cart">
           Articles
         </h1>
         {docs.map((doc, index) => (
@@ -100,6 +107,7 @@ function NewsLetter() {
             description={doc.desc}
             heading={doc.title}
             key={index}
+            avatar={doc.thumbnail}
           />
         ))}
       </div>

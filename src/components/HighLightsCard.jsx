@@ -1,6 +1,7 @@
 import React from "react";
 import woman from "../assets/imageg3.jpg";
-function HighLightsCard({ docLink,description,heading }) {
+
+function HighLightsCard({ docLink, description, heading, avatar }) {
   const handleDownload = () => {
     const filePath = docLink;
     const fileName = 'document.pdf'; // Name of the downloaded file
@@ -23,9 +24,9 @@ function HighLightsCard({ docLink,description,heading }) {
 
   return (
     <div class="w-[80%] relative h-fit md:h-[20rem] my-8 mx-[10%] flex flex-col md:flex-row items-center justify-evenly bg-neutral-950 rounded-xl border md:border-yellow-500 border-yellow-600 box-border ">
-      <div>
+      <div className="hidden md:block">
         <img
-          src={woman}
+          src={avatar}
           alt=""
           className="h-72 w-full rounded-xl md:rounded-lg p-1 md:m-0"
         />
@@ -35,7 +36,7 @@ function HighLightsCard({ docLink,description,heading }) {
           {heading}
         </h2>
         {/* <p className="text-white">some really cool description</p> */}
-        <p className="text-white">
+        <p className="text-white h-fit">
           {description}
         </p>
       </div>
@@ -75,7 +76,7 @@ function HighLightsCard({ docLink,description,heading }) {
             </svg>
           </span>
           <span onClick={handleDownload} class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200">
-              Download
+            Download
           </span>
         </div>
       </div>
