@@ -6,7 +6,7 @@ const Onboarding = () => {
     const [steps, setSteps] = useState([
         {
             target: '.home',
-            content: 'Welcome to our homepage!',
+            content: 'The homepage to our homepage!',
             placement: 'bottom',
         },
         {
