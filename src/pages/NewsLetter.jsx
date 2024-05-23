@@ -87,18 +87,18 @@ function NewsLetter() {
       <Onboarding/>
       <NavBar2 />
       <SubHero />
-      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center home">
+      {/* <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"Highlights"} />
-      </div>
+      </div> */}
 
-      <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center about">
+      {/* <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"NewsLetter"} />
-      </div>
+      </div> */}
       {/* <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
         <HighLights sectionTitle={"Articles"} />
       </div> */}
       <div>
-        <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center cart">
+        <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">
           Articles
         </h1>
         {docs.map((doc, index) => (
