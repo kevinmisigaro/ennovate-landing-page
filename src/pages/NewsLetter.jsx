@@ -14,7 +14,6 @@ import HighLightsCard from "../components/HighLightsCard";
 import doc1 from "../assets/docs/fintech.pdf";
 import doc2 from "../assets/docs/ruge.pdf";
 import doc3 from "../assets/docs/press.pdf";
-import Onboarding from "../components/Onboarding";
 
 const SubHero = () => {
   return (
@@ -84,7 +83,6 @@ function NewsLetter() {
   ];
   return (
     <div className="bg-black w-full h-full">
-      <Onboarding/>
       <NavBar2 />
       <SubHero />
       {/* <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
