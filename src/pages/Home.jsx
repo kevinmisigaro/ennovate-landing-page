@@ -16,7 +16,7 @@ function Home() {
       <div className="h-fit sm:mt-40 w-full flex flex-col items-center justify-evenly mb-4 mt-4 md:mt-4 py-20">
         <AnimatedText
           text={"Explore Ennovate Ventures"}
-          size={"3em"}
+          size={"2.5em"}
           color={"white"}
         />
         <div className="w-32 h-[2px] bg-yellow-500 mt-2"></div>

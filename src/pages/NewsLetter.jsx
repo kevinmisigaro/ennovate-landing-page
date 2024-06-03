@@ -14,6 +14,7 @@ import HighLightsCard from "../components/HighLightsCard";
 import doc1 from "../assets/docs/fintech.pdf";
 import doc2 from "../assets/docs/ruge.pdf";
 import doc3 from "../assets/docs/press.pdf";
+import developp from "../assets/blogs/developp.jpg"
 
 const SubHero = () => {
   return (
@@ -77,7 +78,7 @@ function NewsLetter() {
       id: crypto.randomUUID(),
       title: "Press Release_develoPPP Ventures Support",
       attach: doc3,
-      thumbnail:wahuni,
+      thumbnail:developp,
       desc: "Dar es Salaam, Tanzania, May 15th 2024, DEG Impulse announces the launch of a new call for applications for the develoPPP Ventures program, designed to support start-ups with €100,000 in grant financing and technical assistance to fuel business growth in Tanzania.",
     },
   ];
