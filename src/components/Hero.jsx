@@ -106,7 +106,7 @@ function Hero({
         />
 
         {/* bulb with faded columnar view */}
-        <section className="hidden  lg:h-full lg:flex lg:flex-row lg:items-center lg:justify-center sm:pt-20 p">
+        <section className="hidden  lg:h-full lg:flex lg:flex-row lg:items-center lg:justify-center sm:pt-20">
           <motion.img
             ref={ref}
             animate={controls}
@@ -129,13 +129,13 @@ function Hero({
       <h2 className="text-white uppercase text-2xl ml-0 absolute mt-[17em] font-semibold text-center sm:hidden">
         we're betting on
         <span className="text-yellow-500 ml-2 font-extralight">
-          ambitious founders{" "}
+          ambitious founders
         </span>
         that are shaping the future
       </h2>
       {/* yellow narrow end section */}
       <div className="bg-right-gradient w-[20%] h-full hidden sm:flex sm:items-start sm:justify-center">
-        <button className="h-fit font-semibold w-36 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins  text-xl">
+        <button className="h-fit font-semibold w-36 rounded-full bg-white p-1 mt-[2rem] capitalize font-poppins text-xl">
           <Link to={"/SyndicateNetwork#syndicateform"}>contact us</Link>
         </button>
       </div>

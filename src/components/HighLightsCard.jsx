@@ -32,11 +32,11 @@ function HighLightsCard({ docLink, description, heading, avatar }) {
         />
       </div>
       <div className="h-full md:w-1/3 p-2 mt-2 md:mt-8 lg:mt-12">
-        <h2 className="text-white font-bold text-3xl mt-1 mb-4">
+        <h2 className="text-white font-bold text-xl mt-1 mb-4">
           {heading}
         </h2>
         {/* <p className="text-white">some really cool description</p> */}
-        <p className="text-white h-fit">
+        <p className="text-white font-thin h-fit">
           {description}
         </p>
       </div>

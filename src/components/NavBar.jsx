@@ -18,7 +18,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
 
   return (
     <header
-      className={`h-${height} w-full bg-transparent left-0 right-0 py-2 md:py-6 mt-0`}//lg:bg-gradient-to-r from-black from-80%  to-yellow-600
+      className={`h-${height} w-full bg-transparent left-0 right-0 py-2 md:py-6 mt-0`} //lg:bg-gradient-to-r from-black from-80%  to-yellow-600
       // style={{color?}}
     >
       <nav className="flex justify-between items-center">
@@ -38,7 +38,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
                   window.location.pathname === navlink.linkTo
                     ? "text-yellow-500"
                     : "text-white"
-                } no-underline font-poppins hover:no-underline hover:text-yellow-500 font-semibold leading-normal sm:text-lg md:text-sm lg:text-lg xl:text-2xl text-white md:text-white md:p-2 relative nav-link`} // Added nav-link class
+                } no-underline font-poppins hover:no-underline hover:text-yellow-500 font-semibold leading-normal sm:text-lg md:text-sm lg:text-sm xl:text-2xl text-white md:text-white md:p-2 relative nav-link`} // Added nav-link class
               >
                 {navlink.name}
                 {/* Add the PNG vector for underline effect */}
@@ -50,7 +50,7 @@ const NavBar = ({ height, showContactBtn, color }) => {
               </NavLink>
             </li>
           ))}
-         {/* <Link
+          {/* <Link
             to={"/SyndicateNetwork#syndicateform"}
             className="hidden font-poppins font-semibold sm:flex justify-center items-center text text-xl p-1 mr-12 text-black bg-white rounded-full"
           >
@@ -58,7 +58,6 @@ const NavBar = ({ height, showContactBtn, color }) => {
           </Link> */}
         </ul>
 
-       
         <div className="md:hidden">
           <img
             src={humburger}
@@ -80,12 +79,15 @@ const NavBar = ({ height, showContactBtn, color }) => {
           //   mass: 0.8,
           // }}
           // exit={{scale:.8}}
+          role="alert"
         >
           <button
             aria-label="close menu"
-            className="absolute top-0 right-0 p-4"
+            className="absolute top-0  right-0 p-4"
             onClick={toggleNav}
-          ></button>
+          >
+            X
+          </button>
           <ul className="animate-slide-in-left flex flex-col h-fit items-center gap-12 py-8 uppercase">
             {navLinks.map((singleLink) => (
               <NavLink
@@ -97,14 +99,17 @@ const NavBar = ({ height, showContactBtn, color }) => {
                 {singleLink.name}
               </NavLink>
             ))}
+            <Link
+              to={"/SyndicateNetwork#syndicateform"}
+              className=" sm:flex justify-center items-center text text-xl p-1 rounded-full"
+            >
+              Contact us
+            </Link>
           </ul>
         </motion.div>
       )}
     </header>
   );
 };
-
-
-
 
 export default NavBar;

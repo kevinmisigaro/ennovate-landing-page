@@ -17,14 +17,14 @@ function HoverableHero() {
   }, [controls, inView]);
 
   return (
-    <div className="hero-container relative -mt-[180px]">
+    <div className="hero-container relative lg:-mt-[20px] xl:-mt-[180px]">
       <motion.img
         ref={ref}
         src={woman}
         // sizes="(max-width: 600px) 480px,
         // 800px"
         alt=""
-        className={`object-fill pointer-events-none aspect-square  mt-40 md:mt-2 xl:mt-12 sm:w-[38em] xl:h-[60em] xl:w-[60em] absolute top-4 right-0 z-10 `}
+        className={`object-fill pointer-events-none aspect-square  mt-4 md:-mt-20 xl:mt-0 sm:w-[38em] xl:h-[44em] xl:absolute xl:w-[50em] absolute top-4 right-0 z-10 `}
         animate={controls}
         initial={{ scale: 1 }}
         transition={{

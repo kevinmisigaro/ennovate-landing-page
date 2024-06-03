@@ -108,6 +108,7 @@ export const navLinks = [
     name: "Ennovate News",
     linkTo: "/newsletter",
   },
+  
 ];
 export const navLinks2 = [
   // {
