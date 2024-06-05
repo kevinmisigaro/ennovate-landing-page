@@ -135,7 +135,7 @@ const Partinership = () => {
             {guides.map((guide) => (
               <li
                 key={guide.id}
-                className="text-lg md:text-2xl font-semibold list-disc my-2"
+                className="text-lg md:text-2xl font-semibold list-disc my-1 xl:my-4"
               >
                 {guide.name}
               </li>
