@@ -4,6 +4,8 @@ import React from "react";
 import developp from "../assets/blogs/developp.jpg";
 import pretty from "../assets/blogs/meeting.jpg";
 import wahuni from "../assets/blogs/wahuni.jpg";
+import ruge from "../assets/blogs/ruge.jpg"
+import fintech from "../assets/blogs/Fintech.jpg"
 import doc1 from "../assets/docs/fintech.pdf";
 import doc3 from "../assets/docs/press.pdf";
 import doc2 from "../assets/docs/ruge.pdf";
@@ -75,14 +77,14 @@ const Articles = () => {
       id: crypto.randomUUID(),
       title: "How Fintechs are Revolutionizing Transactions in Tanzania",
       attach: doc1,
-      thumbnail: wahuni,
+      thumbnail: fintech,
       desc: "Having personally witnessed the emergence and rise of fintech services in Tanzania and interacting with most of the solutions firsthand on a daily basis gives me so much hope for the potential fintech holds for harmonising and democratising access to financial services",
     },
     {
       id: crypto.randomUUID(),
       title: "Ennovate Ventures X Ruge Mutahaba",
       attach: doc2,
-      thumbnail: pretty,
+      thumbnail: ruge,
       desc: "Ennovate Ventures and Ruge Mutahaba Foundation Join Forces to Empower Tanzania Youth.",
     },
     {

@@ -25,15 +25,15 @@ const BlogData = [
   //   aosDelay: "200",
   //   url: " https://foodsecurity.ennovateventures.co",
   // },
-  {
-    title: "Innovate for Security.",
-    subtitle:
-      "The Innovate for Food Security Program is a year-long, intense practical program guiding finalists and recent graduates to start and build agribusinesses aimed at improving food security in Tanzania. 40 participants from different disciplines (Agriculture, Technology, Engineering, Food science, etc.) at your university will be guided through design thinking practices to deeply understand the challenges and opportunities that lie along the agricultural value chain.",
-    published: "Jan 20, 2024 by Sabir",
-    image: Img3,
-    aosDelay: "400",
-    url: "",
-  },
+  // {
+  //   title: "Innovate for Security.",
+  //   subtitle:
+  //     "The Innovate for Food Security Program is a year-long, intense practical program guiding finalists and recent graduates to start and build agribusinesses aimed at improving food security in Tanzania. 40 participants from different disciplines (Agriculture, Technology, Engineering, Food science, etc.) at your university will be guided through design thinking practices to deeply understand the challenges and opportunities that lie along the agricultural value chain.",
+  //   published: "Jan 20, 2024 by Sabir",
+  //   image: Img3,
+  //   aosDelay: "400",
+  //   url: "",
+  // },
   //   {
   //     title: "How to ennovate with tech",
   //     subtitle:
