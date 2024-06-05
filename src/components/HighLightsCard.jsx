@@ -75,7 +75,7 @@ function HighLightsCard({ docLink, description, heading, avatar }) {
               ></path>
             </svg>
           </span>
-          <span onClick={handleDownload} class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200">
+          <span onClick={handleDownload} class="relative text-white w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200">
             Download
           </span>
         </div>
