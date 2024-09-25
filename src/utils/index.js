@@ -100,7 +100,7 @@ export const navLinks = [
   },
   {
     id: crypto.randomUUID(),
-    name: "The Next Fund",
+    name: "TheNextFund",
     linkTo: "/nextfund",
   },
   {
@@ -128,7 +128,7 @@ export const navLinks2 = [
   },
   {
     id: crypto.randomUUID(),
-    name: "The Next Fund",
+    name: "TheNextFund",
     linkTo: "/nextfund",
   },
   {
@@ -161,7 +161,7 @@ export const galleryData = [
   },
   {
     id: crypto.randomUUID(),
-    name: "The NextFund",
+    name: "TheNextFund",
     description:
       "We work with audacious  tech founders to build and commercialize high growth companies.",
     img: image4,
@@ -169,7 +169,7 @@ export const galleryData = [
   },
   {
     id: crypto.randomUUID(),
-    name: "The NextHub",
+    name: "TheNextHub",
     description:
       "The first integrated IdeaLab in Tanzania that is building a pipeline of the most disruptive innovations",
     img: image3,
@@ -182,7 +182,7 @@ export const testimonials = [
     name: "Martin Labbe",
     description:
       "We are very happy about our collaboration with Ennovate on our Fast track program, 100 of youth have been trained on digital skills that will allow them to get decent jobs",
-    title: "International trade Center ",
+    title: "International Trade Center ",
     url: image1,
   },
   {
@@ -254,7 +254,7 @@ export const footerQuickLinks = [
   },
   {
     id: crypto.randomUUID(),
-    routeName: "The Nexthub",
+    routeName: "TheNextHub",
     route: "/nexthub",
   },
   {

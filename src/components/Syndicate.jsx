@@ -30,7 +30,7 @@ function Syndicate() {
                     />
                 </div>
             </div>
-            <h1 className="absolute xl:top-[20%] xl:left-24 xl:text-9xl xl:font-bold xl:w-[20%] xl:h-72 xl:text-wrap text-yellow-500 text-opacity-15 ">The NextHub</h1>
+            <h1 className="absolute xl:top-[20%] xl:left-24 xl:text-9xl xl:font-bold xl:w-[20%] xl:h-72 xl:text-wrap text-yellow-500 text-opacity-15 ">TheNextHub</h1>
         </div>
     );
 }
