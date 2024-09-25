@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+Ennovate Landing Page Main.zipZone.Identifier
+.env.development
+.env.production
+.env
