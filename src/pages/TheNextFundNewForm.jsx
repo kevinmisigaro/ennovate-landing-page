@@ -8,7 +8,7 @@ import SyndicateForm from "../components/SyndicateForm";
 import Footer from "../components/Footer";
 import Modal from "../components/Modal";
 import AnimatedText from "../components/AnimatedText";
-import TheForm from "../components/TheForm";
+import TheForm2 from "../components/TheForm2";
 import Card from "@/components/Card";
 // components
 const SubHero = () => {
@@ -118,7 +118,7 @@ const TagLine = () => {
   );
 };
 
-const Cards = () => {
+export const Cards = () => {
   return (
     <>
       <div className="grid gap-6 md:grid-cols-2 p-4 bg-black px-14">
@@ -273,19 +273,28 @@ const Cards = () => {
           </div>
         </div>
       </div>
+      <div className="py-8">
+        <p class="h-fit w-full flex flex-col items-center justify-evenly text-white font-extrabold">
+          Selected startups will be notified on the{" "}
+          <span class="text-transparent bg-clip-text bg-gradient-to-r to-indigo-600 from-violet-400">
+            17th of October 2024
+          </span>
+        </p>
+      </div>
     </>
   );
 };
 
-function SyndicateNetwork() {
+function TheNextFundNewForm() {
   return (
     <div className="relative bg-gradient-to-b from-[#000000] via-[#0f0f0f] to-[#000000] h-full w-full">
       <NavBar2 />
       <SubHero />
       <TagLine />
-      <HowToJoin />
+      {/* <HowToJoin /> */}
+      {/* <Cards /> */}
       <section className="bg-white py-8 px-4">
-        <TheForm />
+        <TheForm2 />
       </section>
       <Footer />
       {/* <Modal/> */}
@@ -293,4 +302,4 @@ function SyndicateNetwork() {
   );
 }
 
-export default SyndicateNetwork;
+export default TheNextFundNewForm;

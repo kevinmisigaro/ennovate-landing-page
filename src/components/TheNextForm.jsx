@@ -7,7 +7,7 @@ import AnimatedText from "./AnimatedText";
 import ErrorModal from "./ErrorModal";
 import { LOGIN_URL, URL } from "../utils/api";
 
-function SyndicateForm() {
+function NewSyndicateForm() {
   const [formData, setFormData] = useState({
     user_firstname: "",
     user_lastname: "",
@@ -136,7 +136,7 @@ function SyndicateForm() {
           status={receivedStatus}
         />
         <AnimatedText
-          text={"TheNextFund is backing the NEXT disruptive companies from Africa"}
+          text={"The Next Fund Form"}
           size={"2em"}
           color={"white"}
         />
@@ -368,4 +368,4 @@ function SyndicateForm() {
   );
 }
 
-export default SyndicateForm;
+export default NewSyndicateForm;

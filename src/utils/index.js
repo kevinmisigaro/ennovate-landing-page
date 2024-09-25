@@ -108,7 +108,6 @@ export const navLinks = [
     name: "Ennovate News",
     linkTo: "/newsletter",
   },
-  
 ];
 export const navLinks2 = [
   // {
@@ -165,7 +164,7 @@ export const galleryData = [
     description:
       "We work with audacious  tech founders to build and commercialize high growth companies.",
     img: image4,
-    page: "/nextFund",
+    page: "/thenextfund",
   },
   {
     id: crypto.randomUUID(),
@@ -301,6 +300,42 @@ export const syndicateAdvantages = [
     name: "Our startup portfolio received up to 12 month venture building, which increases your portfolio success and returns on your investment",
   },
 ];
+
+export const syndicateAdvantagesNew = [
+  {
+    id: crypto.randomUUID(),
+    name: "Up to 2 startups to receive funding between $20,000 and $100,000 from Ennovate Ventures and our co-investors. Ennovate Ventures is passionate about going the long journey with remarkable founders and helping them reach the top.",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Up to $150,000 follow-on funding from our investor partners and DFIs. ",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "1 startup gets a fully funded trip to Cape Town to attend Africa’s largest investor gathering in November. ",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "All selected startups have up to $5,000 AWS Credit to support your ventures to scale. ",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Selected startups will have access to Simba Money infrastructure and market access to accelerate their market penetration. ",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Dedicated global venture experts to work with you at a personal level in navigating through your business frictions and enabling you to unlock new milestones.",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "All selected startups will have their investment documentation fully done and shared with our pool of investors. ",
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Access to dedicated investor office hours with Africa’s most active investors.",
+  },
+];
+
 export const socialLinks = [
   {
     id: crypto.randomUUID(),
