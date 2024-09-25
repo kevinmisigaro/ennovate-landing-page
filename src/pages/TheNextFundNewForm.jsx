@@ -274,9 +274,9 @@ export const Cards = () => {
         </div>
       </div>
       <div className="py-8">
-        <p class="h-fit w-full flex flex-col items-center justify-evenly text-white font-extrabold">
+        <p className="h-fit w-full flex flex-col items-center justify-evenly text-white font-extrabold">
           Selected startups will be notified on the{" "}
-          <span class="text-transparent bg-clip-text bg-gradient-to-r to-indigo-600 from-violet-400">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r to-indigo-600 from-violet-400">
             17th of October 2024
           </span>
         </p>

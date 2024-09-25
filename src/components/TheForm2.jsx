@@ -702,7 +702,7 @@ function SyndicateForm() {
           </span>{" "}
         </h1>
         <div className="py-8">
-          <p class="h-fit w-full flex flex-col items-center justify-evenly text-yellow-400 font-extrabold">
+          <p className="h-fit w-full flex flex-col items-center justify-evenly text-yellow-400 font-extrabold">
             Selected startups will be notified on the 17th of October 2024
           </p>
         </div>
