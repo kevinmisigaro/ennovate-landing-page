@@ -284,6 +284,7 @@ function SyndicateNetwork() {
       <SubHero />
       <TagLine />
       <HowToJoin />
+      <Cards />
       <section className="bg-white py-8 px-4">
         <TheForm />
       </section>

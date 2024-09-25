@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import NextFund from "./pages/NextFund";
+import TheNextFund from "./pages/TheNextFund";
 import Portifolio from "./pages/Portifolio";
 import Story from "./pages/Story";
 import SyndicateNetwork from "./pages/SyndicateNetwork";
+import TheNextFundNewForm from "./pages/TheNextFundNewForm";
 import NextHub from "./pages/NextHub";
 import InnoSpark from "./pages/InnoSpark";
 import GovTech from "./pages/GovTech";
@@ -40,6 +42,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/ourstory" element={<Story />} />
       <Route path="/nextfund" element={<NextFund />} />
+      <Route path="/thenextfund" element={<TheNextFund />} />
       <Route path="/portfolio" element={<Portifolio />} />
       <Route path="/nexthub" element={<NextHub />} />
       <Route path="/hacklab" element={<HackLab />} />
@@ -48,6 +51,7 @@ function App() {
       <Route path="/govtech" element={<GovTech />} />
       <Route path="/fallingwalls" element={<FallingWalls />} />
       <Route path="/syndicatenetwork" element={<SyndicateNetwork />} />
+      <Route path="/thenextfundform" element={<TheNextFundNewForm />} />
       <Route path="/programmes" element={<Programmes />} />
       <Route path="/newsletter" element={<NewsLetter />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
