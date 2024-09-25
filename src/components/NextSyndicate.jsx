@@ -10,9 +10,6 @@ function Syndicate() {
     <>
       <div className="sm:w-full sm:h-fit sm:flex sm:flex-row sm:items-center sm:justify-evenly px-4 py-8 box-border bg-white overflow-clip xl:h-[70vh] xl:relative">
         <div className="h-fit w-full flex-col sm:h-full sm:w-[50%] sm:flex sm:flex-col sm:items-start sm:justify-center xl:flex xl:flex-col xl:items-start xl:justify-evenly">
-          <h2 className="font-medium font-poppins text-3xl text-black mb-4 xl:text-5xl ">
-            TheNextFund is backing the NEXT disruptive companies from Africa
-          </h2>
           <p className="font-poppins text-lg text-justify xl:leading-[3rem] xl:-mt-12">
             TheNextFund is a bespoke venture capital-ready programme that is
             investing in the most promising tech and tech-enabled startups
@@ -26,7 +23,7 @@ function Syndicate() {
           </p>
 
           <div className="py-8">
-            <p class="text-yellow-400 text-2xl font-extrabold md:text-5xl lg:text-2xl">
+            <p className="text-yellow-400 text-2xl font-extrabold md:text-5xl lg:text-2xl">
               Apply before 13th October, 2024
             </p>
           </div>
