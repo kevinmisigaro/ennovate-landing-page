@@ -1259,20 +1259,7 @@ function SyndicateForm() {
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>
         </div>
-        <h1 className="text-center text-white pb-4 ">
-          Already have an Account?{" "}
-          <span>
-            {" "}
-            <a
-              href={LOGIN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="select-none text-yellow-500 font-bold mx-1"
-            >
-              login
-            </a>
-          </span>{" "}
-        </h1>
+
         <div className="py-8">
           <p className="h-fit w-full flex flex-col items-center justify-evenly text-yellow-400 font-extrabold">
             Selected startups will be notified on the 17th of October 2024
