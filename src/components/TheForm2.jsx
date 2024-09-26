@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PhoneInput } from "react-international-phone";
 import Switch from "@mui/material/Switch";
 import "react-international-phone/style.css";
@@ -15,6 +15,10 @@ const SUPABASE_TABLE_NAME = import.meta.env.VITE_SUPABASE_TABLE_NAME;
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+useEffect(() => {
+  console.log('supabaseurl',supabaseUrl);
+},[])
 
   const [formData, setFormData] = useState({
     startup_name: "",
