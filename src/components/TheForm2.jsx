@@ -8,13 +8,14 @@ import { LOGIN_URL } from "../utils/api";
 import { createClient } from "@supabase/supabase-js";
 import humanId from "human-id";
 
+function SyndicateForm() {
+
 const SUPABASE_STORAGE_BUCKET = import.meta.env.VITE_SUPABASE_STORAGE_BUCKET;
 const SUPABASE_TABLE_NAME = import.meta.env.VITE_SUPABASE_TABLE_NAME;
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-function SyndicateForm() {
   const [formData, setFormData] = useState({
     startup_name: "",
     founders_full_names: "",
