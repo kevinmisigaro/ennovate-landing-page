@@ -161,8 +161,11 @@ function NextFund() {
         ))}
       </div>
       <Syndicate />
-      <NextJoinUs />
-
+      <div className="py-8 px-12">
+        <NextJoinUs />
+      </div>
+      <br />
+      <br />
       <hr />
       <Footer />
     </div>
