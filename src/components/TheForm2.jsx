@@ -8,14 +8,13 @@ import { LOGIN_URL } from "../utils/api";
 import { createClient } from "@supabase/supabase-js";
 import humanId from "human-id";
 
+const SUPABASE_STORAGE_BUCKET = import.meta.env.VITE_SUPABASE_STORAGE_BUCKET;
+const SUPABASE_TABLE_NAME = import.meta.env.VITE_SUPABASE_TABLE_NAME;
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
 function SyndicateForm() {
-  const SUPABASE_STORAGE_BUCKET = import.meta.env.VITE_SUPABASE_STORAGE_BUCKET;
-  const SUPABASE_TABLE_NAME = import.meta.env.VITE_SUPABASE_TABLE_NAME;
-  const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-  const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-  const supabase = createClient(supabaseUrl, supabaseAnonKey);
-
   const [formData, setFormData] = useState({
     startup_name: "",
     founders_full_names: "",
@@ -169,8 +168,6 @@ function SyndicateForm() {
   };
 
   const [isOpen, setIsOpen] = useState(false);
-  const [receivedData, setReceivedData] = useState([]);
-  const [receivedStatus, setReceivedStatus] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("something went wrong");
   const [modalType, setModalType] = useState("error");
@@ -197,7 +194,7 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <input
                   type="text"
                   required
@@ -205,6 +202,19 @@ function SyndicateForm() {
                   placeholder="Startup Name"
                   onChange={handleInputChange}
                   name="startup_name"
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the startup name";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <input
                   type="text"
@@ -213,6 +223,20 @@ function SyndicateForm() {
                   placeholder="Founder(s) Full Name(s)"
                   onChange={handleInputChange}
                   name="founders_full_names"
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the founder(s) full name(s)";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <input
                   type="email"
@@ -221,6 +245,19 @@ function SyndicateForm() {
                   placeholder="Email"
                   onChange={handleInputChange}
                   name="email"
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter a valid email address";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <PhoneInput
                   required
@@ -235,6 +272,19 @@ function SyndicateForm() {
                     color: "white",
                     border: "none",
                   }}
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter a valid phone number";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <input
                   type="text"
@@ -243,6 +293,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="website"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the website";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <div className="flex place-self-start">
                   <div className="w-[90%] mx-5 my-2">
@@ -254,7 +317,7 @@ function SyndicateForm() {
                       name="is_registered"
                       checked={formData.is_registered}
                       onChange={() => handleSwitchChange("is_registered")}
-                      required
+                      required={formData.is_registered}
                     />
                   </div>
                 </div>
@@ -266,7 +329,21 @@ function SyndicateForm() {
                       placeholder="Registration Number"
                       onChange={handleInputChange}
                       name="registration_number"
-                      required
+                      required={formData.is_registered}
+                      onInvalid={(e) => {
+                        const errorMessage =
+                          "Please enter the registration number";
+                        console.error(errorMessage);
+                        setMessage(errorMessage);
+                        setModalType("error");
+                        setIsOpen(true);
+                        e.target.setCustomValidity(errorMessage);
+                      }}
+                      onInput={(e) => {
+                        e.target.setCustomValidity("");
+                        setMessage("");
+                        setModalType("");
+                      }}
                     />
                     <input
                       type="date"
@@ -274,7 +351,21 @@ function SyndicateForm() {
                       placeholder="Date of Incorporation"
                       onChange={handleInputChange}
                       name="incorporation_date"
-                      required
+                      required={formData.is_registered}
+                      onInvalid={(e) => {
+                        const errorMessage =
+                          "Please enter the date of incorporation";
+                        console.error(errorMessage);
+                        setMessage(errorMessage);
+                        setModalType("error");
+                        setIsOpen(true);
+                        e.target.setCustomValidity(errorMessage);
+                      }}
+                      onInput={(e) => {
+                        e.target.setCustomValidity("");
+                        setMessage("");
+                        setModalType("");
+                      }}
                     />
                   </>
                 )}
@@ -285,19 +376,40 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="location"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the location";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
-                <select
+                <input
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   onChange={handleInputChange}
                   name="industry"
                   required
-                >
-                  <option value="">Select Industry</option>
-                  <option value="Fintech">Fintech</option>
-                  <option value="HealthTech">HealthTech</option>
-                  <option value="AgriTech">AgriTech</option>
-                  <option value="EdTech">EdTech</option>
-                </select>
+                  placeholder="Industry e.g., Fintech, HealthTech, AgriTech, EdTech"
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the industry";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -308,13 +420,26 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Elevator Pitch"
                   onChange={handleInputChange}
                   name="elevator_pitch"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the elevator pitch";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -322,6 +447,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="mission_statement"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the mission statement";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -329,12 +467,39 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="product_service_description"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the product/service description";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <select
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   onChange={handleInputChange}
                   name="current_stage"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please select the current stage";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 >
                   <option value="">Select Current Stage</option>
                   <option value="Idea stage">Idea stage</option>
@@ -351,6 +516,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="current_stage_details"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the current stage details";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -358,6 +537,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="target_market"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the target market";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -365,6 +557,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="market_size"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the market size";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -372,6 +577,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="problem_statement"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the problem statement";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -379,6 +597,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="solution"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the solution";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -390,13 +621,26 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Revenue Model"
                   onChange={handleInputChange}
                   name="revenue_model"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the revenue model";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -404,6 +648,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="traction_milestones"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the traction and milestones";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -411,6 +669,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="growth_strategy"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the growth strategy";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -418,6 +689,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="customer_acquisition_strategy"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the customer acquisition strategy";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -429,13 +714,26 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Competitors"
                   onChange={handleInputChange}
                   name="competitors"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the competitors";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -443,6 +741,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="competitive_advantage"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the competitive advantage";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -454,13 +766,26 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Founding Team"
                   onChange={handleInputChange}
                   name="founding_team"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the founding team";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <input
                   type="text"
@@ -469,6 +794,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="team_structure"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the team structure";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -476,6 +814,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="key_advisors_mentors"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the key advisors/mentors";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -483,6 +835,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="skills_gaps"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the skills gaps";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -490,6 +855,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="team_motivation"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the team motivation";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -501,13 +879,27 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Current Financial Status"
                   onChange={handleInputChange}
                   name="current_financial_status"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the current financial status";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <div className="flex place-self-start">
                   <div className="w-[90%] mx-5 my-2">
@@ -519,7 +911,7 @@ function SyndicateForm() {
                       name="previous_funding"
                       checked={formData.previous_funding}
                       onChange={() => handleSwitchChange("previous_funding")}
-                      required
+                      required={formData.previous_funding}
                     />
                   </div>
                 </div>
@@ -529,7 +921,21 @@ function SyndicateForm() {
                     placeholder="Previous Funding Details"
                     onChange={handleInputChange}
                     name="previous_funding_details"
-                    required
+                    required={formData.previous_funding}
+                    onInvalid={(e) => {
+                      const errorMessage =
+                        "Please enter the previous funding details";
+                      console.error(errorMessage);
+                      setMessage(errorMessage);
+                      setModalType("error");
+                      setIsOpen(true);
+                      e.target.setCustomValidity(errorMessage);
+                    }}
+                    onInput={(e) => {
+                      e.target.setCustomValidity("");
+                      setMessage("");
+                      setModalType("");
+                    }}
                   />
                 )}
                 <input
@@ -538,7 +944,21 @@ function SyndicateForm() {
                   placeholder="Funding Requirements"
                   onChange={handleInputChange}
                   name="funding_requirements"
-                  required
+                  required={formData.previous_funding}
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the funding requirements";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -546,6 +966,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="use_of_funds"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the use of funds";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -553,6 +986,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="financial_projections"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the financial projections";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -564,13 +1011,26 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Social Impact"
                   onChange={handleInputChange}
                   name="social_impact"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the social impact";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -578,6 +1038,19 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="sustainability"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage = "Please enter the sustainability";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -589,13 +1062,27 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Intellectual Property"
                   onChange={handleInputChange}
                   name="intellectual_property"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the intellectual property details";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -603,6 +1090,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="regulatory_compliance"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the regulatory compliance details";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -610,6 +1111,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="data_protection"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the data protection details";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -621,13 +1136,27 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
                   placeholder="Strategic Partnerships"
                   onChange={handleInputChange}
                   name="strategic_partnerships"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the strategic partnerships details";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -635,6 +1164,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="vision_for_the_future"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter the vision for the future";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
                 <textarea
                   className="w-[90%] mx-5 my-1 bg-neutral-800 rounded-md p-2 outline-none text-white"
@@ -642,6 +1185,20 @@ function SyndicateForm() {
                   onChange={handleInputChange}
                   name="why_this_funding_program"
                   required
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please enter why this funding program";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
@@ -653,7 +1210,7 @@ function SyndicateForm() {
             </h4>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
-              <div className="sm:h-full md:w-1/2 h-1/2 w-full md:w-full ">
+              <div className="sm:h-full h-1/2 w-full  ">
                 <input
                   required
                   type="file"
@@ -665,6 +1222,20 @@ function SyndicateForm() {
                     }))
                   }
                   multiple
+                  onInvalid={(e) => {
+                    const errorMessage =
+                      "Please upload the required attachments";
+                    console.error(errorMessage);
+                    setMessage(errorMessage);
+                    setModalType("error");
+                    setIsOpen(true);
+                    e.target.setCustomValidity(errorMessage);
+                  }}
+                  onInput={(e) => {
+                    e.target.setCustomValidity("");
+                    setMessage("");
+                    setModalType("");
+                  }}
                 />
               </div>
             </div>
