@@ -17,6 +17,10 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Optional: smooth scroll
+  });
   console.log('supabaseurl',supabaseUrl);
 },[])
 
