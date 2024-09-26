@@ -30,7 +30,14 @@ function NextJoinUs() {
           <br />
           <br />
         </ul>
-        <Link to={"/thenextfundform"}>
+        <Link
+          to={"/thenextfundform"}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           <button className="bg-yellow-500 w-full h-12 my-8 sm:w-[50%] sm:absolute sm:z-30 sm:-mt-12 md:ml-[25%] rounded-full">
             Apply Now
           </button>
