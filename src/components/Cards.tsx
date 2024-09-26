@@ -11,7 +11,7 @@ const Cards = () => {
           <ul className="space-y-4">
             <li className="flex items-start">
               <svg
-                className="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -30,7 +30,7 @@ const Cards = () => {
             </li>
             <li className="flex items-start">
               <svg
-                className="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -49,7 +49,7 @@ const Cards = () => {
             </li>
             <li className="flex items-start">
               <svg
-                className="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -69,7 +69,7 @@ const Cards = () => {
             </li>
             <li className="flex items-start">
               <svg
-                className="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -88,7 +88,7 @@ const Cards = () => {
             </li>
             <li className="flex items-start">
               <svg
-                className="w-6 h-6 text-green-500 mr-2 flex-shrink-0"
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -115,38 +115,104 @@ const Cards = () => {
           <h2 className="text-2xl font-bold text-white">Selection Process</h2>
         </div>
         <div className="p-6">
-          <ol className="space-y-4 list-decimal list-inside">
-            <li className="pb-4 border-b border-gray-700">
-              <span className="font-semibold text-white">
-                Initial Application Review
-              </span>
-              <p className="mt-2 text-gray-400">
-                Our team will carefully review all submitted applications.
-              </p>
+          <ul className="space-y-4 list-decimal">
+            <li className="flex items-start pb-4 border-b border-gray-700">
+              <svg
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <span className="font-semibold text-white">
+                  Initial Application Review
+                </span>
+                <p className="mt-2 text-gray-400">
+                  Our team will carefully review all submitted applications.
+                </p>
+              </div>
             </li>
-            <li className="pb-4 border-b border-gray-700">
-              <span className="font-semibold text-white">
-                Interview with pre-selected startups
-              </span>
-              <p className="mt-2 text-gray-400">
-                Shortlisted applicants will be invited for an interview.
-              </p>
+            <li className="flex items-start pb-4 border-b border-gray-700">
+              <svg
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <span className="font-semibold text-white">
+                  Interview with pre-selected startups
+                </span>
+                <p className="mt-2 text-gray-400">
+                  Shortlisted applicants will be invited for an interview.
+                </p>
+              </div>
             </li>
-            <li className="pb-4 border-b border-gray-700">
-              <span className="font-semibold text-white">
-                Selection Committee review meeting
-              </span>
-              <p className="mt-2 text-gray-400">
-                The committee will evaluate interviewed startups.
-              </p>
+            <li className="flex items-start pb-4 border-b border-gray-700">
+              <svg
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <span className="font-semibold text-white">
+                  Selection Committee review meeting
+                </span>
+                <p className="mt-2 text-gray-400">
+                  The committee will evaluate interviewed startups.
+                </p>
+              </div>
             </li>
-            <li>
-              <span className="font-semibold text-white">Final selection</span>
-              <p className="mt-2 text-gray-400">
-                Successful applicants will be notified of their selection.
-              </p>
+            <li className="flex items-start">
+              <svg
+                className="w-6 h-6 bg-yellow-500 mr-2 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <div>
+                <span className="font-semibold text-white">
+                  Final selection
+                </span>
+                <p className="mt-2 text-gray-400">
+                  Successful applicants will be notified of their selection.
+                </p>
+              </div>
             </li>
-          </ol>
+          </ul>
         </div>
       </div>
     </div>
