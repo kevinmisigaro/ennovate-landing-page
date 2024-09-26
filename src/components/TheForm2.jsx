@@ -21,7 +21,7 @@ useEffect(() => {
     top: 0,
     behavior: 'smooth', // Optional: smooth scroll
   });
-  console.log('supabaseurl',supabaseUrl);
+  // console.log('supabaseurl',supabaseUrl);
 },[])
 
   const [formData, setFormData] = useState({
@@ -74,7 +74,7 @@ useEffect(() => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    // console.log(name, value);
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
@@ -91,7 +91,7 @@ useEffect(() => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    console.log(formData);
+    // console.log(formData);
 
     const files = formData.attachments;
     const uploadedUrls = [];
@@ -117,7 +117,7 @@ useEffect(() => {
         // Append the human-friendly ID to the cleaned filename
         const uniqueFileName = `${fileName}-${humanFriendlyId}.${fileExtension}`;
 
-        console.log("Uploading file:", uniqueFileName);
+        // console.log("Uploading file:", uniqueFileName);
         const { data, error } = await supabase.storage
           .from(SUPABASE_STORAGE_BUCKET)
           .upload(`public/${uniqueFileName}`, file);
@@ -126,7 +126,7 @@ useEffect(() => {
           throw new Error(`Error uploading file: ${error.message}`);
         }
 
-        console.log("Uploaded file data:", data);
+        // console.log("Uploaded file data:", data);
 
         const getPublicUrlData = supabase.storage
           .from(SUPABASE_STORAGE_BUCKET)
@@ -139,11 +139,11 @@ useEffect(() => {
         }
 
         const url = getPublicUrlData.data.publicUrl;
-        console.log("Uploaded file URL:", url);
+        // console.log("Uploaded file URL:", url);
         uploadedUrls.push(url);
       }
 
-      console.log("Uploaded file URLs:", uploadedUrls);
+      // console.log("Uploaded file URLs:", uploadedUrls);
 
       // Add the uploaded URLs to the form data
       const submissionData = {
@@ -151,7 +151,7 @@ useEffect(() => {
         attachments: `${uploadedUrls.join(" , ")}`,
       };
 
-      console.log("Submission data before insert:", submissionData);
+      // console.log("Submission data before insert:", submissionData);
 
       // Insert the form data into the Supabase table
       const { error: insertError } = await supabase
@@ -161,7 +161,7 @@ useEffect(() => {
       if (insertError) {
         throw new Error(`Error inserting form data: ${insertError.message}`);
       } else {
-        console.log("Form data inserted successfully");
+        // console.log("Form data inserted successfully");
       }
 
       setMessage("Form submitted successfully!");
