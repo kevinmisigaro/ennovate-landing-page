@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function NextJoinUs() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 h-full w-full p-4 bg-[#000000] xl:h-screen xl:flex xl:flex-row xl:items-center xl:justify-center xl:box-border relative">
+    <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full p-4 bg-[#000000] xl:h-screen xl:flex xl:flex-row xl:items-center xl:justify-center xl:box-border relative">
       {/* Left side content */}
       <div className="h-full overflow-hidden xl:h-full xl:w-1/2 xl:py-12">
         <h1 className="text-3xl ml-8 text-start w-full md:w-[70%] font-bold text-[#feba00] font-poppins xl:text-5xl">
@@ -32,7 +32,7 @@ function NextJoinUs() {
         </ul>
         <Link to={"/thenextfundform"}>
           <button className="bg-yellow-500 w-full h-12 my-8 sm:w-[50%] sm:absolute sm:z-30 sm:-mt-12 md:ml-[25%] rounded-full">
-            Apply Now        
+            Apply Now
           </button>
         </Link>
         {/* <button className="bg-yellow-500 w-full sm:w-auto md:w-full h-12 my-8 sm:my-4 md:my-8 sm:mx-4 md:mx-auto md:ml-0 rounded-full">
@@ -43,7 +43,7 @@ function NextJoinUs() {
       </div>
 
       {/* Right side content */}
-      <div className="relative h-full lg:overflow-visible flex items-center justify-center  xl:h-full xl:w-1/2">
+      <div className="relative lg:overflow-visible flex items-center justify-center  md::w-1/2">
         {/* Images and background */}
         <div className="absolute inset-0 hidden sm:flex sm:items-center sm:justify-center">
           <img
@@ -62,7 +62,7 @@ function NextJoinUs() {
         <img
           src={paintfront}
           alt=""
-          className="h-1/2 w-3/4 absolute sm:-mb-12 sm:top-44 md:-mb-0 hidden sm:block"
+          className="h-[40%] w-3/4 absolute sm:-mb-12 sm:top-44 md:-mb-0 hidden sm:block"
         />
 
         <br />

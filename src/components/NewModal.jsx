@@ -3,7 +3,14 @@ import { Fragment } from "react";
 import logo from "../assets/sendlogo.png";
 import error from "../assets/error.png";
 
-export default function NewModal({ isOpen, closeModal, title, message, type }) {
+export default function NewModal({
+  isOpen,
+  closeModal,
+  title,
+  message,
+  type,
+  redirectLink,
+}) {
   const getBorder = () => {
     switch (type) {
       case "error":
@@ -14,6 +21,14 @@ export default function NewModal({ isOpen, closeModal, title, message, type }) {
         return "border-blue-500";
       default:
         return "border-yellow-500";
+    }
+  };
+
+  const handleButtonClick = () => {
+    if (type === "success" && redirectLink) {
+      window.location.href = redirectLink;
+    } else {
+      closeModal();
     }
   };
 
@@ -65,7 +80,7 @@ export default function NewModal({ isOpen, closeModal, title, message, type }) {
                       <button
                         type="button"
                         className="w-32 inline-flex justify-center rounded-md border border-yellow-500 px-4 py-2 text-sm font-medium text-yellow-500 focus:outline-none"
-                        onClick={closeModal}
+                        onClick={handleButtonClick}
                       >
                         exit
                       </button>

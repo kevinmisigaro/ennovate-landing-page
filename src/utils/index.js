@@ -101,7 +101,7 @@ export const navLinks = [
   {
     id: crypto.randomUUID(),
     name: "TheNextFund",
-    linkTo: "/nextfund",
+    linkTo: "/thenextfund",
   },
   {
     id: crypto.randomUUID(),
@@ -128,7 +128,7 @@ export const navLinks2 = [
   {
     id: crypto.randomUUID(),
     name: "TheNextFund",
-    linkTo: "/nextfund",
+    linkTo: "/thenextfund",
   },
   {
     id: crypto.randomUUID(),
