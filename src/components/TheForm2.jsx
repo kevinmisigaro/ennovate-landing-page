@@ -10,10 +10,10 @@ import humanId from "human-id";
 
 function SyndicateForm() {
 
-const SUPABASE_STORAGE_BUCKET = process.env.NEXT_PUBLIC_VITE_SUPABASE_STORAGE_BUCKET;
-const SUPABASE_TABLE_NAME = process.env.NEXT_PUBLIC_VITE_SUPABASE_TABLE_NAME;
-const supabaseUrl = process.env.NEXT_PUBLIC_VITE_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_VITE_SUPABASE_ANON_KEY;
+const SUPABASE_STORAGE_BUCKET = import.meta.env.VITE_SUPABASE_STORAGE_BUCKET;
+const SUPABASE_TABLE_NAME = import.meta.env.VITE_SUPABASE_TABLE_NAME;
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
   const [formData, setFormData] = useState({
