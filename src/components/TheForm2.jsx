@@ -184,6 +184,7 @@ function SyndicateForm() {
           title="Submission Status"
           message={message}
           type={modalType}
+          redirectLink="/"
         />
         <AnimatedText text={"TheNextFund Form"} size={"2em"} color={"white"} />
         <br />
