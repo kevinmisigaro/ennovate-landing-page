@@ -1218,6 +1218,14 @@ useEffect(() => {
             <h4 className="text-center text-yellow-500 -ml-4 -mt-2 text-xl font-semibold my-4">
               Section 10: Attachments
             </h4>
+            <p className=" text-white mb-4">
+              Please upload the following documents to support your application:
+              <br />
+              • Business plan or pitch deck (Mandatory)
+              <br />
+              • Financial statements (if available)
+              <br />• Product demo or prototype (if available)
+            </p>
             <br />
             <div className="h-full mb-24 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between">
               <div className="sm:h-full h-1/2 w-full  ">
