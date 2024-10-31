@@ -130,7 +130,7 @@ function News() {
         <Articles />
       </TabsContent>
       <TabsContent value="newsletter">
-        <HighLights sectionTitle={"NewsLetter"} />
+        <HighLights sectionTitle={"Newsletter"} />
       </TabsContent>
       <TabsContent value="highlights">
         {/* <HighLights sectionTitle={"Highlights"} /> */}

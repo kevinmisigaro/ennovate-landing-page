@@ -93,7 +93,7 @@ function News() {
                         aria-hidden="true"
                       />
                     )}
-                    NewsLetters
+                    Newsletters
                   </button>
                 )}
               </Menu.Item>

@@ -4,7 +4,7 @@ import Heading from "./Shared/Heading";
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
 // import Img2 from "../assets/blogs/Tudarco.heic";
-import Img3 from "../assets/blogs/blog-3.jpg";
+import Img3 from "../assets/blogs/newsletter31102024.jpgg";
 
 const BlogData = [
   {
@@ -16,15 +16,15 @@ const BlogData = [
     aosDelay: "0",
     url: "https://www.developpp.de/en/funding-programme/startups",
   },
-  // {
-  //   title: "How to choose perfect gadget",
-  //   subtitle:
-  //     "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
-  //   published: "Jan 20, 2024 by Satya",
-  //   image: Img2,
-  //   aosDelay: "200",
-  //   url: " https://foodsecurity.ennovateventures.co",
-  // },
+  {
+    title: "3rd Quarter 2024 - Newsletter",
+    subtitle:
+      "As we continue to champion innovation and entrepreneurship across Africa, this quarter has been particularly impactful for Ennovate Ventures.",
+    published: "Oct 31, 2024",
+    image: Img2,
+    aosDelay: "200",
+    url: "https://drive.google.com/file/d/17qzJm_MF5btvoPls88qwlV6ek0xUts8Y/view?usp=sharing",
+  },
   // {
   //   title: "Innovate for Security.",
   //   subtitle:
