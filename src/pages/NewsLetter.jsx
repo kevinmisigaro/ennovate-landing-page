@@ -123,7 +123,7 @@ function News() {
           Highlights
         </TabsTrigger>
         <TabsTrigger value="newsletter" className="rounded-full">
-          Newsleter
+          Newsletter
         </TabsTrigger>
       </TabsList>
       <TabsContent value="articles">
