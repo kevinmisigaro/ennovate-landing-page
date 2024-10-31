@@ -4,7 +4,7 @@ import Heading from "./Shared/Heading";
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
 // import Img2 from "../assets/blogs/Tudarco.heic";
-import Img3 from "../assets/blogs/newsletter31102024.jpgg";
+import Img3 from "../assets/blogs/newsletter31102024.jpg";
 
 const BlogData = [
   {
@@ -21,7 +21,7 @@ const BlogData = [
     subtitle:
       "As we continue to champion innovation and entrepreneurship across Africa, this quarter has been particularly impactful for Ennovate Ventures.",
     published: "Oct 31, 2024",
-    image: Img2,
+    image: Img3,
     aosDelay: "200",
     url: "https://drive.google.com/file/d/17qzJm_MF5btvoPls88qwlV6ek0xUts8Y/view?usp=sharing",
   },
