@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import tick from "../assets/tick.png";
 import paint from "../assets/paint.png";
 import paintfront from "../assets/paintFront.png";
@@ -7,6 +7,8 @@ import { syndicateAdvantagesNew } from "../utils";
 import { Link } from "react-router-dom";
 
 function NextJoinUs() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full p-4 bg-[#000000] xl:h-screen xl:flex xl:flex-row xl:items-center xl:justify-center xl:box-border relative">
       {/* Left side content */}
@@ -30,11 +32,29 @@ function NextJoinUs() {
           <br />
           <br />
         </ul>
-        <Link to={"/thenextfundform"}>
-          <button className="bg-yellow-500 w-full h-12 my-8 sm:w-[50%] sm:absolute sm:z-30 sm:-mt-12 md:ml-[25%] rounded-full">
-            Apply Now
-          </button>
-        </Link>
+        <div className="relative" id="applyform">
+          <Link
+            to={"#applyform"}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <button
+              className="bg-gray-500 w-full h-12 my-8 sm:w-[50%] sm:absolute sm:z-30 sm:-mt-12 md:ml-[25%] rounded-full"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              Apply Now
+            </button>
+          </Link>
+          {isHovered && (
+            <p className="text-center text-red-500 mt-2">
+              Sorry, Submissions are now closed.
+            </p>
+          )}
+        </div>
         {/* <button className="bg-yellow-500 w-full sm:w-auto md:w-full h-12 my-8 sm:my-4 md:my-8 sm:mx-4 md:mx-auto md:ml-0 rounded-full">
   <Link to={"/syndicatenetwork#syndicateform"} className="text-white font-semibold flex items-center justify-center h-full w-full">
     Join Now
