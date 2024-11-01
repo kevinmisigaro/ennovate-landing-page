@@ -19,7 +19,7 @@ const BlogData = [
   {
     title: "3rd Quarter 2024 - Newsletter",
     subtitle:
-      "As we continue to champion innovation and entrepreneurship across Africa, this quarter has been particularly impactful for Ennovate Ventures.",
+      "This quarter marked significant progress for Ennovate Ventures. We launched #TheNextFund 3.0, committing $20,000 in funding with $100,000+ in co-investment opportunities for African founders. Our partnership with AESIS2024 Investor Summit strengthens ties with key stakeholders in Africas startup ecosystem.",
     published: "Oct 31, 2024",
     image: Img3,
     aosDelay: "200",
