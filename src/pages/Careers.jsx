@@ -22,7 +22,7 @@ const Articles = () => {
       attach: "https://airtable.com/appUYDCXDVr10R5hb/pagtBpvx8klqvOYK7/form",
       thumbnail: fintech,
       desc: `
-      We&apos;re seeking six passionate Agri-Tech Innovation Fellows (3 Tanzanians, 3 Ugandans) to join a one-year, full-time fellowship aimed at transforming the agricultural sector through sustainable ventures. Apply by November 11, 2024, and be part of this impactful journey!
+      We're seeking six passionate Agri-Tech Innovation Fellows (3 Tanzanians, 3 Ugandans) to join a one-year, full-time fellowship aimed at transforming the agricultural sector through sustainable ventures. Apply by November 11, 2024, and be part of this impactful journey!
       `
       },
   ];
