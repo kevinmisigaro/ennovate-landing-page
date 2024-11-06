@@ -1,26 +1,6 @@
 import React from "react";
 
-function HighLightsCard({ docLink, description, heading, avatar }) {
-  const handleDownload = () => {
-    const filePath = docLink;
-    const fileName = 'document.pdf'; // Name of the downloaded file
-
-    // Create a temporary anchor element
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.download = fileName;
-
-    // Append the anchor to the body
-    document.body.appendChild(link);
-
-    // Trigger the click event to start the download
-    link.click();
-
-    // Cleanup: Remove the anchor from the DOM
-    document.body.removeChild(link);
-  };
-
-
+function CareerCard({ docLink, description, heading, avatar }) {
   return (
     <div class="w-[80%] relative h-fit md:h-[20rem] my-8 mx-[10%] flex flex-col md:flex-row items-center justify-evenly bg-neutral-950 rounded-xl border md:border-yellow-500 border-yellow-600 box-border ">
       <div className="hidden md:block">
@@ -74,13 +54,13 @@ function HighLightsCard({ docLink, description, heading, avatar }) {
               ></path>
             </svg>
           </span>
-          <span onClick={handleDownload} class="relative text-white w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200">
+          <a href={docLink} target="_blank" class="relative text-white w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white dark:group-hover:text-gray-200">
             Apply
-          </span>
+          </a>
         </div>
       </div>
     </div>
   );
 }
 
-export default HighLightsCard;
+export default CareerCard;
