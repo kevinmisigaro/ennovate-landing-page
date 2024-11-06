@@ -1,8 +1,8 @@
 import React from "react";
-import fintech from "../assets/blogs/Fintech.jpg"
+import fintech from "../assets/smiling-students.jpg"
 import doc1 from "../assets/docs/fintech.pdf";
 import hero from "../assets/news_hero.jpg";
-import HighLightsCard from "../components/HighLightsCard";
+import CareerCard from "../components/CareerCard.jsx";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
 
@@ -34,7 +34,7 @@ const Articles = () => {
         Careers
       </h1>
       {docs.map((doc, index) => (
-        <HighLightsCard
+        <CareerCard
           docLink={doc.attach}
           description={doc.desc}
           heading={doc.title}
