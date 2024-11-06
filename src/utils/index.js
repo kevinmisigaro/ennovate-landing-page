@@ -274,7 +274,7 @@ export const footerQuickLinks = [
   {
     id: crypto.randomUUID(),
     routeName: "Careers",
-    route: "",
+    route: "/careers",
   },
 ];
 

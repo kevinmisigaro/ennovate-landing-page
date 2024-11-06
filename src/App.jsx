@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import Programmes from "./pages/Programmes";
 import NewsLetter from "./pages/NewsLetter";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Careers from "./pages/Careers"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
@@ -55,6 +56,7 @@ function App() {
       <Route path="/programmes" element={<Programmes />} />
       <Route path="/newsletter" element={<NewsLetter />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      <Route path="/careers" element={<Careers />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/stories" element={<Story />} /> */}
     </Routes>
