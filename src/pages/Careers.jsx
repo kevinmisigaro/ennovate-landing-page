@@ -4,6 +4,7 @@ import hero from "../assets/news_hero.jpg";
 import CareerCard from "../components/CareerCard.jsx";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
+import venture from "../assets/venture-analyst.png"
 
 const SubHero = () => {
   return (
@@ -16,15 +17,24 @@ const SubHero = () => {
 
 const Articles = () => {
   const docs = [
-    {
-      id: crypto.randomUUID(),
-      title: "Agri-Tech Innovation Fellowship: Apply Now!",
-      attach: "https://airtable.com/appUYDCXDVr10R5hb/pagtBpvx8klqvOYK7/form",
-      thumbnail: fintech,
+      {
+        id: crypto.randomUUID(),
+      title: "Venture Analyst | Full time",
+      attach: "https://zurl.to/2bKP?source=CareerSite",
+      thumbnail: venture,
       desc: `
-      We're seeking six passionate Agri-Tech Innovation Fellows (3 Tanzanians, 3 Ugandans) to join a one-year, full-time fellowship aimed at transforming the agricultural sector through sustainable ventures. Apply by November 11, 2024, and be part of this impactful journey!
+      We are seeking a dynamic and detail-oriented Startup Investment Analyst to join our team.
       `
       },
+      {
+        id: crypto.randomUUID(),
+        title: "Agri-Tech Innovation Fellowship: Apply Now!",
+        attach: "https://airtable.com/appUYDCXDVr10R5hb/pagtBpvx8klqvOYK7/form",
+        thumbnail: fintech,
+        desc: `
+        We're seeking six passionate Agri-Tech Innovation Fellows (3 Tanzanians, 3 Ugandans) to join a one-year, full-time fellowship aimed at transforming the agricultural sector through sustainable ventures. Apply by November 11, 2024, and be part of this impactful journey!
+        `
+        }
   ];
 
   return (
