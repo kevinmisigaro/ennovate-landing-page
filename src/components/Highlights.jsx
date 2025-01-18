@@ -96,7 +96,7 @@ const HighLights = ({ sectionTitle }) => {
                 <img
                   src={Img2}
                   alt=""
-                  className="w-full h-[40vh] object-cover rounded-2xl hover:scale-105 duration-500"
+                  className="w-full h-[50vh] object-cover rounded-2xl hover:scale-105 duration-500"
                 />
               </div>
               {/* content section */}
