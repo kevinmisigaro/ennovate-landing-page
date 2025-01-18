@@ -120,7 +120,7 @@ const HighLights = ({ sectionTitle }) => {
                   across different sectors. <br />
                   <br />
                   The call is now open, welcoming young start-ups with
-                  innovative business models to submit their proposals until
+                  innovative business models to submit their proposals until &nbsp;
                   <b>December 31st 2024</b>.
                 </p>
               </div>
