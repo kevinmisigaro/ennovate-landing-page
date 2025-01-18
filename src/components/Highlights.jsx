@@ -3,7 +3,7 @@ import Heading from "./Shared/Heading";
 
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
-// import Img2 from "../assets/blogs/Tudarco.heic";
+import Img2 from "../assets/blogs/develop-press-release.jpeg";
 import Img3 from "../assets/blogs/newsletter31102024.jpg";
 
 const BlogData = [
@@ -25,15 +25,15 @@ const BlogData = [
     aosDelay: "200",
     url: "https://drive.google.com/file/d/17qzJm_MF5btvoPls88qwlV6ek0xUts8Y/view?usp=sharing",
   },
-  // {
-  //   title: "Innovate for Security.",
-  //   subtitle:
-  //     "The Innovate for Food Security Program is a year-long, intense practical program guiding finalists and recent graduates to start and build agribusinesses aimed at improving food security in Tanzania. 40 participants from different disciplines (Agriculture, Technology, Engineering, Food science, etc.) at your university will be guided through design thinking practices to deeply understand the challenges and opportunities that lie along the agricultural value chain.",
-  //   published: "Jan 20, 2024 by Sabir",
-  //   image: Img3,
-  //   aosDelay: "400",
-  //   url: "",
-  // },
+  {
+    title: "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital",
+    subtitle:
+      "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital of up to €100,000 to co-finance strategic investments aimed at scaling these impactful businesses.",
+    published: "Jan 18, 2025",
+    image: Img2,
+    aosDelay: "400",
+    url: "https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true",
+  },
   //   {
   //     title: "How to ennovate with tech",
   //     subtitle:
