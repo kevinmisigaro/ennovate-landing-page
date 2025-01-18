@@ -96,7 +96,7 @@ const HighLights = ({ sectionTitle }) => {
                 <img
                   src={Img2}
                   alt=""
-                  className="w-full h-[30vh] object-cover rounded-2xl hover:scale-105 duration-500"
+                  className="w-full h-[40vh] object-cover rounded-2xl hover:scale-105 duration-500"
                 />
               </div>
               {/* content section */}
@@ -106,7 +106,7 @@ const HighLights = ({ sectionTitle }) => {
                   develoPPP Ventures Supports Tanzanian Start-ups with
                   non-dilutive capital
                 </p>
-                <p className="line-clamp-2 text-sm text-gray-600">
+                <p className="text-sm text-gray-600">
                   DEG Impulse announced the launch of a new call for
                   applications for the develoPPP Ventures program, designed to
                   support young companies with innovative business models that
