@@ -25,15 +25,15 @@ const BlogData = [
     aosDelay: "200",
     url: "https://drive.google.com/file/d/17qzJm_MF5btvoPls88qwlV6ek0xUts8Y/view?usp=sharing",
   },
-  {
-    title: "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital",
-    subtitle:
-      "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital of up to €100,000 to co-finance strategic investments aimed at scaling these impactful businesses.",
-    published: "Jan 18, 2025",
-    image: Img2,
-    aosDelay: "400",
-    url: "https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true",
-  },
+  // {
+  //   title: "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital",
+  //   subtitle:
+  //     "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital of up to €100,000 to co-finance strategic investments aimed at scaling these impactful businesses.",
+  //   published: "Jan 18, 2025",
+  //   image: Img2,
+  //   aosDelay: "400",
+  //   url: "https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true",
+  // },
   //   {
   //     title: "How to ennovate with tech",
   //     subtitle:
@@ -80,6 +80,34 @@ const HighLights = ({ sectionTitle }) => {
               </div>
             </a>
           ))}
+        </div>
+
+        <div className="py-10 px-5">
+        <a href="https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true" target="_blank">
+              <div
+                data-aos="fade-up"
+                data-aos-delay={data.aosDelay}
+                key={data.title}
+                className="bg-white border border-yellow-600 rounded-lg p-1"
+              >
+                {/* image section */}
+                <div className="overflow-hidden rounded-2xl mb-2">
+                  <img
+                    src={Img2}
+                    alt=""
+                    className="w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500"
+                  />
+                </div>
+                {/* content section */}
+                <div className="space-y-2">
+                  {/* <p className="text-xs text-gray-500">{data.published}</p> */}
+                  <p className="font-bold line-clamp-1">develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital</p>
+                  <p className="line-clamp-2 text-sm text-gray-600">
+                  develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital of up to €100,000 to co-finance strategic investments aimed at scaling these impactful businesses.
+                  </p>
+                </div>
+              </div>
+            </a>
         </div>
       </div>
     </div>
