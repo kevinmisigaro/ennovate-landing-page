@@ -86,8 +86,6 @@ const HighLights = ({ sectionTitle }) => {
         <a href="https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true" target="_blank">
               <div
                 data-aos="fade-up"
-                data-aos-delay={data.aosDelay}
-                key={data.title}
                 className="bg-white border border-yellow-600 rounded-lg p-1"
               >
                 {/* image section */}
