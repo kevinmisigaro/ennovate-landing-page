@@ -3,7 +3,6 @@ import Heading from "./Shared/Heading";
 
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
-import Img2 from "../assets/blogs/develop-press-release.jpeg";
 import Img3 from "../assets/blogs/newsletter31102024.jpg";
 
 const BlogData = [
