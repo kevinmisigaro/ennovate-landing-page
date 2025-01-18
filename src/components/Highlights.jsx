@@ -81,52 +81,6 @@ const HighLights = ({ sectionTitle }) => {
             </a>
           ))}
         </div>
-
-        <div className="py-10 px-5">
-          <a
-            href="https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true"
-            target="_blank"
-          >
-            <div
-              data-aos="fade-up"
-              className="bg-white border border-yellow-600 rounded-lg p-1"
-            >
-              {/* image section */}
-              <div className="overflow-hidden rounded-2xl mb-2">
-                <img
-                  src={Img2}
-                  alt=""
-                  className="w-full h-[50vh] object-cover rounded-2xl hover:scale-105 duration-500"
-                />
-              </div>
-              {/* content section */}
-              <div className="space-y-2 p-6">
-                {/* <p className="text-xs text-gray-500">{data.published}</p> */}
-                <p className="font-bold line-clamp-1">
-                  develoPPP Ventures Supports Tanzanian Start-ups with
-                  non-dilutive capital
-                </p>
-                <p className="text-sm text-gray-600">
-                  DEG Impulse announced the launch of a new call for
-                  applications for the develoPPP Ventures program, designed to
-                  support young companies with innovative business models that
-                  enhance living conditions in emerging economies and are poised
-                  for growth. Through a matching-funds approach, the German
-                  Federal Ministry for Economic Cooperation and Development
-                  (BMZ) offers non-dilutive capital of up to 100,000 euros to
-                  co-finance strategic investments aimed at scaling these
-                  impactful businesses. Since the launch of the programme in
-                  Tanzania in 2022 develoPPP Ventures has supported 16 start-ups
-                  across different sectors. <br />
-                  <br />
-                  The call is now open, welcoming young start-ups with
-                  innovative business models to submit their proposals until &nbsp;
-                  <b>December 31st 2024</b>.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
     </div>
   );
