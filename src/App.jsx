@@ -20,6 +20,7 @@ import Careers from "./pages/Careers"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
+import Highlights from "./pages/Highlights";
 
 function App() {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -57,6 +58,7 @@ function App() {
       <Route path="/newsletter" element={<NewsLetter />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="/careers" element={<Careers />} />
+      <Route path="/highlights" element={<Highlights />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/stories" element={<Story />} /> */}
     </Routes>
