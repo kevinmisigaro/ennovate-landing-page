@@ -79,6 +79,16 @@ const ArticleHighlights = () => {
     {
       id: crypto.randomUUID(),
       title:
+        "Ennovate Ventures Invests in Swahilies to Drive Financial Inclusion for SMEs in Africa",
+      thumbnail: Img4,
+      attach: doc4,
+      desc: `We are happy to announce our investment in Swahilies, a fintech startup that is helping
+      unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
+      critical gap in Africas SME ecosystem by digitizing business operations`,
+    },
+    {
+      id: crypto.randomUUID(),
+      title:
         "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital",
       attach:
         "https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true",
@@ -88,16 +98,6 @@ const ArticleHighlights = () => {
       Development (BMZ) offers non-dilutive capital of up to
       100,000 euros to co-finance strategic investments aimed at
       scaling these impactful businesses.`,
-    },
-    {
-      id: crypto.randomUUID(),
-      title:
-        "Ennovate Ventures Invests in Swahilies to Drive Financial Inclusion for SMEs in Africa",
-      thumbnail: Img4,
-      attach: doc4,
-      desc: `We are happy to announce our investment in Swahilies, a fintech startup that is helping
-      unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
-      critical gap in Africas SME ecosystem by digitizing business operations`,
     },
   ];
   return (
