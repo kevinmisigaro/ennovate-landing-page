@@ -22,6 +22,8 @@ import NavBar2 from "./../components/NavBar2";
 import Img2 from "../assets/blogs/develop-press-release.jpeg";
 import doc4 from "../assets/docs/investments/swahilies.pdf";
 import Img4 from "../assets/blogs/swahilies-cofunders.jpg";
+import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png"
+import doc5 from "../assets/docs/ESEA 2025_Norad.pdf"
 
 const SubHero = () => {
   return (
@@ -76,6 +78,16 @@ export function SkeletonCard() {
 
 const ArticleHighlights = () => {
   const docs = [
+    {
+      id: crypto.randomUUID(),
+      title:
+        "Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa",
+      thumbnail: Img5,
+      attach: doc5,
+      desc: `Village Capital, in partnership with Norway, through Norad
+      – the Norwegian Agency for Development Cooperation, has launched the second phase of the
+      Empowering Sustainable Entrepreneurship Africa initiative.`,
+    },
     {
       id: crypto.randomUUID(),
       title:
