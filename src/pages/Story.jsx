@@ -38,7 +38,7 @@ function Story() {
         hero={heroGuy}
         textDescription={
           <h1 className="text-4xl ml-12 font-bold tracking-tight text-white sm:text-7xl sm:w-[12em]">
-            We're backing Africa's most undeserved
+            We're backing Africa's most underserved
             <span className="text-yellow-500 font-light">
               <br></br>founders
             </span>
@@ -46,7 +46,7 @@ function Story() {
         }
         textOnSmall={
           <h2 className="text-white uppercase text-2xl -mt-[13em] font-semibold text-center sm:hidden">
-            We're backing Africa's most undeserved
+            We're backing Africa's most underserved
             <span className="text-yellow-500 ml-2 font-extralight relative">
               founders
               {/* <svg

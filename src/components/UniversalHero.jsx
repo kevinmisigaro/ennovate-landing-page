@@ -124,7 +124,7 @@ function UniversalHero() {
           <div class="grid items-center gap-12 lg:grid-cols-2">
             <div class="mt-12 lg:mt-0">
               <h1 className="text-4xl ml-12 font-bold tracking-tight text-white sm:text-7xl sm:w-[12em]">
-                We're backing Africa's most undeserved
+                We're backing Africa's most underserved
                 <span className="text-yellow-500 font-light">
                   <br></br>founders
                 </span>
