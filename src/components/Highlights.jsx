@@ -58,8 +58,9 @@ const HighLights = ({ sectionTitle }) => {
         unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
         critical gap in Africas SME ecosystem by digitizing business operations`}
             heading={`Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa`}
-            avatar={Img4}
+            avatar={Img5}
           />
+
           {BlogData.map((data) => (
             <a href={data.url} target="_blank">
               <div

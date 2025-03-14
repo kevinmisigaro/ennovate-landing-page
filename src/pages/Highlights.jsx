@@ -21,16 +21,16 @@ function Highlights() {
 
   const ArticleHighlights = () => {
     const docs = [
-      {
-        id: crypto.randomUUID(),
-        title:
-          "Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa",
-        thumbnail: Img5,
-        attach: doc5,
-        desc: `Village Capital, in partnership with Norway, through Norad
-        – the Norwegian Agency for Development Cooperation, has launched the second phase of the
-        Empowering Sustainable Entrepreneurship Africa initiative.`,
-      },
+      // {
+      //   id: crypto.randomUUID(),
+      //   title:
+      //     "Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa",
+      //   thumbnail: Img5,
+      //   attach: doc5,
+      //   desc: `Village Capital, in partnership with Norway, through Norad
+      //   – the Norwegian Agency for Development Cooperation, has launched the second phase of the
+      //   Empowering Sustainable Entrepreneurship Africa initiative.`,
+      // },
       {
         id: crypto.randomUUID(),
         title:
@@ -65,7 +65,7 @@ function Highlights() {
         unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
         critical gap in Africas SME ecosystem by digitizing business operations`}
           heading={`Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa`}
-          avatar={Img4}
+          avatar={Img5}
         />
         {docs.map((doc, index) => (
           <HighLightsCard
