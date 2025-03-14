@@ -31,7 +31,7 @@ function Emea() {
             Village Capital.
           </p>
 
-          <h4 className="font-bold mb-2 text-lg">
+          <h4 className="font-bold my-2 text-lg">
             The Sustainability Crisis in Africa
           </h4>
 
@@ -48,7 +48,7 @@ function Emea() {
             remain out of reach.
           </p>
 
-          <h4 className="font-bold mb-2 text-lg">Eligibility</h4>
+          <h4 className="font-bold my-2 text-lg">Eligibility</h4>
           <p>Eligibility requirements include:</p>
           <ul className="list-disc list-inside">
             <li>
@@ -77,7 +77,7 @@ function Emea() {
             </li>
           </ul>
 
-          <h3 className="font-bold mb-2 text-lg">Program Timeline</h3>
+          <h3 className="font-bold my-2 text-lg">Program Timeline</h3>
           <table class="table-auto border-collapse border border-gray-300">
             <tbody>
               <tr>
@@ -124,6 +124,96 @@ function Emea() {
               </tr>
             </tbody>
           </table>
+
+          <h3 className="font-bold my-2 text-lg">Frequently Asked Questions</h3>
+          <p className="font-bold mb-2">
+            1. What is the main goal of the program?
+          </p>
+          <p>
+            The program is designed to help startups identify early milestones
+            and prepare for their next round of capital or expansion plans (if
+            relevant). In short, through virtual workshops, we deliver a
+            targeted, award-winning curriculum and provide countless connections
+            to prepare startups for growth.
+          </p>
+
+          <p className="font-bold my-2">2. Are we required to travel?</p>
+          <p>
+            No. This program is completely virtual. We require that one
+            founder/C-suite member participate in all activities of each
+            workshop. Additional team members are welcome to join the workshops.
+          </p>
+
+          <p className="font-bold my-2">
+            3. Do you take equity for participating in the program?
+          </p>
+          <p>
+            No. If financial considerations prevent you from participating,
+            please discuss this with us, and we will review it on a case-by-case
+            basis.
+          </p>
+
+          <a
+            target="_blank"
+            href="https://my.abaca.app/?a=sustainableentrepreneurshiptanzania&amp;__hstc=125284117.c787014d5
+            58b31a75e25a4992a9836f2.1737701412394.1741673689892.1741800871962.3&amp;__hssc=1252
+            84117.1.1741800871962&amp;__hsfp=1022811669"
+            class="bg-[#f9bd00] text-white px-4 py-2 rounded-md hover:bg-[#f9a500] focus:outline-none focus:ring-2 focus:ring-[#f9bd00]"
+          >
+            Apply now
+          </a>
+
+          <div className="my-4">
+            <p>
+              For more information, reach out to Joseph Mwanyika at Ennovate
+              Ventures joseph@ennovateventures.co / info@ennovateventures.co
+            </p>
+          </div>
+
+          <div className="my-4">
+            <h4 className="font-bold mb-2">About Ennovate Ventures</h4>
+            <p>
+              Ennovate Ventures is a pan-African venture studio and microfund
+              that is building and funding the next wave of disruptive
+              innovations for Africa&apos;s prosperity. Through its venture fund
+              and innovation consulting solutions, Ennovate is at the forefront
+              of driving inclusive social and economic development in Tanzania
+              and across the continent. Learn more here: ennovateventures.co
+            </p>
+          </div>
+
+          <div className="my-4">
+            <h4 className="font-bold mb-2">About Village Capital</h4>
+            <p>
+              Village Capital is reinventing the system to back the
+              entrepreneurs of the future. Known for its groundbreaking
+              approaches to supporting founders who are building solutions to
+              emergent social, economic, and environmental challenges, VilCap
+              unlocks critical social and financial capital for early-stage
+              companies to maximize business and impact growth. Village Capital
+              has operated in sub-Saharan Africa since 2012 by running over 14
+              accelerator programs serving entrepreneurs in 27 countries in the
+              region. VilCap has supported more than 170 locally-based startups
+              and close to 50 Entrepreneur Support Organizations (ESO) working
+              in sectors such as financial health, hardware, sustainability, and
+              the future of work. Learn more at www.vilcap.com and follow
+              @villagecapital.
+            </p>
+          </div>
+
+          <div className="my-4">
+            <h4 className="font-bold mb-2">About Village Capital</h4>
+            <p>
+              Norad is the Norwegian agency for development cooperation. We work
+              for the world to achieve the UN&apos;s Sustainable Development
+              Goals. Norad is a professional body under the Ministry of Foreign
+              Affairs. Together with our partners and on behalf of Norway, Norad
+              strives for a greener future in a world without poverty. Human
+              rights must be respected, and none left out. By way of knowledge
+              and cooperation, we ensure that the funds of Norwegian development
+              aid contribute to global development.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
