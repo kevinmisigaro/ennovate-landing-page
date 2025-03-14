@@ -5,8 +5,9 @@ import NavBar2 from "./../components/NavBar2";
 import Img2 from "../assets/blogs/develop-press-release.jpeg";
 import doc4 from "../assets/docs/investments/swahilies.pdf";
 import Img4 from "../assets/blogs/swahilies-cofunders.jpg";
-import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png"
-import doc5 from "../assets/docs/ESEA 2025_Norad.pdf"
+import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
+import doc5 from "../assets/docs/ESEA 2025_Norad.pdf";
+import FollowupCard from "@/components/FollowupCard";
 
 function Highlights() {
   const SubHero = () => {
@@ -59,6 +60,13 @@ function Highlights() {
         <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">
           Highlights
         </h1>
+        <FollowupCard
+          description={`We are happy to announce our investment in Swahilies, a fintech startup that is helping
+        unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
+        critical gap in Africas SME ecosystem by digitizing business operations`}
+          heading={`Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa`}
+          avatar={Img4}
+        />
         {docs.map((doc, index) => (
           <HighLightsCard
             docLink={doc.attach}

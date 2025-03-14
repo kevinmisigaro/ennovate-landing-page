@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "./Shared/Heading";
+import FollowupCard from "./FollowupCard";
 
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
@@ -52,6 +53,13 @@ const HighLights = ({ sectionTitle }) => {
         {/* Blog section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
           {/* Blog card */}
+          <FollowupCard
+            description={`We are happy to announce our investment in Swahilies, a fintech startup that is helping
+        unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
+        critical gap in Africas SME ecosystem by digitizing business operations`}
+            heading={`Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa`}
+            avatar={Img4}
+          />
           {BlogData.map((data) => (
             <a href={data.url} target="_blank">
               <div
