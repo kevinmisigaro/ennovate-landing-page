@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
+import Img6 from "../assets/blogs/Village_Capital_A_0410.jpg"
 import {
   FaBook,
   FaBox,
@@ -240,8 +241,10 @@ function Emea() {
             </div>
           </div>
 
+          <div>
           <h3 className="font-bold mt-6 mb-3  text-lg">Program Timeline</h3>
-          <table class="table-auto border-collapse border border-gray-300">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+        <table class="table-auto border-collapse border border-gray-300">
             <tbody>
               <tr>
                 <td class="border border-gray-300 px-4 py-2">
@@ -287,6 +290,11 @@ function Emea() {
               </tr>
             </tbody>
           </table>
+          <div>
+            <img src={Img6} className="w-full" alt="lady staring" />
+          </div>
+        </div>
+          </div>
 
           <h3 className="font-bold mt-6 mb-3 text-lg">
             Frequently Asked Questions
