@@ -135,7 +135,7 @@ function Emea() {
                 </p>
               </div>
 
-              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200 md:col-span-3">
                 <div className="flex justify-center">
                   <FaFan className="text-3xl" />
                 </div>
