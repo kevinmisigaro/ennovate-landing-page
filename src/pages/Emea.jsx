@@ -153,15 +153,17 @@ function Emea() {
             basis.
           </p>
 
-          <a
-            target="_blank"
-            href="https://my.abaca.app/?a=sustainableentrepreneurshiptanzania&amp;__hstc=125284117.c787014d5
-            58b31a75e25a4992a9836f2.1737701412394.1741673689892.1741800871962.3&amp;__hssc=1252
-            84117.1.1741800871962&amp;__hsfp=1022811669"
-            class="mt-4 mb-8 bg-[#f9bd00] text-white px-4 py-2 rounded-md hover:bg-[#f9a500] focus:outline-none focus:ring-2 focus:ring-[#f9bd00]"
-          >
-            Apply now
-          </a>
+          <div className="mt-4 mb-8">
+            <a
+                target="_blank"
+                href="https://my.abaca.app/?a=sustainableentrepreneurshiptanzania&amp;__hstc=125284117.c787014d5
+                58b31a75e25a4992a9836f2.1737701412394.1741673689892.1741800871962.3&amp;__hssc=1252
+                84117.1.1741800871962&amp;__hsfp=1022811669"
+                class="bg-[#f9bd00] text-white px-4 py-2 rounded-md hover:bg-[#f9a500] focus:outline-none focus:ring-2 focus:ring-[#f9bd00]"
+            >
+                Apply now
+            </a>
+          </div>
 
           <div className="my-4">
             <p>
