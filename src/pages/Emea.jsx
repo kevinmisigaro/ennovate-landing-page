@@ -13,7 +13,7 @@ function Emea() {
       </div>
       <div className="px-10">
         <div className="bg-white p-12">
-          <h4>About the Program</h4>
+          <h4 className="font-bold mb-2 text-lg">About the Program</h4>
           <p>
             Empowering Sustainable Entrepreneurship in Africa 2025 is Phase Two
             of an initiative to strengthen climate innovation across Tanzania,
@@ -31,7 +31,9 @@ function Emea() {
             Village Capital.
           </p>
 
-          <h4>The Sustainability Crisis in Africa</h4>
+          <h4 className="font-bold mb-2 text-lg">
+            The Sustainability Crisis in Africa
+          </h4>
 
           <p>
             Despite Africa&apos;s immense potential in greentech, startups in
@@ -46,7 +48,7 @@ function Emea() {
             remain out of reach.
           </p>
 
-          <h4>Eligibility</h4>
+          <h4 className="font-bold mb-2 text-lg">Eligibility</h4>
           <p>Eligibility requirements include:</p>
           <ul className="list-disc list-inside">
             <li>
@@ -75,42 +77,50 @@ function Emea() {
             </li>
           </ul>
 
-          <h3>Program Timeline</h3>
-          <table class="table-auto">
+          <h3 className="font-bold mb-2 text-lg">Program Timeline</h3>
+          <table class="table-auto border-collapse border border-gray-300">
             <tbody>
               <tr>
-                <td>Applications open</td>
-                <td>MARCH 10, 2025</td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Applications open
+                </td>
+                <td class="border border-gray-300 px-4 py-2">MARCH 10, 2025</td>
               </tr>
               <tr>
-                <td>Applications close</td>
-                <td>APRIL 30, 2025</td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Applications close
+                </td>
+                <td class="border border-gray-300 px-4 py-2">APRIL 30, 2025</td>
               </tr>
               <tr>
-                <td>Cohort announcement (Pre-accelerator)</td>
-                <td>MID-MAY, 2025</td>
+                <td class="border border-gray-300 px-4 py-2">
+                  Cohort announcement (Pre-accelerator)
+                </td>
+                <td class="border border-gray-300 px-4 py-2">MID-MAY, 2025</td>
               </tr>
               <tr>
-                <td>
+                <td class="border border-gray-300 px-4 py-2">
                   <div>
                     <h4>Cohort announcement (Investment-readiness program)</h4>
                     <h4>Virtual workshops (Pre-accelerator)</h4>
-                    <ul className="ml-4">
+                    <ul class="ml-4">
                       <li>Cohort 1: May 19 - July 11, 2025</li>
                       <li>Cohort 2: June 20 - August 15, 2025</li>
                     </ul>
                     <h4>Virtual workshops (Investment-readiness program)</h4>
-                    <ul className="ml-4">
+                    <ul class="ml-4">
                       <li>Cohort 1: September 1, 2025 - January 1, 2026</li>
                       <li>Cohort 2: February 1, 2026 - June 1, 2026</li>
                     </ul>
                   </div>
                 </td>
-                <td>SEPTEMBER, 2025</td>
+                <td class="border border-gray-300 px-4 py-2">
+                  SEPTEMBER, 2025
+                </td>
               </tr>
               <tr>
-                <td>Program Summit</td>
-                <td>JUNE, 2026</td>
+                <td class="border border-gray-300 px-4 py-2">Program Summit</td>
+                <td class="border border-gray-300 px-4 py-2">JUNE, 2026</td>
               </tr>
             </tbody>
           </table>
