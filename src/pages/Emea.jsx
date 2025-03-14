@@ -84,8 +84,8 @@ function Emea() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
-                    <div>
-                        <FaFish className="text-center text-xl" />
+                    <div className="flex justify-center">
+                        <FaFish className="text-3xl" />
                     </div>
                     <h4 className="font-bold">Blue Economy</h4>
                     <p>
@@ -94,8 +94,8 @@ function Emea() {
                 </div>
 
                 <div>
-                <div>
-                        <FaBrain className="text-center text-xl" />
+                <div className="flex justify-center">
+                        <FaBrain className="text-3xl" />
                     </div>
                     <h4 className="font-bold">Climate Adaptation</h4>
                     <p>
