@@ -48,7 +48,7 @@ function Emea() {
             remain out of reach.
           </p>
 
-          <h4 className="font-bold my-2 text-lg">Eligibility</h4>
+          <h4 className="font-bold mt-6 mb-3 text-lg">Eligibility</h4>
           <p>Eligibility requirements include:</p>
           <ul className="list-disc list-inside">
             <li>
@@ -77,7 +77,7 @@ function Emea() {
             </li>
           </ul>
 
-          <h3 className="font-bold my-2 text-lg">Program Timeline</h3>
+          <h3 className="font-bold mt-6 mb-3  text-lg">Program Timeline</h3>
           <table class="table-auto border-collapse border border-gray-300">
             <tbody>
               <tr>
@@ -125,7 +125,7 @@ function Emea() {
             </tbody>
           </table>
 
-          <h3 className="font-bold my-2 text-lg">Frequently Asked Questions</h3>
+          <h3 className="font-bold mt-6 mb-3 text-lg">Frequently Asked Questions</h3>
           <p className="font-bold mb-2">
             1. What is the main goal of the program?
           </p>
@@ -174,7 +174,7 @@ function Emea() {
 
           <div className="my-4">
             <h4 className="font-bold mb-2">About Ennovate Ventures</h4>
-            <p>
+            <p className="italic">
               Ennovate Ventures is a pan-African venture studio and microfund
               that is building and funding the next wave of disruptive
               innovations for Africa&apos;s prosperity. Through its venture fund
@@ -186,7 +186,7 @@ function Emea() {
 
           <div className="my-4">
             <h4 className="font-bold mb-2">About Village Capital</h4>
-            <p>
+            <p className="italic">
               Village Capital is reinventing the system to back the
               entrepreneurs of the future. Known for its groundbreaking
               approaches to supporting founders who are building solutions to
@@ -204,8 +204,8 @@ function Emea() {
           </div>
 
           <div className="my-4">
-            <h4 className="font-bold mb-2">About Village Capital</h4>
-            <p>
+            <h4 className="font-bold mb-2">About Norad</h4>
+            <p className="italic">
               Norad is the Norwegian agency for development cooperation. We work
               for the world to achieve the UN&apos;s Sustainable Development
               Goals. Norad is a professional body under the Ministry of Foreign
