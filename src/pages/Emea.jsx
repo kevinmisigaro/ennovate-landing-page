@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
-import { FaFish } from 'react-icons/fa'
+import { FaBrain, FaFish } from 'react-icons/fa'
 
 function Emea() {
   return (
@@ -85,7 +85,7 @@ function Emea() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                     <div>
-                        <FaFish />
+                        <FaFish className="text-center text-xl" />
                     </div>
                     <h4 className="font-bold">Blue Economy</h4>
                     <p>
@@ -94,6 +94,9 @@ function Emea() {
                 </div>
 
                 <div>
+                <div>
+                        <FaBrain className="text-center text-xl" />
+                    </div>
                     <h4 className="font-bold">Climate Adaptation</h4>
                     <p>
                     Early warning systems, risk mapping and analysis technologies, meteorological data technologies, carbon capture and storage, green infrastructure, and water management technologies.
