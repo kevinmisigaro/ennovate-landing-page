@@ -12,7 +12,7 @@ function Emea() {
         <img src={Img5} alt="" className="h-full w-full object-cover" />
       </div>
       <div  className="px-10">
-        <div className="bg-white">
+        <div className="bg-white p-20">
         <h4>About the Program</h4>
         <p>
           Empowering Sustainable Entrepreneurship in Africa 2025 is Phase Two of
