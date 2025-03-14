@@ -77,6 +77,85 @@ function Emea() {
             </li>
           </ul>
 
+          <div className="my-5">
+          <h3 className="font-bold mt-6 mb-3 text-lg text-center">
+          We are looking for startups in the following areas:
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div>
+                    <h4 className="font-bold">Blue Economy</h4>
+                    <p>
+                    Fisheries and aquaculture, marine biotechnology, marine conservation, eco-tourism, and marine litter management.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 className="font-bold">Climate Adaptation</h4>
+                    <p>
+                    Early warning systems, risk mapping and analysis technologies, meteorological data technologies, carbon capture and storage, green infrastructure, and water management technologies.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 className="font-bold">Food Security</h4>
+                    <p>
+                    Precision agriculture, enhanced irrigation technologies, supply chain management, transportation and logistics, and cold-chain technologies.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 className="font-bold">Renewable Energy</h4>
+                    <p>
+                    Microgrid technologies, clean cooking solutions, hydro, solar, geothermal, and wind, energy management software, and energy payment platforms.
+                    </p>
+                </div>
+          </div>
+          </div>
+
+          <div className="my-5">
+          <h3 className="font-bold mt-6 mb-3 text-lg text-center">
+          Benefits
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div>
+                    <h4 className="font-bold">Advice</h4>
+                    <p>
+                    Participate in a virtual investor forum and mock board meetings with representatives from financial institutions, corporations, experienced entrepreneurs, and investors who can help startups scale their solutions.
+                    </p>
+                </div>
+                <div>
+                    <h4 className="font-bold">Continued Learning</h4>
+                    <p>
+                    Access to live and asynchronous sessions tailored to a virtual learning environment to help their companies identify early milestones and prepare for their next round of capital (if relevant) or significant expansion.
+                    </p>
+                </div>
+                <div>
+                    <h4 className="font-bold">Financial Analysis</h4>
+                    <p>
+                    Access to an investment analyst who will coach startups 1:1 on building a financial model, identifying unit economics, and using financial metrics to drive both business and investor diligence.
+                    </p>
+                </div>
+                <div>
+                    <h4 className="font-bold">Media Exposure</h4>
+                    <p>
+                    Exposure to Village Capital&apos;s program website and other communications collateral.
+                    </p>
+                </div>
+                <div>
+                    <h4 className="font-bold">Mentorship</h4>
+                    <p>
+                    Ability to meet with and receive mentorship from prominent investors, potential strategic partners, customers, and other founders.
+                    </p>
+                </div>
+                <div>
+                    <h4 className="font-bold">Networking</h4>
+                    <p>
+                    Access to a network of mentors and founders.
+                    </p>
+                </div>
+            </div>
+          </div>
+
           <h3 className="font-bold mt-6 mb-3  text-lg">Program Timeline</h3>
           <table class="table-auto border-collapse border border-gray-300">
             <tbody>
