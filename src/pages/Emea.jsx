@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
+import { FaFish } from 'react-icons/fa'
 
 function Emea() {
   return (
@@ -77,12 +78,15 @@ function Emea() {
             </li>
           </ul>
 
-          <div className="my-5">
-          <h3 className="font-bold mt-6 mb-3 text-lg text-center">
+          <div className="my-10">
+          <h3 className="font-bold my-6 text-xl text-center">
           We are looking for startups in the following areas:
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
+                    <div>
+                        <FaFish />
+                    </div>
                     <h4 className="font-bold">Blue Economy</h4>
                     <p>
                     Fisheries and aquaculture, marine biotechnology, marine conservation, eco-tourism, and marine litter management.
@@ -112,7 +116,7 @@ function Emea() {
           </div>
           </div>
 
-          <div className="my-5">
+          <div className="my-10">
           <h3 className="font-bold mt-6 mb-3 text-lg text-center">
           Benefits
           </h3>
