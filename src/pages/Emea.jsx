@@ -11,8 +11,8 @@ function Emea() {
         <div className="absolute bg-gradient-to-b from-transparent to-[#000000] h-full w-full"></div>
         <img src={Img5} alt="" className="h-full w-full object-cover" />
       </div>
-      <div className="px-10">
-        <div className="bg-white p-12">
+      <div className="px-5 md:px-10">
+        <div className="bg-white p-2 md:p-12">
           <h4 className="font-bold mb-2 text-lg">About the Program</h4>
           <p>
             Empowering Sustainable Entrepreneurship in Africa 2025 is Phase Two
