@@ -93,8 +93,7 @@ function Emea() {
             <h3 className="font-bold my-6 text-xl text-center">
               We are looking for startups in the following areas:
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
                 <div className="flex justify-center">
                   <FaFish className="text-5xl" />
@@ -109,45 +108,46 @@ function Emea() {
               </div>
 
               <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaBrain className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Climate Adaptation</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Early warning systems, risk mapping and analysis technologies,
-    meteorological data technologies, carbon capture and storage,
-    green infrastructure, and water management technologies.
-  </p>
-</div>
+                <div className="flex justify-center">
+                  <FaBrain className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Climate Adaptation
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Early warning systems, risk mapping and analysis technologies,
+                  meteorological data technologies, carbon capture and storage,
+                  green infrastructure, and water management technologies.
+                </p>
+              </div>
 
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaPizzaSlice className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Food Security
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Precision agriculture, enhanced irrigation technologies,
+                  supply chain management, transportation and logistics, and
+                  cold-chain technologies.
+                </p>
+              </div>
 
-<div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaPizzaSlice className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Food Security</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Precision agriculture, enhanced irrigation technologies,
-    supply chain management, transportation and logistics, and
-    cold-chain technologies.
-  </p>
-</div>
-
-
-<div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaFan className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Renewable Energy</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Microgrid technologies, clean cooking solutions, hydro, solar,
-    geothermal, and wind, energy management software, and energy
-    payment platforms.
-  </p>
-</div>
-
-
-
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaFan className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Renewable Energy
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Microgrid technologies, clean cooking solutions, hydro, solar,
+                  geothermal, and wind, energy management software, and energy
+                  payment platforms.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -156,86 +156,87 @@ function Emea() {
               Benefits
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaSms className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Advice</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Participate in a virtual investor forum and mock board meetings with representatives from financial institutions, corporations, experienced entrepreneurs, and investors who can help startups scale their solutions.
-  </p>
-</div>
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaSms className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">Advice</h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Participate in a virtual investor forum and mock board
+                  meetings with representatives from financial institutions,
+                  corporations, experienced entrepreneurs, and investors who can
+                  help startups scale their solutions.
+                </p>
+              </div>
 
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaBook className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Continued Learning
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Access to live and asynchronous sessions tailored to a virtual
+                  learning environment to help their companies identify early
+                  milestones and prepare for their next round of capital (if
+                  relevant) or significant expansion.
+                </p>
+              </div>
 
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaCoins className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Financial Analysis
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Access to an investment analyst who will coach startups 1:1 on
+                  building a financial model, identifying unit economics, and
+                  using financial metrics to drive both business and investor
+                  diligence.
+                </p>
+              </div>
 
-<div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaBook className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Continued Learning</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Access to live and asynchronous sessions tailored to a virtual
-    learning environment to help their companies identify early
-    milestones and prepare for their next round of capital (if
-    relevant) or significant expansion.
-  </p>
-</div>
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaClock className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Media Exposure
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Exposure to Village Capital&apos;s program website and other
+                  communications collateral.
+                </p>
+              </div>
 
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaBox className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Mentorship
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Ability to meet with and receive mentorship from prominent
+                  investors, potential strategic partners, customers, and other
+                  founders.
+                </p>
+              </div>
 
-
-<div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaCoins className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Financial Analysis</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Access to an investment analyst who will coach startups 1:1 on
-    building a financial model, identifying unit economics, and
-    using financial metrics to drive both business and investor
-    diligence.
-  </p>
-</div>
-
-
-
-<div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaClock className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Media Exposure</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Exposure to Village Capital&apos;s program website and other
-    communications collateral.
-  </p>
-</div>
-
-
-<div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaBox className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Mentorship</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Ability to meet with and receive mentorship from prominent
-    investors, potential strategic partners, customers, and other
-    founders.
-  </p>
-</div>
-
-
-
-<div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
-  <div className="flex justify-center">
-    <FaNetworkWired className="text-3xl" />
-  </div>
-  <h4 className="font-bold text-center mt-4 text-xl">Networking</h4>
-  <p className="mt-2 text-gray-600 text-center">
-    Access to a network of mentors and founders.
-  </p>
-</div>
-
-
-
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
+                <div className="flex justify-center">
+                  <FaNetworkWired className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Networking
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Access to a network of mentors and founders.
+                </p>
+              </div>
             </div>
           </div>
 
