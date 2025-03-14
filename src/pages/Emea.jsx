@@ -90,7 +90,7 @@ function Emea() {
           </ul>
 
           <div className="my-10">
-            <h3 className="font-bold my-6 text-xl text-center">
+            <h3 className="font-bold my-6 text-3xl text-center">
               We are looking for startups in the following areas:
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -134,7 +134,7 @@ function Emea() {
                   cold-chain technologies.
                 </p>
               </div>
-              <div class="col-span-3 grid grid-cols-subgrid gap-4">
+
               <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
                 <div className="flex justify-center">
                   <FaFan className="text-3xl" />
@@ -148,13 +148,11 @@ function Emea() {
                   payment platforms.
                 </p>
               </div>
-                </div>
-            
             </div>
           </div>
 
           <div className="my-10">
-            <h3 className="font-bold mt-6 mb-3 text-lg text-center">
+            <h3 className="font-bold mt-6 mb-3 text-3xl text-center">
               Benefits
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
