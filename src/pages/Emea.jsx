@@ -2,7 +2,18 @@ import React from "react";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
-import { FaBook, FaBox, FaBrain, FaClock, FaCoins, FaFan, FaFish, FaNetworkWired, FaPizzaSlice, FaSms } from 'react-icons/fa'
+import {
+  FaBook,
+  FaBox,
+  FaBrain,
+  FaClock,
+  FaCoins,
+  FaFan,
+  FaFish,
+  FaNetworkWired,
+  FaPizzaSlice,
+  FaSms,
+} from "react-icons/fa";
 
 function Emea() {
   return (
@@ -79,111 +90,131 @@ function Emea() {
           </ul>
 
           <div className="my-10">
-          <h3 className="font-bold my-6 text-xl text-center">
-          We are looking for startups in the following areas:
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div>
-                    <div className="flex justify-center">
-                        <FaFish className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Blue Economy</h4>
-                    <p>
-                    Fisheries and aquaculture, marine biotechnology, marine conservation, eco-tourism, and marine litter management.
-                    </p>
-                </div>
+            <h3 className="font-bold my-6 text-xl text-center">
+              We are looking for startups in the following areas:
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-                <div>
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
                 <div className="flex justify-center">
-                        <FaBrain className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Climate Adaptation</h4>
-                    <p>
-                    Early warning systems, risk mapping and analysis technologies, meteorological data technologies, carbon capture and storage, green infrastructure, and water management technologies.
-                    </p>
+                  <FaFish className="text-5xl" />
                 </div>
+                <h4 className="font-bold text-center mt-4 text-xl">
+                  Blue Economy
+                </h4>
+                <p className="mt-2 text-gray-600 text-center">
+                  Fisheries and aquaculture, marine biotechnology, marine
+                  conservation, eco-tourism, and marine litter management.
+                </p>
+              </div>
 
-                <div>
+              <div>
                 <div className="flex justify-center">
-                        <FaPizzaSlice className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Food Security</h4>
-                    <p>
-                    Precision agriculture, enhanced irrigation technologies, supply chain management, transportation and logistics, and cold-chain technologies.
-                    </p>
+                  <FaBrain className="text-3xl" />
                 </div>
+                <h4 className="font-bold text-center">Climate Adaptation</h4>
+                <p>
+                  Early warning systems, risk mapping and analysis technologies,
+                  meteorological data technologies, carbon capture and storage,
+                  green infrastructure, and water management technologies.
+                </p>
+              </div>
 
-                <div>
+              <div>
                 <div className="flex justify-center">
-                        <FaFan className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Renewable Energy</h4>
-                    <p>
-                    Microgrid technologies, clean cooking solutions, hydro, solar, geothermal, and wind, energy management software, and energy payment platforms.
-                    </p>
+                  <FaPizzaSlice className="text-3xl" />
                 </div>
-          </div>
+                <h4 className="font-bold text-center">Food Security</h4>
+                <p>
+                  Precision agriculture, enhanced irrigation technologies,
+                  supply chain management, transportation and logistics, and
+                  cold-chain technologies.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex justify-center">
+                  <FaFan className="text-3xl" />
+                </div>
+                <h4 className="font-bold text-center">Renewable Energy</h4>
+                <p>
+                  Microgrid technologies, clean cooking solutions, hydro, solar,
+                  geothermal, and wind, energy management software, and energy
+                  payment platforms.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="my-10">
-          <h3 className="font-bold mt-6 mb-3 text-lg text-center">
-          Benefits
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                <div>
+            <h3 className="font-bold mt-6 mb-3 text-lg text-center">
+              Benefits
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div>
                 <div className="flex justify-center">
-                        <FaSms className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Advice</h4>
-                    <p>
-                    Participate in a virtual investor forum and mock board meetings with representatives from financial institutions, corporations, experienced entrepreneurs, and investors who can help startups scale their solutions.
-                    </p>
+                  <FaSms className="text-3xl" />
                 </div>
-                <div>
+                <h4 className="font-bold text-center">Advice</h4>
+                <p>
+                  Participate in a virtual investor forum and mock board
+                  meetings with representatives from financial institutions,
+                  corporations, experienced entrepreneurs, and investors who can
+                  help startups scale their solutions.
+                </p>
+              </div>
+              <div>
                 <div className="flex justify-center">
-                        <FaBook className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Continued Learning</h4>
-                    <p>
-                    Access to live and asynchronous sessions tailored to a virtual learning environment to help their companies identify early milestones and prepare for their next round of capital (if relevant) or significant expansion.
-                    </p>
+                  <FaBook className="text-3xl" />
                 </div>
-                <div>
+                <h4 className="font-bold text-center">Continued Learning</h4>
+                <p>
+                  Access to live and asynchronous sessions tailored to a virtual
+                  learning environment to help their companies identify early
+                  milestones and prepare for their next round of capital (if
+                  relevant) or significant expansion.
+                </p>
+              </div>
+              <div>
                 <div className="flex justify-center">
-                        <FaCoins className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Financial Analysis</h4>
-                    <p>
-                    Access to an investment analyst who will coach startups 1:1 on building a financial model, identifying unit economics, and using financial metrics to drive both business and investor diligence.
-                    </p>
+                  <FaCoins className="text-3xl" />
                 </div>
-                <div>
+                <h4 className="font-bold text-center">Financial Analysis</h4>
+                <p>
+                  Access to an investment analyst who will coach startups 1:1 on
+                  building a financial model, identifying unit economics, and
+                  using financial metrics to drive both business and investor
+                  diligence.
+                </p>
+              </div>
+              <div>
                 <div className="flex justify-center">
-                        <FaClock className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Media Exposure</h4>
-                    <p>
-                    Exposure to Village Capital&apos;s program website and other communications collateral.
-                    </p>
+                  <FaClock className="text-3xl" />
                 </div>
-                <div>
+                <h4 className="font-bold text-center">Media Exposure</h4>
+                <p>
+                  Exposure to Village Capital&apos;s program website and other
+                  communications collateral.
+                </p>
+              </div>
+              <div>
                 <div className="flex justify-center">
-                        <FaBox className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Mentorship</h4>
-                    <p>
-                    Ability to meet with and receive mentorship from prominent investors, potential strategic partners, customers, and other founders.
-                    </p>
+                  <FaBox className="text-3xl" />
                 </div>
-                <div>
+                <h4 className="font-bold text-center">Mentorship</h4>
+                <p>
+                  Ability to meet with and receive mentorship from prominent
+                  investors, potential strategic partners, customers, and other
+                  founders.
+                </p>
+              </div>
+              <div>
                 <div className="flex justify-center">
-                        <FaNetworkWired className="text-3xl" />
-                    </div>
-                    <h4 className="font-bold text-center">Networking</h4>
-                    <p>
-                    Access to a network of mentors and founders.
-                    </p>
+                  <FaNetworkWired className="text-3xl" />
                 </div>
+                <h4 className="font-bold text-center">Networking</h4>
+                <p>Access to a network of mentors and founders.</p>
+              </div>
             </div>
           </div>
 
@@ -235,7 +266,9 @@ function Emea() {
             </tbody>
           </table>
 
-          <h3 className="font-bold mt-6 mb-3 text-lg">Frequently Asked Questions</h3>
+          <h3 className="font-bold mt-6 mb-3 text-lg">
+            Frequently Asked Questions
+          </h3>
           <p className="font-bold mb-2">
             1. What is the main goal of the program?
           </p>
@@ -265,13 +298,13 @@ function Emea() {
 
           <div className="mt-4 mb-8">
             <a
-                target="_blank"
-                href="https://my.abaca.app/?a=sustainableentrepreneurshiptanzania&amp;__hstc=125284117.c787014d5
+              target="_blank"
+              href="https://my.abaca.app/?a=sustainableentrepreneurshiptanzania&amp;__hstc=125284117.c787014d5
                 58b31a75e25a4992a9836f2.1737701412394.1741673689892.1741800871962.3&amp;__hssc=1252
                 84117.1.1741800871962&amp;__hsfp=1022811669"
-                class="bg-[#f9bd00] text-white px-4 py-2 rounded-md hover:bg-[#f9a500] focus:outline-none focus:ring-2 focus:ring-[#f9bd00]"
+              class="bg-[#f9bd00] text-white px-4 py-2 rounded-md hover:bg-[#f9a500] focus:outline-none focus:ring-2 focus:ring-[#f9bd00]"
             >
-                Apply now
+              Apply now
             </a>
           </div>
 
