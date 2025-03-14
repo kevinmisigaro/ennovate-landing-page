@@ -134,8 +134,8 @@ function Emea() {
                   cold-chain technologies.
                 </p>
               </div>
-
-              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200 md:col-span-3">
+              <div class="col-span-3 grid grid-cols-subgrid gap-4">
+              <div className="max-w-sm rounded-lg shadow-lg p-4 bg-white border border-gray-200">
                 <div className="flex justify-center">
                   <FaFan className="text-3xl" />
                 </div>
@@ -148,6 +148,8 @@ function Emea() {
                   payment platforms.
                 </p>
               </div>
+                </div>
+            
             </div>
           </div>
 
