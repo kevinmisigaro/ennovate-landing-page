@@ -76,7 +76,7 @@ function Agribusiness() {
 
         <div className="px-5 md:px-10 py-10">
           <h3 className="font-bold text-2xl">Why should you take part?</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
               <h4 className="font-bold">Who can participate in the program?</h4>
               <p>
@@ -102,22 +102,67 @@ function Agribusiness() {
               </p>
             </div>
             <div>
-                <h4 className="font-bold">Do I need a business Idea before joining?</h4>
-                <p>
-                Not necessarily! While having a specific idea can be helpful, it&apos;s not a requirement. Your passion for food systems and entrepreneurial drive are more important. The program will equip you with the tools and guidance to develop and refine your business concept.
-                </p>
+              <h4 className="font-bold">
+                Do I need a business Idea before joining?
+              </h4>
+              <p>
+                Not necessarily! While having a specific idea can be helpful,
+                it&apos;s not a requirement. Your passion for food systems and
+                entrepreneurial drive are more important. The program will equip
+                you with the tools and guidance to develop and refine your
+                business concept.
+              </p>
             </div>
             <div>
-                <h4 className="font-bold">Do I need to pay to be part of the program? Will I be paid to participate??</h4>
-                <p>
-                No, participation in the program is free! You won&apos;t receive any financial compensation, but the rewards in terms of learning, growth, and potential impact are priceless.
-                </p>
+              <h4 className="font-bold">
+                Do I need to pay to be part of the program? Will I be paid to
+                participate?
+              </h4>
+              <p>
+                No, participation in the program is free! You won&apos;t receive
+                any financial compensation, but the rewards in terms of
+                learning, growth, and potential impact are priceless.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold">
+                Can I join the program with a team I am working with?
+              </h4>
+              <p>
+                The initial selection process for the Ideathon phase focuses on
+                individual potential and working with individuals from other
+                disciplines to ideate. However, if you’re selected for the
+                Build-It phase (where teams are formed), you may have the
+                opportunity to collaborate with fellow participants based on
+                shared interests and skills.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold">
+                What is the expected time commitment for the program?
+              </h4>
+              <p>
+                While exact dates and formats may differ, you’ll need to be
+                physically present at your university during the Ideathon and
+                Build-It phases. Expect dedicated time for activities,
+                workshops, and team collaboration. Remember, these are just some
+                of the most frequently asked questions. If you have any further
+                inquiries, don’t hesitate to reach out!
+                g.geria@starthubafrica.org
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold">
+                If selected for the Build-It phase, can my team attend?
+              </h4>
+              <p>
+                Unfortunately, no. The Build-It phase involves only 10
+                participants chosen from the Ideathon phase. This allows for
+                focused mentorship and personalized guidance.
+              </p>
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   );
