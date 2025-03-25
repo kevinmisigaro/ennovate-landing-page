@@ -24,13 +24,15 @@ function Agribusiness() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
 
         {/* Text Overlay */}
-        <div className="absolute inset-0 flex items-center justify-start px-4">
-          <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl">
+        <div className="absolute inset-0 flex items-center justify-center md:justify-start px-4">
+          <div className="flex flex-col gap-5">
+          <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl md:text-center">
             Learn How To Start And Grow Your Own Agri-business
           </h3>
           <a href="https://ee.kobotoolbox.org/x/bngscXav" className="text-white bg-[#005d42] border-[#005d42] px-4 py-3 my-4" target="_blank">
                 APPLY NOW
             </a>
+          </div>
         </div>
       </div>
 
