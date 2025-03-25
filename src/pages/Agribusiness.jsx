@@ -46,7 +46,7 @@ function Agribusiness() {
           </div>
         </div>
 
-        <div className="px-5 md:px-10 py-10">
+        <div className="px-5 md:px-10 pt-3 pb-10">
           <h3 className="font-bold text-2xl">Program Structure</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div>
@@ -67,18 +67,13 @@ function Agribusiness() {
           </div>
         </div>
 
-        <div
-          style={{
-            background: `url('${Farm1}')`,
-          }}
-          className="bg-cover bg-no-repeat h-[30vh]"
-        />
+        <img src={Farm1} alt="" className="h-[30vh] w-full object-cover" />
 
         <div className="px-5 md:px-10 py-10">
-          <h3 className="font-bold text-2xl">Why should you take part?</h3>
+          <h3 className="font-bold text-2xl pb-8">Why should you take part?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-              <h4 className="font-bold">Who can participate in the program?</h4>
+              <h4 className="font-bold text-xl">Who can participate in the program?</h4>
               <p>
                 This program is open to finalists and recent graduates from Gulu
                 University, Makerere University, and Mbarara University of
@@ -88,7 +83,7 @@ function Agribusiness() {
               </p>
             </div>
             <div>
-              <h4 className="font-bold">
+              <h4 className="font-bold text-xl">
                 Will there be any start-up capital given to teams that
                 participate?
               </h4>
@@ -102,7 +97,7 @@ function Agribusiness() {
               </p>
             </div>
             <div>
-              <h4 className="font-bold">
+              <h4 className="font-bold text-xl">
                 Do I need a business Idea before joining?
               </h4>
               <p>
@@ -114,7 +109,7 @@ function Agribusiness() {
               </p>
             </div>
             <div>
-              <h4 className="font-bold">
+              <h4 className="font-bold text-xl">
                 Do I need to pay to be part of the program? Will I be paid to
                 participate?
               </h4>
@@ -125,7 +120,7 @@ function Agribusiness() {
               </p>
             </div>
             <div>
-              <h4 className="font-bold">
+              <h4 className="font-bold text-xl">
                 Can I join the program with a team I am working with?
               </h4>
               <p>
@@ -138,7 +133,7 @@ function Agribusiness() {
               </p>
             </div>
             <div>
-              <h4 className="font-bold">
+              <h4 className="font-bold text-xl">
                 What is the expected time commitment for the program?
               </h4>
               <p>
@@ -152,7 +147,7 @@ function Agribusiness() {
               </p>
             </div>
             <div>
-              <h4 className="font-bold">
+              <h4 className="font-bold text-xl">
                 If selected for the Build-It phase, can my team attend?
               </h4>
               <p>
