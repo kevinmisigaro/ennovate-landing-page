@@ -23,7 +23,7 @@ import Img2 from "../assets/blogs/develop-press-release.jpeg";
 import doc4 from "../assets/docs/investments/swahilies.pdf";
 import Img4 from "../assets/blogs/swahilies-cofunders.jpg";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
-import agri from "../assets/agri/qwee.jpg"
+import agri from "../assets/agri/qwee.jpg";
 import FollowupCard from "@/components/FollowupCard";
 
 const SubHero = () => {
@@ -238,11 +238,13 @@ function NewsLetter() {
       {/* <Media/> */}
       <News />
       <Heading title={"Innovate for Food Security"} />
-      <div className="flex lg:items-center lg:justify-center mb-5">
-      <img
-        src={agri}
-        className="w-[70vw] max-h-60 md:max-h-80 md:object-center object-cover"
-      />
+      <div className="flex lg:items-center lg:justify-center mb-10">
+        <a href="/agribusiness">
+          <img
+            src={agri}
+            className="w-[80vw] max-h-60 md:max-h-80 md:object-center object-cover"
+          />
+        </a>
       </div>
       <Heading title={"Media"} />
       <div className="flex lg:items-center lg:justify-center">
