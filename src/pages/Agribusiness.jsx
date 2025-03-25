@@ -12,7 +12,7 @@ function Agribusiness() {
   return (
     <div className="bg-black w-full h-full">
       <NavBar2 />
-      <div className="relative h-screen w-full">
+      <div className="relative h-[60vh] w-full">
   {/* Background Image */}
   <img src={hero} alt="" className="h-full w-full object-cover absolute inset-0" />
 
