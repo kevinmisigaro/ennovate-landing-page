@@ -204,8 +204,8 @@ function Agribusiness() {
           <h3 className="font-bold text-2xl pb-3">Implementing Partners</h3>
           <p>
             Innovate for Foood Security is implemented by StartHub Africa in
-            partnership with the Ennovate Venture and Norwegian Agency for
-            Exchange Cooperation
+            partnership with the Ennovate Venture and <a href="https://www.norec.no/en/home/" target="_blank">Norwegian Agency for
+            Exchange Cooperation</a>
           </p>
 
           <div className="py-5 grid grid-cols-1 md:grid-cols-3 gap-5">
