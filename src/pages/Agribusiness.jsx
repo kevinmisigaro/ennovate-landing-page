@@ -1,9 +1,12 @@
 import NavBar2 from "./../components/NavBar2";
 import Farm1 from "../assets/agri/shot-of-an-attractive-young-female-farmer-working.jpg";
-import hero from "../assets/agri/qwee.jpg"
-import Ennovate from "../assets/agri/ennovate-logo.png"
-import Norec from "../assets/agri/norec-logo.png"
-import Startup from "../assets/agri/startup-logo.png"
+import hero from "../assets/agri/qwee.jpg";
+import Ennovate from "../assets/agri/ennovate-logo.png";
+import Norec from "../assets/agri/norec-logo.png";
+import Startup from "../assets/agri/startup-logo.png";
+import Prog1 from "../assets/agri/ghj.jpg";
+import Prog2 from "../assets/agri/portrait-of-a-smiling-man-working-in-a-flower-gree-2023-11-27-05-24-31-utc.jpg";
+import Prog3 from "../assets/agri/smiling-african-american-student-with-backpacks-h-2023-11-27-05-26-02-utc.jpg";
 
 function Agribusiness() {
   return (
@@ -53,14 +56,17 @@ function Agribusiness() {
           <h3 className="font-bold text-2xl">Program Structure</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div>
+              <img src={Prog1} alt="" className="w-[100px]" />
               <h5 className="font-bold text-xl">Ideathons</h5>
               <p>Brainstorm and design solutions in interdisciplinary teams.</p>
             </div>
             <div>
+              <img src={Prog2} alt="" className="w-[100px]" />
               <h5 className="font-bold text-xl">Build-It Bootcamps</h5>
               <p>Develop your Minimum Viable Product with expert guidance.</p>
             </div>
             <div>
+              <img src={Prog3} alt="" className="w-[100px]" />
               <h5 className="font-bold text-xl">Mentorship</h5>
               <p>
                 Receive one-on-one support from a seasoned mentor to grow your
@@ -173,9 +179,9 @@ function Agribusiness() {
           </p>
 
           <div className="py-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-                <img src={Ennovate} className="w-[200px]" />
-                <img src={Norec} className="w-[200px]" />
-                <img src={Startup} className="w-[200px]" />
+            <img src={Ennovate} className="w-[200px]" />
+            <img src={Norec} className="w-[200px]" />
+            <img src={Startup} className="w-[80px]" />
           </div>
         </div>
       </div>
