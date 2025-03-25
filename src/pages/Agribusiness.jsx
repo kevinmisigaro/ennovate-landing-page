@@ -173,9 +173,9 @@ function Agribusiness() {
           </p>
 
           <div className="py-5 grid grid-cols-1 md:grid-cols-3 gap-5">
-                <img src={Ennovate} className="w-full h-full" />
-                <img src={Norec} className="w-full h-full" />
-                <img src={Startup} className="w-full h-full" />
+                <img src={Ennovate} className="w-full" />
+                <img src={Norec} className="w-full" />
+                <img src={Startup} className="w-full" />
           </div>
         </div>
       </div>
