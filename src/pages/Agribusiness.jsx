@@ -1,6 +1,6 @@
 import NavBar2 from "./../components/NavBar2";
 import Farm1 from "../assets/agri/shot-of-an-attractive-young-female-farmer-working.jpg";
-import hero from "../assets/agri/qwee.jpg";
+import hero from "../assets/agri/agriculture-concept-2023-11-27-05-10-39-utc.jpg";
 import Ennovate from "../assets/agri/ennovate-logo.png";
 import Norec from "../assets/agri/norec-logo.png";
 import Startup from "../assets/agri/startup-logo.png";
@@ -15,6 +15,11 @@ function Agribusiness() {
       <div className="relative">
         <div className="absolute bg-gradient-to-b from-transparent to-[#000000] h-full w-full"></div>
         <img src={hero} alt="" className="h-full w-full object-cover" />
+        <div className="absolute text-white">
+            <h3 className="text-2xl md:text-3xl">
+            Learn How To Start And Grow Your Own Agri-business
+            </h3>
+        </div>
       </div>
 
       <div className="bg-white py-10">
@@ -54,20 +59,20 @@ function Agribusiness() {
 
         <div className="px-5 md:px-10 pt-3 pb-10">
           <h3 className="font-bold text-2xl">Program Structure</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
             <div>
               <img src={Prog1} alt="" className="w-[20vw]" />
-              <h5 className="font-bold text-xl">Ideathons</h5>
+              <h5 className="font-bold text-xl pt-3">Ideathons</h5>
               <p>Brainstorm and design solutions in interdisciplinary teams.</p>
             </div>
             <div>
               <img src={Prog2} alt="" className="w-[20vw]" />
-              <h5 className="font-bold text-xl">Build-It Bootcamps</h5>
+              <h5 className="font-bold text-xl pt-3">Build-It Bootcamps</h5>
               <p>Develop your Minimum Viable Product with expert guidance.</p>
             </div>
             <div>
               <img src={Prog3} alt="" className="w-[20vw]" />
-              <h5 className="font-bold text-xl">Mentorship</h5>
+              <h5 className="font-bold text-xl pt-3">Mentorship</h5>
               <p>
                 Receive one-on-one support from a seasoned mentor to grow your
                 business.
