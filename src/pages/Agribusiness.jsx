@@ -1,6 +1,9 @@
 import NavBar2 from "./../components/NavBar2";
-import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
 import Farm1 from "../assets/agri/shot-of-an-attractive-young-female-farmer-working.jpg";
+import hero from "../assets/agri/qwee.jpg"
+import Ennovate from "../assets/agri/ennovate-logo.png"
+import Norec from "../assets/agri/norec-logo.png"
+import Startup from "../assets/agri/startup-logo.png"
 
 function Agribusiness() {
   return (
@@ -8,7 +11,7 @@ function Agribusiness() {
       <NavBar2 />
       <div className="relative">
         <div className="absolute bg-gradient-to-b from-transparent to-[#000000] h-full w-full"></div>
-        <img src={Img5} alt="" className="h-full w-full object-cover" />
+        <img src={hero} alt="" className="h-full w-full object-cover" />
       </div>
 
       <div className="bg-white py-10">
@@ -67,13 +70,15 @@ function Agribusiness() {
           </div>
         </div>
 
-        <img src={Farm1} alt="" className="h-[30vh] w-full object-cover" />
+        <img src={Farm1} alt="" className="h-[50vh] w-full object-cover" />
 
         <div className="px-5 md:px-10 py-10">
-          <h3 className="font-bold text-2xl pb-8">Why should you take part?</h3>
+          <h3 className="font-bold text-3xl pb-8">Why should you take part?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-              <h4 className="font-bold text-xl">Who can participate in the program?</h4>
+              <h4 className="font-bold text-xl">
+                Who can participate in the program?
+              </h4>
               <p>
                 This program is open to finalists and recent graduates from Gulu
                 University, Makerere University, and Mbarara University of
@@ -156,6 +161,21 @@ function Agribusiness() {
                 focused mentorship and personalized guidance.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="px-5 md:px-10 py-10">
+          <h3 className="font-bold text-2xl pb-3">Implementing Partners</h3>
+          <p>
+            Innovate for Foood Security is implemented by StartHub Africa in
+            partnership with the Ennovate Venture and Norwegian Agency for
+            Exchange Cooperation
+          </p>
+
+          <div className="py-5 grid grid-cols-1 md:grid-cols-3 gap-5">
+                <img src={Ennovate} className="w-full h-full" />
+                <img src={Norec} className="w-full h-full" />
+                <img src={Startup} className="w-full h-full" />
           </div>
         </div>
       </div>
