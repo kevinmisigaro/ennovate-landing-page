@@ -238,10 +238,10 @@ function NewsLetter() {
       {/* <Media/> */}
       <News />
       <Heading title={"Innovate for Food Security"} />
-      <div className="flex lg:items-center lg:justify-center">
+      <div className="flex lg:items-center lg:justify-center mb-5">
       <img
         src={agri}
-        className="w-full max-h-60 md:max-h-80 md:object-center object-cover"
+        className="w-[70vw] max-h-60 md:max-h-80 md:object-center object-cover"
       />
       </div>
       <Heading title={"Media"} />
