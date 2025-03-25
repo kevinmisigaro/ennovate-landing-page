@@ -28,6 +28,9 @@ function Agribusiness() {
           <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl">
             Learn How To Start And Grow Your Own Agri-business
           </h3>
+          <a href="https://ee.kobotoolbox.org/x/bngscXav" className="text-white bg-[#005d42] border-[#005d42] px-4 py-3 my-4" target="_blank">
+                APPLY NOW
+            </a>
         </div>
       </div>
 
