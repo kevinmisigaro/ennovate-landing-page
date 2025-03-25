@@ -11,8 +11,8 @@ function Agribusiness() {
         <img src={Img5} alt="" className="h-full w-full object-cover" />
       </div>
 
-      <div className="bg-white">
-        <div className="px-5 md:px-10 py-10">
+      <div className="bg-white py-10">
+        <div className="px-5 md:px-10 py-8">
           <h3 className="font-bold text-2xl">Why should you take part?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
             <div>
@@ -74,7 +74,7 @@ function Agribusiness() {
           className="bg-cover bg-no-repeat h-[30vh]"
         />
 
-        <div className="px-5 md:px-10">
+        <div className="px-5 md:px-10 py-10">
           <h3 className="font-bold text-2xl">Why should you take part?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
@@ -110,7 +110,7 @@ function Agribusiness() {
             <div>
                 <h4 className="font-bold">Do I need to pay to be part of the program? Will I be paid to participate??</h4>
                 <p>
-                No, participation in the program is free! You won’t receive any financial compensation, but the rewards in terms of learning, growth, and potential impact are priceless.
+                No, participation in the program is free! You won&apos;t receive any financial compensation, but the rewards in terms of learning, growth, and potential impact are priceless.
                 </p>
             </div>
           </div>
