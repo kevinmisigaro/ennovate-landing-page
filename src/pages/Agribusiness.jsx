@@ -12,20 +12,24 @@ function Agribusiness() {
   return (
     <div className="bg-black w-full h-full">
       <NavBar2 />
-      <div className="relative h-[60vh] w-full">
-  {/* Background Image */}
-  <img src={hero} alt="" className="h-full w-full object-cover absolute inset-0" />
+      <div className="relative h-[85vh] w-full">
+        {/* Background Image */}
+        <img
+          src={hero}
+          alt=""
+          className="h-full w-full object-cover absolute inset-0"
+        />
 
-  {/* Gradient Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
 
-  {/* Text Overlay */}
-  <div className="absolute inset-0 flex items-center justify-start px-4">
-    <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl">
-      Learn How To Start And Grow Your Own Agri-business
-    </h3>
-  </div>
-</div>
+        {/* Text Overlay */}
+        <div className="absolute inset-0 flex items-center justify-start px-4">
+          <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl">
+            Learn How To Start And Grow Your Own Agri-business
+          </h3>
+        </div>
+      </div>
 
       <div className="bg-white py-10">
         <div className="px-5 md:px-10 py-8">
