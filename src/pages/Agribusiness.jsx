@@ -12,9 +12,9 @@ function Agribusiness() {
       </div>
 
       <div className="bg-white">
-        <div className="px-5 md:px-10">
+        <div className="px-5 md:px-10 py-10">
           <h3 className="font-bold text-2xl">Why should you take part?</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
             <div>
               <p>
                 The Innovate for Food Security Program is a year-long intense
@@ -46,7 +46,7 @@ function Agribusiness() {
           </div>
         </div>
 
-        <div className="px-5 md:px-10">
+        <div className="px-5 md:px-10 py-10">
           <h3 className="font-bold text-2xl">Program Structure</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div>
