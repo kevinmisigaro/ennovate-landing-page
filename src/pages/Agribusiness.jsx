@@ -181,7 +181,7 @@ function Agribusiness() {
           <div className="py-5 grid grid-cols-1 md:grid-cols-3 gap-5">
             <img src={Ennovate} className="w-[200px]" />
             <img src={Norec} className="w-[200px]" />
-            <img src={Startup} className="w-[80px]" />
+            <img src={Startup} className="w-[90px]" />
           </div>
         </div>
       </div>
