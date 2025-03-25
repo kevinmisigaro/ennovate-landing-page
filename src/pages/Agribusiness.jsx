@@ -56,17 +56,17 @@ function Agribusiness() {
           <h3 className="font-bold text-2xl">Program Structure</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div>
-              <img src={Prog1} alt="" className="w-[100px]" />
+              <img src={Prog1} alt="" className="w-[20vw]" />
               <h5 className="font-bold text-xl">Ideathons</h5>
               <p>Brainstorm and design solutions in interdisciplinary teams.</p>
             </div>
             <div>
-              <img src={Prog2} alt="" className="w-[100px]" />
+              <img src={Prog2} alt="" className="w-[20vw]" />
               <h5 className="font-bold text-xl">Build-It Bootcamps</h5>
               <p>Develop your Minimum Viable Product with expert guidance.</p>
             </div>
             <div>
-              <img src={Prog3} alt="" className="w-[100px]" />
+              <img src={Prog3} alt="" className="w-[20vw]" />
               <h5 className="font-bold text-xl">Mentorship</h5>
               <p>
                 Receive one-on-one support from a seasoned mentor to grow your
