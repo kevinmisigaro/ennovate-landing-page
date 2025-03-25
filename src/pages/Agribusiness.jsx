@@ -20,8 +20,8 @@ function Agribusiness() {
   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
 
   {/* Text Overlay */}
-  <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-    <h3 className="text-white text-2xl md:text-3xl font-bold max-w-2xl">
+  <div className="absolute inset-0 flex items-center justify-start px-4">
+    <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl">
       Learn How To Start And Grow Your Own Agri-business
     </h3>
   </div>
