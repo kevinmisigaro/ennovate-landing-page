@@ -239,7 +239,7 @@ function NewsLetter() {
       <News />
       <Heading title={"Innovate for Food Security"} />
       <div className="flex lg:items-center lg:justify-center mb-10">
-        <a href="/agribusiness">
+        <a href="/agribusiness" className="hover:border-yellow-500 hover:border-yellow-600 hover:box-border cursor-pointer">
           <img
             src={agri}
             className="w-[80vw] max-h-60 md:max-h-80 md:object-center object-cover"
