@@ -26,11 +26,15 @@ function Agribusiness() {
         {/* Text Overlay */}
         <div className="absolute inset-0 flex items-center justify-center md:justify-start px-4">
           <div className="flex flex-col gap-5 justify-center">
-          <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl md:text-center">
-            Learn How To Start And Grow Your Own Agri-business
-          </h3>
-          <a href="https://ee.kobotoolbox.org/x/bngscXav" className="text-white bg-[#005d42] border-[#005d42] px-6 py-3 my-4 max-w-fit" target="_blank">
-                APPLY NOW
+            <h3 className="text-white text-2xl md:text-5xl font-bold max-w-2xl md:text-center">
+              Learn How To Start And Grow Your Own Agri-business
+            </h3>
+            <a
+              href="https://ee.kobotoolbox.org/x/bngscXav"
+              className="text-white bg-[#005d42] border-[#005d42] px-6 py-3 my-4 max-w-fit ml-5"
+              target="_blank"
+            >
+              APPLY NOW
             </a>
           </div>
         </div>
@@ -57,7 +61,7 @@ function Agribusiness() {
             </div>
             <div>
               <p>Through the program, you will:</p>
-              <ul className="list-disc list-inside mb-3">
+              <ul className="list-disc list-inside mb-6">
                 <li>
                   Develop a deeper understanding of Uganda&apos;s food systems.
                 </li>
@@ -67,9 +71,13 @@ function Agribusiness() {
                 </li>
                 <li>Learn how to start and grow your own agri-business.</li>
               </ul>
-              <a href="https://ee.kobotoolbox.org/x/bngscXav" className="text-white bg-[#005d42] border-[#005d42] px-6 py-3 my-4 max-w-fit" target="_blank">
+              <a
+                href="https://ee.kobotoolbox.org/x/bngscXav"
+                className="text-white bg-[#005d42] border-[#005d42] px-6 py-3 my-4 max-w-fit"
+                target="_blank"
+              >
                 APPLY NOW
-            </a>
+              </a>
             </div>
           </div>
         </div>
