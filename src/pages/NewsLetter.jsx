@@ -23,7 +23,7 @@ import Img2 from "../assets/blogs/develop-press-release.jpeg";
 import doc4 from "../assets/docs/investments/swahilies.pdf";
 import Img4 from "../assets/blogs/swahilies-cofunders.jpg";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
-import doc5 from "../assets/docs/ESEA 2025_Norad.pdf";
+import agri from "../assets/agri/qwee.jpg"
 import FollowupCard from "@/components/FollowupCard";
 
 const SubHero = () => {
@@ -237,6 +237,13 @@ function NewsLetter() {
       {/* <Articles /> */}
       {/* <Media/> */}
       <News />
+      <Heading title={"Innovate for Food Security"} />
+      <div className="flex lg:items-center lg:justify-center">
+      <img
+        src={agri}
+        className="w-full max-h-60 md:max-h-80 md:object-center object-cover"
+      />
+      </div>
       <Heading title={"Media"} />
       <div className="flex lg:items-center lg:justify-center">
         <Carousel imagesList={logos} />
