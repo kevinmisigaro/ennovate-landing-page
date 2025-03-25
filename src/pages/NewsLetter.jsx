@@ -241,7 +241,7 @@ function NewsLetter() {
       <div className="flex lg:items-center lg:justify-center mb-10">
         <a
           href="/agribusiness"
-          className="cursor-pointer border-2 border-transparent hover:border-yellow-500 transition duration-300 p-2"
+          className="cursor-pointer border-2 border-transparent hover:border-yellow-500 transition duration-300 p-2 rounded-md"
         >
           <img
             src={agri}
