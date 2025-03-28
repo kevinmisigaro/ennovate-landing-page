@@ -116,9 +116,7 @@ function Agribusiness() {
                 Who can participate in the program?
               </h4>
               <p>
-                This program is open to finalists and recent graduates from Gulu
-                University, Makerere University, and Mbarara University of
-                Science and Technology. You must be passionate about food
+                This program is open to finalists and recent graduates from Muhimbili University, Dar es Salaam Tumaini University, Sokoine University of Agriculture. You must be passionate about food
                 systems and have a strong desire to start and grow a business
                 that tackles challenges along the agricultural value chain.
               </p>
