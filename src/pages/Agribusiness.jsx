@@ -30,7 +30,7 @@ function Agribusiness() {
               Learn How To Start And Grow Your Own Agri-business
             </h3>
             <a
-              href="https://ee.kobotoolbox.org/x/bngscXav"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSetkxcvjsKbtF2LrfjuqbFnSZMLkmaHd7D86TAha-ql74DO0A/viewform"
               className="text-white bg-[#005d42] border-[#005d42] px-6 py-3 my-4 max-w-fit ml-5"
               target="_blank"
             >
@@ -49,21 +49,21 @@ function Agribusiness() {
                 The Innovate for Food Security Program is a year-long intense
                 practical program guiding finalists and recent graduates to
                 start and build agri-businesses aimed at improving food security
-                in Uganda.
+                in Tanzania.
               </p>
               <p>
                 42 participants from different disciplines (Agriculture,
                 Technology, Engineering, Food science etc.) at your university
                 will be guided through design thinking practices to deeply
                 understand challenges and opportunities that lie along the
-                agricultural value chain
+                agricultural value chain.
               </p>
             </div>
             <div>
               <p>Through the program, you will:</p>
               <ul className="list-disc list-inside mb-6">
                 <li>
-                  Develop a deeper understanding of Uganda&apos;s food systems.
+                  Develop a deeper understanding of Tanzania&apos;s food systems.
                 </li>
                 <li>
                   Design, prototype, and test new approaches to food production,
@@ -72,7 +72,7 @@ function Agribusiness() {
                 <li>Learn how to start and grow your own agri-business.</li>
               </ul>
               <a
-                href="https://ee.kobotoolbox.org/x/bngscXav"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSetkxcvjsKbtF2LrfjuqbFnSZMLkmaHd7D86TAha-ql74DO0A/viewform"
                 className="text-white bg-[#005d42] border-[#005d42] px-6 py-3 my-4 max-w-fit"
                 target="_blank"
               >

@@ -25,6 +25,7 @@ import Img4 from "../assets/blogs/swahilies-cofunders.jpg";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
 import agri from "../assets/agri/qwee.jpg";
 import FollowupCard from "@/components/FollowupCard";
+import AgriCard from "@/components/AgriCard";
 
 const SubHero = () => {
   return (
@@ -237,18 +238,14 @@ function NewsLetter() {
       {/* <Articles /> */}
       {/* <Media/> */}
       <News />
-      <Heading title={"Innovate for Food Security"} />
-      <div className="flex lg:items-center lg:justify-center mb-10">
-        <a
-          href="/agribusiness"
-          className="cursor-pointer border-2 border-transparent hover:border-yellow-500 transition duration-300 p-2 rounded-md"
-        >
-          <img
-            src={agri}
-            className="w-[80vw] max-h-60 md:max-h-80 md:object-center object-cover"
-          />
-        </a>
-      </div>
+      <AgriCard
+        description={`The Innovate for Food Security Program is a year-long intense
+            practical program guiding finalists and recent graduates to
+            start and build agri-businesses aimed at improving food security
+            in Tanzania.`}
+        heading={`Innovate for Food Security`}
+        avatar={agri}
+      />
       <Heading title={"Media"} />
       <div className="flex lg:items-center lg:justify-center">
         <Carousel imagesList={logos} />
