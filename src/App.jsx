@@ -61,7 +61,7 @@ function App() {
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/highlights" element={<Highlights />} />
-      <Route path="/emea" element={<Emea />} />
+      <Route path="/esea" element={<Emea />} />
       <Route path="/agribusiness" element={<Agribusiness />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/stories" element={<Story />} /> */}
