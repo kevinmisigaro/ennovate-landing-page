@@ -5,7 +5,7 @@ function FollowupCard({ description, heading, avatar }) {
     const navigate = useNavigate()
 
   const handleNavigation = () => {
-    navigate("/emea")
+    navigate("/esea")
   };
 
 
