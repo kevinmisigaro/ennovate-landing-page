@@ -26,6 +26,8 @@ import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
 import agri from "../assets/agri/qwee.jpg";
 import FollowupCard from "@/components/FollowupCard";
 import AgriCard from "@/components/AgriCard";
+import Img4 from "../assets/blogs/blog-4.jpg";
+import Img5 from "../assets/blogs/blog-5.jpg";
 
 const SubHero = () => {
   return (
@@ -80,6 +82,20 @@ export function SkeletonCard() {
 
 const ArticleHighlights = () => {
   const docs = [
+    {
+      id: crypto.randomUUID(),
+      desc: "Tanzanian Start-ups Invited to Benefit from €100,000 (TSh282million) Funding Opportunity through the develoPPP Ventures Programme",
+      title: "Startups invited to benefit €100,000",
+      thumbnail: Img4,
+      attach: "https://drive.google.com/file/d/1aLBUTXpMnnjScShwMYzhxeX6uaZJiEiE/view?usp=sharing"
+    },
+    {
+      id: crypto.randomUUID(),
+      attach: "https://drive.google.com/file/d/1vkJqTaWVtz-Qk4jcYXx4CHeGFUOXYIoG/view?usp=sharing",
+      thumbnail: Img5,
+      title: "Ennovate Ventures Named ESO Venture Partner for Africa Ecosystem Catalysts Facility",
+      desc: "Ennovate Ventures Named ESO Venture Partner for Africa Ecosystem Catalysts Facility to Strengthen Early-Stage Entrepreneurship in Tanzania."
+    },
     {
       id: crypto.randomUUID(),
       title:
