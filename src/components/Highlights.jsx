@@ -5,8 +5,26 @@ import FollowupCard from "./FollowupCard";
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
 import Img3 from "../assets/blogs/newsletter31102024.jpg";
+import Img4 from "../assets/blogs/blog-4.jpg";
+import Img5 from "../assets/blogs/blog-5.jpg";
 
 const BlogData = [
+  {
+    subtitle: "Tanzanian Start-ups Invited to Benefit from €100,000 (TSh282million) Funding Opportunity through the develoPPP Ventures Programme",
+    title: "Startups invited to benefit €100,000",
+    published: "Jul 16, 2025",
+    image: Img4,
+    aosDelay: "200",
+    url: "https://drive.google.com/file/d/1aLBUTXpMnnjScShwMYzhxeX6uaZJiEiE/view?usp=sharing"
+  },
+  {
+    url: "https://drive.google.com/file/d/1vkJqTaWVtz-Qk4jcYXx4CHeGFUOXYIoG/view?usp=sharing",
+    published: "Jul 16, 2025",
+    image: Img5,
+    aosDelay: "200",
+    title: "Ennovate Ventures Named ESO Venture Partner for Africa Ecosystem Catalysts Facility",
+    subtitle: "Ennovate Ventures Named ESO Venture Partner for Africa Ecosystem Catalysts Facility to Strengthen Early-Stage Entrepreneurship in Tanzania."
+  },
   {
     title: "develoPPP Ventures",
     subtitle:
@@ -25,23 +43,6 @@ const BlogData = [
     aosDelay: "200",
     url: "https://drive.google.com/file/d/17qzJm_MF5btvoPls88qwlV6ek0xUts8Y/view?usp=sharing",
   },
-  // {
-  //   title: "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital",
-  //   subtitle:
-  //     "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital of up to €100,000 to co-finance strategic investments aimed at scaling these impactful businesses.",
-  //   published: "Jan 18, 2025",
-  //   image: Img2,
-  //   aosDelay: "400",
-  //   url: "https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true",
-  // },
-  //   {
-  //     title: "How to ennovate with tech",
-  //     subtitle:
-  //       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
-  //     published: "mar 20, 2024 by Jasmine",
-  //     image: Img3,
-  //     aosDelay: "500",
-  //   },
 ];
 const HighLights = ({ sectionTitle }) => {
   return (
@@ -53,14 +54,6 @@ const HighLights = ({ sectionTitle }) => {
         {/* Blog section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
           {/* Blog card */}
-          <FollowupCard
-            description={`We are happy to announce our investment in Swahilies, a fintech startup that is helping
-        unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
-        critical gap in Africas SME ecosystem by digitizing business operations`}
-            heading={`Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa`}
-            avatar={Img5}
-          />
-
           {BlogData.map((data) => (
             <a href={data.url} target="_blank">
               <div
@@ -88,6 +81,13 @@ const HighLights = ({ sectionTitle }) => {
               </div>
             </a>
           ))}
+          <FollowupCard
+            description={`We are happy to announce our investment in Swahilies, a fintech startup that is helping
+        unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
+        critical gap in Africas SME ecosystem by digitizing business operations`}
+            heading={`Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa`}
+            avatar={Img5}
+          />
         </div>
       </div>
     </div>

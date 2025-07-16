@@ -225,18 +225,6 @@ function NewsLetter() {
     <div className="bg-black w-full h-full">
       <NavBar2 />
       <SubHero />
-      {/* <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
-        <HighLights sectionTitle={"Highlights"} />
-      </div> */}
-
-      {/* <div className="container mx-auto my-4 md:my-0 w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
-        <HighLights sectionTitle={"NewsLetter"} />
-      </div> */}
-      {/* <div className="container mx-auto w-9/12 2xl:w-7/12 lg:flex lg:items-center lg:justify-center">
-        <HighLights sectionTitle={"Articles"} />
-      </div> */}
-      {/* <Articles /> */}
-      {/* <Media/> */}
       <News />
       <AgriCard
         description={`The Innovate for Food Security Program is a year-long intense
