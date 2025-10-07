@@ -23,7 +23,7 @@ function AnchorFirms() {
 
       {/* Hero section */}
       <div className="relative">
-        <div className="absolute bg-gradient-to-b from-transparent to-[#000000] h-full w-full"></div>
+        <div className="absolute bg-gradient-to-b from-transparent to-[#000000] h-[20vh] w-full"></div>
         <img src={Img1} alt="Green and Smart Cities" className="h-full w-full object-cover" />
       </div>
 
