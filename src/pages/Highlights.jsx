@@ -10,6 +10,7 @@ import doc5 from "../assets/docs/ESEA 2025_Norad.pdf";
 import FollowupCard from "@/components/FollowupCard";
 import Img6 from "../assets/blogs/blog-4.jpg";
 import Img7 from "../assets/blogs/PHOTO-2025-07-17-16-55-56.jpg";
+import HighlightsLinkCard from "@/components/HighlightsLinkCard";
 
 function Highlights() {
   const SubHero = () => {
@@ -69,7 +70,11 @@ function Highlights() {
         <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">
           Highlights
         </h1>
-
+          <HighlightsLinkCard
+          description={"Investment Readiness &amp; Acceleration Programme for Anchor Firms between 5th October – 31st October 2025"}
+          heading={"Call for Applications"}
+          avatar={Img5}
+          />
         {docs.slice(0, 2).map((doc, index) => (
           <HighLightsCard
             docLink={doc.attach}

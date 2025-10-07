@@ -23,6 +23,7 @@ import React from "react";
 import Highlights from "./pages/Highlights";
 import Emea from "./pages/Emea";
 import Agribusiness from "./pages/Agribusiness";
+import AnchorFirms from "./pages/AnchorFirms";
 
 function App() {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -62,6 +63,7 @@ function App() {
       <Route path="/careers" element={<Careers />} />
       <Route path="/highlights" element={<Highlights />} />
       <Route path="/esea" element={<Emea />} />
+      <Route path="/anchorfirms" element={<AnchorFirms/>} />
       <Route path="/agribusiness" element={<Agribusiness />} />
       <Route path="*" element={<NotFound />} />
       {/* <Route path="/stories" element={<Story />} /> */}
