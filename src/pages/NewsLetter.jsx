@@ -19,7 +19,6 @@ import HighLights from "../components/Highlights";
 import Heading from "../components/Shared/Heading";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
-import Img2 from "../assets/blogs/develop-press-release.jpeg";
 import doc4 from "../assets/docs/investments/swahilies.pdf";
 import Img4 from "../assets/blogs/swahilies-cofunders.jpg";
 import Img5 from "../assets/blogs/ESEA Norad_All ESOs.png";
@@ -29,6 +28,7 @@ import AgriCard from "@/components/AgriCard";
 import Img6 from "../assets/blogs/blog-4.jpg";
 import Img7 from "../assets/blogs/PHOTO-2025-07-17-16-55-56.jpg";
 import Img8 from "../assets/cleanenergy.jpg";
+import HighlightsLinkCard from "@/components/HighlightsLinkCard";
 
 const SubHero = () => {
   return (
