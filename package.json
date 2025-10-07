@@ -10,6 +10,9 @@
     "preview": "vite preview",
     "start": "nodemon index.js"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
