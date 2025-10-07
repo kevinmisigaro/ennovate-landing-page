@@ -2,7 +2,7 @@ import React from "react";
 
 function HighlightsLinkCard({ description, heading, avatar }) {
   const handleNavigation = () => {
-    navigate("/anchorfirm")
+    navigate("/anchorfirms")
   };
 
 

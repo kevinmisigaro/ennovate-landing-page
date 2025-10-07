@@ -28,6 +28,7 @@ import FollowupCard from "@/components/FollowupCard";
 import AgriCard from "@/components/AgriCard";
 import Img6 from "../assets/blogs/blog-4.jpg";
 import Img7 from "../assets/blogs/PHOTO-2025-07-17-16-55-56.jpg";
+import Img8 from "../assets/cleanenergy.jpg";
 
 const SubHero = () => {
   return (
@@ -109,19 +110,6 @@ const ArticleHighlights = () => {
       unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
       critical gap in Africas SME ecosystem by digitizing business operations`,
     },
-    // {
-    //   id: crypto.randomUUID(),
-    //   title:
-    //     "develoPPP Ventures Supports Tanzanian Start-ups with non-dilutive capital",
-    //   attach:
-    //     "https://docs.google.com/document/d/1epcRNWnd9hxY8XI65k2oALw55UuRJF67/edit?usp=sharing&ouid=107996262346116417988&rtpof=true&sd=true",
-    //   thumbnail: Img2,
-    //   desc: `Through a matching-funds approach,
-    //   the German Federal Ministry for Economic Cooperation and
-    //   Development (BMZ) offers non-dilutive capital of up to
-    //   100,000 euros to co-finance strategic investments aimed at
-    //   scaling these impactful businesses.`,
-    // },
   ];
   return (
     <div>
@@ -130,6 +118,11 @@ const ArticleHighlights = () => {
       </h1>
 
       <>
+      <HighlightsLinkCard
+          description={"Investment Readiness &amp; Acceleration Programme for Anchor Firms between 5th October – 31st October 2025"}
+          heading={"Call for Applications"}
+          avatar={Img8}
+          />
         {docs.slice(0, 2).map((doc, index) => (
           <HighLightsCard
             key={index}
