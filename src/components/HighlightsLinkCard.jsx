@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function HighlightsLinkCard({ description, heading, avatar }) {
+  const navigate = useNavigate()
+
   const handleNavigation = () => {
     navigate("/anchorfirms")
   };
