@@ -30,7 +30,7 @@ function AnchorFirms() {
       <div className="px-5 md:px-10">
         <div className="bg-white p-4 md:p-12">
           {/* Intro */}
-          <h3 className="font-bold mb-2 text-lg">Call for Applications</h3>
+          <h3 className="font-bold mb-2 text-2xl text-center">Call for Applications</h3>
           <p className="italic mb-4">
             <strong>Investment Readiness & Acceleration Programme for Anchor Firms</strong>
           </p>

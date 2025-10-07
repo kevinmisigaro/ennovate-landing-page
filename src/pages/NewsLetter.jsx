@@ -27,7 +27,7 @@ import FollowupCard from "@/components/FollowupCard";
 import AgriCard from "@/components/AgriCard";
 import Img6 from "../assets/blogs/blog-4.jpg";
 import Img7 from "../assets/blogs/PHOTO-2025-07-17-16-55-56.jpg";
-import Img8 from "../assets/cleanenergy.jpg";
+import Img8 from "../assets/anchorfirmsartwork.jpg";
 import HighlightsLinkCard from "@/components/HighlightsLinkCard";
 
 const SubHero = () => {

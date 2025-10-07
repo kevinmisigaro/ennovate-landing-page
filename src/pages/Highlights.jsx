@@ -11,6 +11,7 @@ import FollowupCard from "@/components/FollowupCard";
 import Img6 from "../assets/blogs/blog-4.jpg";
 import Img7 from "../assets/blogs/PHOTO-2025-07-17-16-55-56.jpg";
 import HighlightsLinkCard from "@/components/HighlightsLinkCard";
+import Img8 from "../assets/anchorfirmsartwork.jpg";
 
 function Highlights() {
   const SubHero = () => {
@@ -73,7 +74,7 @@ function Highlights() {
           <HighlightsLinkCard
           description={"Investment Readiness and Acceleration Programme for Anchor Firms between 5th October – 31st October 2025"}
           heading={"Call for Applications"}
-          avatar={Img5}
+          avatar={Img8}
           />
         {docs.slice(0, 2).map((doc, index) => (
           <HighLightsCard
