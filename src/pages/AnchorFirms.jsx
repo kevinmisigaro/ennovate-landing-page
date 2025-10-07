@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "../components/Footer";
 import NavBar2 from "../components/NavBar2";
-import Img1 from "../assets/blogs/green_smart_cities.jpg"; // replace with your hero image
-import Img2 from "../assets/blogs/anchor_firms_training.jpg"; // replace with your second image
+import Img1 from "../assets/cleanenergy.jpg"; // replace with your hero image
+import Img2 from "../assets/learning.jpg"; // replace with your second image
 import {
   FaIndustry,
   FaRecycle,
