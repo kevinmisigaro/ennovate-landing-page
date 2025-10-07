@@ -15,7 +15,7 @@ function HighlightsLinkCard({ description, heading, avatar }) {
         <img
           src={avatar}
           alt=""
-          className="h-72 w-full rounded-xl md:rounded-lg p-1 md:m-0"
+          className="h-[20vh] w-full rounded-xl md:rounded-lg p-1 md:m-0"
         />
       </div>
       <div className="h-full md:w-1/3 p-2 mt-2 md:mt-8 lg:mt-12">

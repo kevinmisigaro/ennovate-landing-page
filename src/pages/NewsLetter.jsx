@@ -118,11 +118,13 @@ const ArticleHighlights = () => {
       </h1>
 
       <>
-      <HighlightsLinkCard
-          description={"Investment Readiness &amp; Acceleration Programme for Anchor Firms between 5th October – 31st October 2025"}
+        <HighlightsLinkCard
+          description={
+            "Investment Readiness &amp; Acceleration Programme for Anchor Firms between 5th October – 31st October 2025"
+          }
           heading={"Call for Applications"}
           avatar={Img8}
-          />
+        />
         {docs.slice(0, 2).map((doc, index) => (
           <HighLightsCard
             key={index}
