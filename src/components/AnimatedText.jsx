@@ -21,8 +21,8 @@ const AnimatedText = ({ text, size, color, showShadow = false }) => {
       animate={controls}
       initial={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.7 }}
-      style={{ fontSize: size || "5.5em", textAlign: "center" }}
-      className={`font-semibold text-${color} ${
+      style={{ textAlign: "center" }}
+      className={`font-semibold text-${color} text-${size} ${
         showShadow ? "text-with-shadow" : ""
       }`}
     >
