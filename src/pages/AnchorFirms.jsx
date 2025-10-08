@@ -367,7 +367,7 @@ function ApplicationProcessSection() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="relative h-[400px] rounded-2xl overflow-hidden"
         >
-          <img src="https://images.pexels.com/photos/1367276/pexels-photo-1367276.jpeg" alt="Application process" className="w-full h-full object-cover" />
+          <img src="https://images.pexels.com/photos/33679985/pexels-photo-33679985.jpeg" alt="Application process" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </motion.div>
       </div>
