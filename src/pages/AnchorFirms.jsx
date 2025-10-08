@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import AnimatedText from "@/components/animated-text"
+import AnimatedText from "../components/AnimatedText.jsx"
 import {
   FaIndustry,
   FaRecycle,
