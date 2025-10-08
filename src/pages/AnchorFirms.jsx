@@ -116,7 +116,7 @@ function IntroSection() {
       transition={{ duration: 0.6 }}
       className="space-y-8"
     >
-      <AnimatedText text="About the Program" size="3xl" color="white" />
+      <AnimatedText text="About the Program" size="6xl" color="white" />
 
       <div className="prose prose-lg prose-invert max-w-none">
         <p className="text-gray-300 leading-relaxed text-lg">
@@ -152,7 +152,7 @@ function PartnershipSection() {
       transition={{ duration: 0.6 }}
       className="space-y-8"
     >
-      <AnimatedText text="Ennovate Ventures Partnership" size="3xl" color="white" />
+      <AnimatedText text="Ennovate Ventures Partnership" size="6xl" color="white" />
 
       <div className="prose prose-lg prose-invert max-w-none space-y-6">
         <p className="text-gray-300 leading-relaxed text-lg">
@@ -191,7 +191,7 @@ function CriteriaSection() {
       transition={{ duration: 0.6 }}
       className="space-y-8"
     >
-      <AnimatedText text="Who We Are Looking For" size="3xl" color="white" />
+      <AnimatedText text="Who We Are Looking For" size="6xl" color="white" />
       <p className="text-xl text-gray-400 -mt-4">Anchor Firm Criteria</p>
 
       <div className="grid gap-4">
@@ -394,7 +394,7 @@ function KeyDatesSection() {
       transition={{ duration: 0.6 }}
       className="space-y-8"
     >
-      <AnimatedText text="Key Dates" size="3xl" color="white" />
+      <AnimatedText text="Key Dates" size="6xl" color="white" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {dates.map((item, index) => (
