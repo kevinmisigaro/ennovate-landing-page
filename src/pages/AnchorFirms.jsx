@@ -58,7 +58,7 @@ function HeroSection() {
     <div className="relative h-[60vh] min-h-[500px] overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img src="https://drive.google.com/file/d/1Mtl9Cy4jB5y3EWLERR35VnxfkwF1GEhA/view?usp=sharing" alt="Green and Smart Cities" className="w-full h-full object-cover" />
+        <img src="https://images.pexels.com/photos/9800008/pexels-photo-9800008.jpeg" alt="Green and Smart Cities" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-[#0a0a0a]" />
       </div>
 
@@ -367,7 +367,7 @@ function ApplicationProcessSection() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="relative h-[400px] rounded-2xl overflow-hidden"
         >
-          <img src="https://drive.google.com/file/d/1r09JVvYUtlz6SWOJoGAWEg8oOGfQt4dl/view?usp=sharing" alt="Application process" className="w-full h-full object-cover" />
+          <img src="https://images.pexels.com/photos/1367276/pexels-photo-1367276.jpeg" alt="Application process" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </motion.div>
       </div>
