@@ -14,8 +14,8 @@ import {
   FaFileAlt,
   FaUsers,
 } from "react-icons/fa"
-import img1 from "../assets/business-meeting-with-diverse-professionals-discus.jpg";
-import img2 from "../assets/green-sustainable-city-with-modern-buildings-and-n.jpg"
+// import img1 from "../assets/business-meeting-with-diverse-professionals-discus.jpg";
+// import img2 from "../assets/green-sustainable-city-with-modern-buildings-and-n.jpg"
 
 export default function AnchorFirms() {
   return (
@@ -58,7 +58,7 @@ function HeroSection() {
     <div className="relative h-[60vh] min-h-[500px] overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img src={img2} alt="Green and Smart Cities" className="w-full h-full object-cover" />
+        <img src="../assets/green-sustainable-city-with-modern-buildings-and-n.jpg" alt="Green and Smart Cities" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-[#0a0a0a]" />
       </div>
 
@@ -367,7 +367,7 @@ function ApplicationProcessSection() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="relative h-[400px] rounded-2xl overflow-hidden"
         >
-          <img src={img1} alt="Application process" className="w-full h-full object-cover" />
+          <img src="../assets/business-meeting-with-diverse-professionals-discus.jpg" alt="Application process" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </motion.div>
       </div>
