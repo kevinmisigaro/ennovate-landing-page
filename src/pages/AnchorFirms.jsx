@@ -14,12 +14,14 @@ import {
   FaFileAlt,
   FaUsers,
 } from "react-icons/fa"
-// import img1 from "../assets/business-meeting-with-diverse-professionals-discus.jpg";
-// import img2 from "../assets/green-sustainable-city-with-modern-buildings-and-n.jpg"
+import NavBar from "../components/NavBar.jsx";
 
 export default function AnchorFirms() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]">
+       <div className="sm:w-[80%]">
+        <NavBar />
+      </div>
       {/* Hero Section */}
       <HeroSection />
 
