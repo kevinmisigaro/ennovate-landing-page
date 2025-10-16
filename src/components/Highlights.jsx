@@ -6,6 +6,8 @@ import FollowupCard from "./FollowupCard";
 import Img1 from "../assets/blogs/developp.jpg";
 import Img3 from "../assets/blogs/newsletter31102024.jpg";
 import Img4 from "../assets/jasmine-newsletters.jpeg"
+import Img5 from "../assets/womancooking-newsletter.jpeg"
+import Img6 from "../assets/teaching-newsletter.jpeg"
 
 const BlogData = [
   {
@@ -15,6 +17,22 @@ const BlogData = [
     aosDelay: "0",
     url: "https://ennovate-ventures.kit.com/posts/EnnovateQ3Highlights",
     image: Img4
+  },
+  {
+    title: "Q2 in Review: Ennovate Top Highlights",
+    subtitle: "This quarter, we deepened our commitment to climate resilience, SME growth, digital transformation, and youth empowerment through impactful programs, catalytic partnerships, and high-value networking.",
+    published: "Oct 15, 2025",
+    aosDelay: "0",
+    url: "https://ennovate-ventures.kit.com/posts/q2-in-review-ennovate-s-top-highlights?_gl=1*1vrbn1x*_gcl_au*MjIyMDM3MzY1LjE3NTM2ODk4NDUuMTY0ODI4NzQzOC4xNzYwNjAwMjQ1LjE3NjA2MDA1NjM",
+    image: Img5
+  },
+  {
+    title: "Q1 in Review: Ennovate Top Highlights",
+    subtitle: "Q1 marked a strong start to the year at Ennovate Ventures.",
+    published: "Oct 15, 2025",
+    aosDelay: "0",
+    url: "https://ennovate-ventures.kit.com/posts/EnnovateQ1News?_gl=1*1s8j2p9*_gcl_au*MjIyMDM3MzY1LjE3NTM2ODk4NDUuMTY0ODI4NzQzOC4xNzYwNjAwMjQ1LjE3NjA2MDA1NjM",
+    image: Img6
   },
   {
     title: "develoPPP Ventures",
