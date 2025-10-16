@@ -5,8 +5,17 @@ import FollowupCard from "./FollowupCard";
 // import images
 import Img1 from "../assets/blogs/developp.jpg";
 import Img3 from "../assets/blogs/newsletter31102024.jpg";
+import Img4 from "../assets/jasmine-newsletters.jpeg"
 
 const BlogData = [
+  {
+    title: "Q3 in Review: Ennovate Top Highlights",
+    subtitle: "Q3 was a quarter of growth, partnerships, and measurable impact across programs and the ecosystem.",
+    published: "Oct 15, 2025",
+    aosDelay: "0",
+    url: "https://ennovate-ventures.kit.com/posts/EnnovateQ3Highlights",
+    image: Img4
+  },
   {
     title: "develoPPP Ventures",
     subtitle:
@@ -35,13 +44,13 @@ const HighLights = ({ sectionTitle }) => {
 
         {/* Blog section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
-        <FollowupCard
+        {/* <FollowupCard
             description={`We are happy to announce our investment in Swahilies, a fintech startup that is helping
         unbanked SMEs qualify and access business capital seamlessly. Swahilies is addressing a
         critical gap in Africas SME ecosystem by digitizing business operations`}
             heading={`Village Capital and Local ESOs Launch Accelerator for Sustainable Startups in Africa`}
             avatar={Img5}
-          />
+          /> */}
           {/* Blog card */}
           {BlogData.map((data) => (
             <a href={data.url} target="_blank">
