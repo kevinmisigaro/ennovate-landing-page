@@ -28,7 +28,7 @@ const BlogData = [
   },
   {
     title: "Q1 in Review: Ennovate Top Highlights",
-    subtitle: "Q1 marked a strong start to the year at Ennovate Ventures.100 SMEs are supported In Mwanza, in partnership with Enabel we have expanded SME support, prioritizing women led ventures with potential for scale.",
+    subtitle: "Q1 marked a strong start to the year at Ennovate Ventures.100 SMEs are supported In Mwanza, in partnership with Enabel we have expanded SME support, prioritizing women-led ventures with potential for scale.",
     published: "Oct 15, 2025",
     aosDelay: "0",
     url: "https://ennovate-ventures.kit.com/posts/EnnovateQ1News?_gl=1*1s8j2p9*_gcl_au*MjIyMDM3MzY1LjE3NTM2ODk4NDUuMTY0ODI4NzQzOC4xNzYwNjAwMjQ1LjE3NjA2MDA1NjM",
