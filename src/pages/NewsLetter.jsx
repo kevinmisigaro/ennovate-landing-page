@@ -254,14 +254,14 @@ function NewsLetter() {
       <NavBar2 />
       <SubHero />
       <News />
-      <AgriCard
+      {/* <AgriCard
         description={`The Innovate for Food Security Program is a year-long intense
             practical program guiding finalists and recent graduates to
             start and build agri-businesses aimed at improving food security
             in Tanzania.`}
         heading={`Innovate for Food Security`}
         avatar={agri}
-      />
+      /> */}
       <Heading title={"Media"} />
       <div className="flex lg:items-center lg:justify-center">
         <Carousel imagesList={logos} />
