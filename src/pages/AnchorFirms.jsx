@@ -15,6 +15,7 @@ import {
   FaUsers,
 } from "react-icons/fa"
 import NavBar from "../components/NavBar.jsx";
+import AnchorFirmsPartners from "@/components/AnchorFirmsPartners.jsx"
 
 export default function AnchorFirms() {
   return (
@@ -50,6 +51,8 @@ export default function AnchorFirms() {
 
         {/* CTA Section */}
         <CTASection />
+
+        <AnchorFirmsPartners />
       </div>
     </div>
   )

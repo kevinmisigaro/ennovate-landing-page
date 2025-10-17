@@ -82,6 +82,11 @@ import a17 from "../assets/Partners Logos/Screenshot 2023-08-01 at 12.03.49.png"
 import a18 from "../assets/Partners Logos/Segal-Family-Foundation-Logo.png";
 import a19 from "../assets/Partners Logos/logo.png";
 
+import m1 from "../assets/anchorfundlogos/Gvt Logo.png"
+import m2 from "../assets/anchorfundlogos/Enabel_Logo_Color_RGB.png"
+import m3 from "../assets/anchorfundlogos/Global Gateway .png"
+import m4 from "../assets/anchorfundlogos/Sasa logo. png.png"
+
 export const navLinks = [
   // {
   //   id: crypto.randomUUID(),
@@ -885,6 +890,11 @@ export const portfolios = [
     url: "https://sumet.co/",
   },
 ];
+
+export const anchorFirmsLogos = [
+  m1,m2,m3,m4
+]
+
 export const logos = [
   a1,
   // a2,
