@@ -4,7 +4,7 @@ import React from 'react'
 function AnchorFirmsPartners() {
   return (
     <div class="w-full inline-flex flex-nowrap bg-white py-12 overflow-hidden">
-    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none">
       {anchorFirmsLogos.map((logo, index) => (
         <img
           key={index}
@@ -16,7 +16,7 @@ function AnchorFirmsPartners() {
     </ul>
 
     <ul
-      class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+      class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none"
       aria-hidden="true"
     >
       {anchorFirmsLogos.map((logo, index) => (
