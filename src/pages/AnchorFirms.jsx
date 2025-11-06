@@ -102,7 +102,7 @@ function HeroSection() {
               <span className="text-lg">Application Window</span>
             </div>
             <span className="hidden sm:block text-gray-500">|</span>
-            <span className="text-lg font-semibold">5th October – 31st October 2025</span>
+            <span className="text-lg font-semibold">5<sup>th</sup>October – 15<sup>th</sup> November 2025</span>
           </motion.div>
         </motion.div>
       </div>
