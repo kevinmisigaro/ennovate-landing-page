@@ -326,7 +326,7 @@ function ApplicationProcessSection() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
   const steps = [
-    { step: "Application Submission", detail: "5th – 31st October 2025" },
+    { step: "Application Submission", detail: "5th – 15th November 2025" },
     {
       step: "Eligibility Screening",
       detail: "Based on predefined criteria (revenue, team, scalability, ESG, linkage potential)",
@@ -385,7 +385,7 @@ function KeyDatesSection() {
 
   const dates = [
     { label: "Call Opens", date: "5th October 2025" },
-    { label: "Deadline", date: "31st October 2025" },
+    { label: "Deadline", date: "15th November 2025" },
     { label: "Interviews & Validation", date: "November 2025" },
     { label: "Final Selection", date: "2nd week of November 2025" },
     { label: "Programme Start", date: "3rd week of November 2025" },

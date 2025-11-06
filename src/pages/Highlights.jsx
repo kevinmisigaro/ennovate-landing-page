@@ -72,7 +72,7 @@ function Highlights() {
           Highlights
         </h1>
           <HighlightsLinkCard
-          description={"Investment Readiness and Acceleration Programme for Anchor Firms between 5th October – 31st October 2025"}
+          description={"Investment Readiness and Acceleration Programme for Anchor Firms between 5th October – 15th November 2025"}
           heading={"Call for Applications"}
           avatar={Img8}
           />
