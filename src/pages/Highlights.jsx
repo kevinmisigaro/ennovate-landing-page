@@ -12,6 +12,7 @@ import Img6 from "../assets/blogs/blog-4.jpg";
 import Img7 from "../assets/blogs/PHOTO-2025-07-17-16-55-56.jpg";
 import HighlightsLinkCard from "@/components/HighlightsLinkCard";
 import Img8 from "../assets/anchorfirmsartwork.jpg";
+import Img9 from "../assets/blogs/develoPPP-ventures-img.jpeg"
 
 function Highlights() {
   const SubHero = () => {
@@ -25,6 +26,13 @@ function Highlights() {
 
   const ArticleHighlights = () => {
     const docs = [
+      {
+        id: crypto.randomUUID(),
+        title: "Tanzanian start-ups can now access €100,000 in non-dilutive funding",
+        desc: "Innovative Tanzanian start-ups can now access €100,000 in non-dilutive funding and strategic support through the newly opened call for applications for develoPPP Ventures, implemented by DEG Impulse. Eligible start-ups are invited to apply by December 31, 2025, for an opportunity to secure co-financing and scale their businesses sustainably.",
+        attach: "https://drive.google.com/file/d/1FeMTMYsHqrGTwecHjt4TIsVJ-pg27Tqs/view?usp=sharing",
+        thumbnail: Img9
+      },
       {
         id: crypto.randomUUID(),
         desc: "Tanzanian Start-ups Invited to Benefit from €100,000 (TSh282million) Funding Opportunity through the develoPPP Ventures Programme",
@@ -71,11 +79,11 @@ function Highlights() {
         <h1 className="text-yellow-600 font-bold text-3xl lg:text-4xl md:my-4 text-center">
           Highlights
         </h1>
-          <HighlightsLinkCard
+          {/* <HighlightsLinkCard
           description={"Investment Readiness and Acceleration Programme for Anchor Firms between 5th October – 15th November 2025"}
           heading={"Call for Applications"}
           avatar={Img8}
-          />
+          /> */}
         {docs.slice(0, 2).map((doc, index) => (
           <HighLightsCard
             docLink={doc.attach}
