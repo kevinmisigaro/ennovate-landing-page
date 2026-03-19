@@ -799,22 +799,22 @@ export const fallingWallsOutcomes = [
   },
 ];
 export const portfolios = [
-  {
-    id: crypto.randomUUID(),
-    name: "Farm Boksi ",
-    description:
-      "A cold chain company that is empowering small farmers and vendors to mitigate post harvesting losses, as well as connecting them with the global market through technology.",
-    logo: boks,
-    url: "farmboksi.shop",
-  },
-  {
-    id: crypto.randomUUID(),
-    name: "Haba ",
-    description:
-      "Is a bank for the informal sector that offers innovative financial solutions, including instant access to non- collateral loan options to individuals and groups while incentivizing them to enhance their saving culture.",
-    logo: haba,
-    url: "gethaba.app",
-  },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: "Farm Boksi ",
+  //   description:
+  //     "A cold chain company that is empowering small farmers and vendors to mitigate post harvesting losses, as well as connecting them with the global market through technology.",
+  //   logo: boks,
+  //   url: "farmboksi.shop",
+  // },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: "Haba ",
+  //   description:
+  //     "Is a bank for the informal sector that offers innovative financial solutions, including instant access to non- collateral loan options to individuals and groups while incentivizing them to enhance their saving culture.",
+  //   logo: haba,
+  //   url: "gethaba.app",
+  // },
   {
     id: crypto.randomUUID(),
     name: "Serengeti Business Angels Network",
@@ -831,14 +831,14 @@ export const portfolios = [
     logo: plumar,
     url: "Plumar.co",
   },
-  {
-    id: crypto.randomUUID(),
-    name: "Desire",
-    description:
-      "Desire is a food tech company that is paying people to eat. Its biggest mission is to make healthy food available and accessible to everyone with their own budget.",
-    logo: desire,
-    url: "desiretaste.com",
-  },
+  // {
+  //   id: crypto.randomUUID(),
+  //   name: "Desire",
+  //   description:
+  //     "Desire is a food tech company that is paying people to eat. Its biggest mission is to make healthy food available and accessible to everyone with their own budget.",
+  //   logo: desire,
+  //   url: "desiretaste.com",
+  // },
   {
     id: crypto.randomUUID(),
     name: "Dawa mkononi",
