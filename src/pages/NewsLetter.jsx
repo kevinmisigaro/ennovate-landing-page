@@ -210,17 +210,17 @@ const Articles = () => {
 function News() {
   return (
     <Tabs defaultValue="articles" className="" highContrast>
-      <TabsList className="grid md:ml-[20%] ml-[15%] rounded-full grid-cols-3 bg-neutral-500/20 text-white w-[70%] md:w-[60%] md:mb-8">
-        <TabsTrigger value="articles" className="rounded-full">
+      <TabsList className="grid md:ml-[20%] ml-[5%] rounded-full grid-cols-4 bg-neutral-500/20 text-white w-[90%] md:w-[60%] md:mb-8">
+        <TabsTrigger value="articles" className="rounded-full px-1 text-xs sm:px-3 sm:text-sm">
           Articles
         </TabsTrigger>
-        <TabsTrigger value="highlights" className="rounded-full">
+        <TabsTrigger value="highlights" className="rounded-full px-1 text-xs sm:px-3 sm:text-sm">
           Highlights
         </TabsTrigger>
-        <TabsTrigger value="newsletter" className="rounded-full">
+        <TabsTrigger value="newsletter" className="rounded-full px-1 text-xs sm:px-3 sm:text-sm">
           Newsletter
         </TabsTrigger>
-         <TabsTrigger value="reports" className="rounded-full">
+        <TabsTrigger value="reports" className="rounded-full px-1 text-xs sm:px-3 sm:text-sm">
           Reports
         </TabsTrigger>
       </TabsList>
