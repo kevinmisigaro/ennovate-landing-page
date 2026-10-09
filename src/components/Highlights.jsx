@@ -11,6 +11,14 @@ import Img6 from "../assets/teaching-newsletter.jpeg"
 
 const BlogData = [
   {
+    title: "ANNUAL IMPACT REPORT 2025",
+    subtitle: "A year in which structured support translated into measurable business growth, income generation, capital access, and stronger entrepreneurial systems.",
+    published: "Oct 9, 2026",
+    image: Img3,
+    aosDelay: "200",
+    url: "https://drive.google.com/file/d/1Vz153dvnlbzllAdqw60P4MDqpdRpa35R/view?usp=drive_link"
+  },
+  {
     title: "Q3 in Review: Ennovate Top Highlights",
     subtitle: "Q3 was a quarter of growth, partnerships, and measurable impact across programs and the ecosystem.",
     published: "Oct 15, 2025",
@@ -43,15 +51,15 @@ const BlogData = [
     aosDelay: "0",
     url: "https://www.developpp.de/en/funding-programme/startups",
   },
-  {
-    title: "3rd Quarter 2024 - Newsletter",
-    subtitle:
-      "This quarter marked significant progress for Ennovate Ventures. We launched #TheNextFund 3.0, committing $20,000 in funding with $100,000+ in co-investment opportunities for African founders. Our partnership with AESIS2024 Investor Summit strengthens ties with key stakeholders in Africas startup ecosystem.",
-    published: "Oct 31, 2024",
-    image: Img3,
-    aosDelay: "200",
-    url: "https://drive.google.com/file/d/17qzJm_MF5btvoPls88qwlV6ek0xUts8Y/view?usp=sharing",
-  },
+  // {
+  //   title: "3rd Quarter 2024 - Newsletter",
+  //   subtitle:
+  //     "This quarter marked significant progress for Ennovate Ventures. We launched #TheNextFund 3.0, committing $20,000 in funding with $100,000+ in co-investment opportunities for African founders. Our partnership with AESIS2024 Investor Summit strengthens ties with key stakeholders in Africas startup ecosystem.",
+  //   published: "Oct 31, 2024",
+  //   image: Img3,
+  //   aosDelay: "200",
+  //   url: "https://drive.google.com/file/d/17qzJm_MF5btvoPls88qwlV6ek0xUts8Y/view?usp=sharing",
+  // },
 ];
 const HighLights = ({ sectionTitle }) => {
   return (
