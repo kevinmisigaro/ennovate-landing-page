@@ -2,14 +2,14 @@ import React from "react";
 import Heading from "./Shared/Heading";
 
 // import images
-import Img3 from "../assets/blogs/newsletter31102024.jpg";
+import AnnualReport2025 from "../assets/blogs/annual-report-2025.jpg";
 
 const ReportsData = [
   {
     title: "ANNUAL IMPACT REPORT 2025",
     subtitle: "A year in which structured support translated into measurable business growth, income generation, capital access, and stronger entrepreneurial systems.",
     published: "Oct 9, 2026",
-    image: Img3,
+    image: AnnualReport2025,
     aosDelay: "200",
     url: "https://drive.google.com/file/d/1Vz153dvnlbzllAdqw60P4MDqpdRpa35R/view?usp=drive_link"
   },
