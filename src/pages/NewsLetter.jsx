@@ -16,6 +16,7 @@ import hero from "../assets/news_hero.jpg";
 import Carousel from "../components/Carousel";
 import HighLightsCard from "../components/HighLightsCard";
 import HighLights from "../components/Highlights";
+import Reports from "../components/Reports";
 import Heading from "../components/Shared/Heading";
 import Footer from "./../components/Footer";
 import NavBar2 from "./../components/NavBar2";
@@ -219,6 +220,9 @@ function News() {
         <TabsTrigger value="newsletter" className="rounded-full">
           Newsletter
         </TabsTrigger>
+         <TabsTrigger value="reports" className="rounded-full">
+          Reports
+        </TabsTrigger>
       </TabsList>
       <TabsContent value="articles">
         <Articles />
@@ -228,6 +232,9 @@ function News() {
       </TabsContent>
       <TabsContent value="highlights">
         <ArticleHighlights />
+      </TabsContent>
+      <TabsContent value="reports">
+        <Reports />
       </TabsContent>
     </Tabs>
   );
