@@ -8,8 +8,44 @@ import Img3 from "../assets/blogs/newsletter31102024.jpg";
 import Img4 from "../assets/jasmine-newsletters.jpeg"
 import Img5 from "../assets/womancooking-newsletter.jpeg"
 import Img6 from "../assets/teaching-newsletter.jpeg"
+import Img7 from "../assets/blogs/q3-2026-newsletter.jpg"
+import Img8 from "../assets/blogs/q2-2026-newsletter.jpg"
+import Img9 from "../assets/blogs/q1-2026-newsletter.jpg"
+import Img10 from "../assets/blogs/annual-review-2025-newsletter.jpg"
 
 const BlogData = [
+  {
+    title: "Turning Ambition into Impact! | Ennovate Q3 2026",
+    subtitle: "Our Q3 2026 newsletter recaps investment-readiness results, climate funding, and East African ecosystem events, plus the November 2026 deadline for our Adaptation & Resilience ClimAccelerator.",
+    published: "Oct 28, 2026",
+    aosDelay: "0",
+    url: "https://ennovate-ventures.kit.com/posts/turning-ambition-into-impact-ennovate-q3-2026",
+    image: Img7
+  },
+  {
+    title: "Bridging Capital & Ambition | Ennovate Q2 2026",
+    subtitle: "Our Q2 2026 newsletter covers efforts to connect African founders with capital, expertise, and networks, including the Startups Za Viwango programme, the develoPPP Ventures cohort, and activity at TIIF and VivaTech.",
+    published: "Aug 2026",
+    aosDelay: "0",
+    url: "https://ennovate-ventures.kit.com/posts/bridging-capital-ambition-ennovate-q2-2026",
+    image: Img8
+  },
+  {
+    title: "2026 in Motion: The Builders, The Breakthroughs and The Opportunities",
+    subtitle: "Our Q1 2026 update reports 10 companies made investment-ready, 31 SMEs digitally transformed, and 11 climate startups accelerated, along with new partnerships and funding programmes.",
+    published: "May 2026",
+    aosDelay: "0",
+    url: "https://ennovate-ventures.kit.com/posts/2026-in-motion-the-builders-the-breakthroughs-and-the-opportunities",
+    image: Img9
+  },
+  {
+    title: "2025 Year in Review: Building the Pipeline for Scale",
+    subtitle: "Our 2025 recap covers the capital deployed, the early- and growth-stage startups backed, and the partnerships formed across Africa, plus our plans for 2026.",
+    published: "Jan 2026",
+    aosDelay: "0",
+    url: "https://ennovate-ventures.kit.com/posts/2025-year-in-review-building-the-pipeline-for-scale",
+    image: Img10
+  },
   {
     title: "Q3 in Review: Ennovate Top Highlights",
     subtitle: "Q3 was a quarter of growth, partnerships, and measurable impact across programs and the ecosystem.",
